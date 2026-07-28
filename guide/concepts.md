@@ -66,7 +66,8 @@ Files on disk always contain uids, never names. The editor *displays* names; the
 
 ## Where entities live in the UI
 
-![A character with relationships, traits, and items in the inspector](/screenshots/character.png)
+<img src="/screenshots/character-light.png" alt="A character with relationships, traits, and items in the inspector" class="light-only">
+<img src="/screenshots/character-dark.png" alt="A character with relationships, traits, and items in the inspector" class="dark-only">
 
 - The **sidebar** groups types into sections (Manuscript, Story World by default) and lists the derived **views** (Graph, Timeline).
 - The **list** shows the entities of the selected type — for manuscript types, as a nested tree with status dots and word counts.

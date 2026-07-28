@@ -1,0 +1,10 @@
+/* Theme-dependent screenshots: every screenshot exists as a -light and
+   a -dark capture; the pair is embedded with these classes and the
+   inactive variant is hidden. */
+html:not(.dark) .dark-only {
+  display: none;
+}
+
+html.dark .light-only {
+  display: none;
+}

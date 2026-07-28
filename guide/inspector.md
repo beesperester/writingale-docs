@@ -2,7 +2,8 @@
 
 The inspector (<kbd>⌘4</kbd>, or the toolbar button) is the structured side of the selected entity. It is **composed from the type's traits** — a chapter shows status and story time; a character shows relationships and journey; your custom faction shows its custom fields. Sections you see:
 
-![Character inspector with relationships and traits](/screenshots/character.png)
+<img src="/screenshots/character-light.png" alt="Character inspector with relationships and traits" class="light-only">
+<img src="/screenshots/character-dark.png" alt="Character inspector with relationships and traits" class="dark-only">
 
 ## Identity
 
@@ -48,4 +49,5 @@ Backlinks: every entity whose prose or fields point at this one. The example boo
 
 The inferred appearance list — see [Journeys](/guide/journeys).
 
-![Journey section with POV badges](/screenshots/journey.png)
+<img src="/screenshots/journey-light.png" alt="Journey section with POV badges" class="light-only">
+<img src="/screenshots/journey-dark.png" alt="Journey section with POV badges" class="dark-only">
