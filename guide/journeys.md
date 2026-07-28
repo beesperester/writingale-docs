@@ -4,7 +4,8 @@ A journey is the answer to "where does this character actually appear?" — infe
 
 For every entity whose type has the `journey` trait, Writingale scans the manuscript for appearances: prose references, cast lists, POV fields, item ownership. The result is an ordered itinerary through the book.
 
-![A character's journey in the inspector](/screenshots/journey.png)
+<img src="/screenshots/journey-light.png" alt="A character's journey in the inspector" class="light-only">
+<img src="/screenshots/journey-dark.png" alt="A character's journey in the inspector" class="dark-only">
 
 ## What a journey entry shows
 

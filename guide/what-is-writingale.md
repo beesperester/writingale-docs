@@ -4,7 +4,8 @@ Writingale is a native macOS app for writing books on **plain markdown files**.
 
 Everything in a book — chapters, characters, locations, items, notes — is an **entity**: a single markdown file with a small YAML frontmatter block. Entities reference each other with stable `[[uid]]` links, so names can change at any point in the process without breaking anything. Nothing is baked in until you export, when uids are replaced with the entities' current names.
 
-![The welcome screen](/screenshots/welcome.png)
+<img src="/screenshots/welcome-light.png" alt="The welcome screen" class="light-only">
+<img src="/screenshots/welcome-dark.png" alt="The welcome screen" class="dark-only">
 
 ## Why plain files?
 

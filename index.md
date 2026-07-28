@@ -39,6 +39,7 @@ features:
 
 <div style="max-width: 1152px; margin: 48px auto 0;">
 
-![The Writingale editor](/screenshots/editor.png)
+<img src="/screenshots/editor-light.png" alt="The Writingale editor" class="light-only">
+<img src="/screenshots/editor-dark.png" alt="The Writingale editor" class="dark-only">
 
 </div>

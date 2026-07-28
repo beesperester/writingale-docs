@@ -6,7 +6,8 @@ This walkthrough takes you from an empty folder to an exported manuscript in abo
 
 Launch Writingale. On the welcome screen, click **Create a New Book…**, give it a title and author, and choose a folder.
 
-![The welcome screen](/screenshots/welcome.png)
+<img src="/screenshots/welcome-light.png" alt="The welcome screen" class="light-only">
+<img src="/screenshots/welcome-dark.png" alt="The welcome screen" class="dark-only">
 
 Writingale writes the folder for you: a `book.yaml` manifest, a `types.yaml` with the default entity types (Chapter, Character, Location, Item, Note), the type folders, and a `.gitignore`. The folder is a normal git-ready directory — nothing hidden, nothing binary.
 
@@ -18,7 +19,8 @@ The main window has four columns: **sidebar** (types and views), **list** (entit
 2. Click **+** above the list to create a chapter.
 3. Type. The editor styles markdown live — headings, `**bold**`, `*italic*`, lists, quotes — while keeping the file plain text. Saving is automatic.
 
-![The editor with a chapter from the example book](/screenshots/editor.png)
+<img src="/screenshots/editor-light.png" alt="The editor with a chapter from the example book" class="light-only">
+<img src="/screenshots/editor-dark.png" alt="The editor with a chapter from the example book" class="dark-only">
 
 ## 3. Link your world together
 

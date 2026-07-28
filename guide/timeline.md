@@ -2,7 +2,8 @@
 
 The timeline lays your story out against **story time**: a signed numeric axis in the book's time unit (years for the example book — configurable in Book Settings). 0 is the beginning of the book; negative values are backstory.
 
-![The timeline view of the example book](/screenshots/timeline.png)
+<img src="/screenshots/timeline-light.png" alt="The timeline view of the example book" class="light-only">
+<img src="/screenshots/timeline-dark.png" alt="The timeline view of the example book" class="dark-only">
 
 ## What you're seeing
 

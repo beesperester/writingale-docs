@@ -2,7 +2,8 @@
 
 The editor shows the markdown source of the selected entity, styled in place — the file stays plain text, but headings scale, emphasis renders, and references become readable names.
 
-![The editor showing a chapter from the example book](/screenshots/editor.png)
+<img src="/screenshots/editor-light.png" alt="The editor showing a chapter from the example book" class="light-only">
+<img src="/screenshots/editor-dark.png" alt="The editor showing a chapter from the example book" class="dark-only">
 
 ## Markdown styling
 
