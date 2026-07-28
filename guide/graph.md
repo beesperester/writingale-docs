@@ -7,9 +7,11 @@ The graph is a force-directed map of every entity and every reference between th
 ## Reading the graph
 
 - **The spine** — manuscript entities on the horizontal center line, left to right in reading order. A character whose edges all land on the right half of the spine doesn't appear until late in the book; you can see it without reading a page.
-- **Nodes** are entities, in their type's color (the example book's factions are the dark red nodes — a custom hex color).
-- **Edges** are references. Hover a node for a card with its reference count; click **Open** to jump to it.
-- **Group outlines** trace nested manuscript containers — you can literally see each part wrapping its chapters.
+- **Nodes** are entities, in their type's color (the example book's factions are the dark red nodes — a custom hex color). Manuscript containers draw no node of their own — they appear as their group's outline and label.
+- **Edges** are references.
+- **Group outlines** trace nested manuscript containers, each labeled with the container's name — you can literally see each part wrapping its chapters.
+
+Clicking a node shows its contents in the glance panel on the right — the same inspector the editor and timeline use (<kbd>⌘4</kbd> or the toolbar's sidebar button) — with an **Open** button to jump to the document. Double-clicking a node jumps straight there.
 
 ## Controls
 
