@@ -42,4 +42,4 @@ Per book, in `.writingale/stats.json` — local state, gitignored, delta-based, 
 
 ## Is there an iOS / Windows / Linux version?
 
-The app is macOS-only (macOS 14+). The core library builds and tests on Linux, but there is no UI for other platforms.
+The app is macOS-only (macOS 14+), available on the Mac App Store. Because books are plain markdown and YAML files, they remain readable and editable on any platform even without the app.

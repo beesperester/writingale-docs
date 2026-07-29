@@ -11,6 +11,7 @@ MyBook/
   Chapters/…          # one folder per type (configurable)
   Characters/…
   Notes/…
+  Images/…            # image entities + their binaries (content-hash names)
   …
   .writingale/        # local app state (stats.json) — gitignored
   Export/             # ignored by the entity scanner
@@ -76,12 +77,13 @@ types:
 | `relationships` | — | Typed links with notes |
 | `annotator` | — | Can attach to documents/passages |
 | `journey` | — | Appearances inferred across the manuscript |
+| `image` | — | Labels a stored image asset (`file` key); embeddable with `![[uid]]` |
 
 ### Fields
 
 `kind: text | number | list | reference`. Reference fields take `cardinality: one | many`, `types: [typeId, …]`, and optionally `role: pov` (marks the point-of-view reference used by journeys and the timeline).
 
-Reserved keys that cannot be field keys: `uid`, `type`, `name`, `created`, `children`, `index`, `status`, `goal`, `material`, `time`, `relationships`, `annotations`.
+Reserved keys that cannot be field keys: `uid`, `type`, `name`, `created`, `children`, `index`, `status`, `goal`, `material`, `file`, `time`, `relationships`, `annotations`.
 
 Structural problems in `types.yaml` are reported as warnings — never fatal.
 
@@ -120,6 +122,7 @@ between them for the first time in their lives…
 | `status` | Stage id. Unknown values are tolerated. |
 | `goal` | Per-entity word target (integer). |
 | `material` | `true` marks aside material — in the tree, out of export/goals/progress. |
+| `file` | Project-relative path of the stored asset an image entity labels, e.g. `Images/b5a2cb9e3792d21f.png` (named by content hash). |
 | `time` | `{from, to, label, row}` — numbers in the book's time unit; 0 = book start, negatives before. |
 | `relationships` | `[{to, kind, note?}]` |
 | `annotations` | `[{target, quote?, stale?}]` |
@@ -130,9 +133,10 @@ Trait payload keys are parsed whenever present, regardless of whether the type c
 
 ### Body
 
-Plain markdown. Two extensions:
+Plain markdown. Three extensions:
 
 - `[[uid]]` and `[[uid|display text]]` wiki references.
+- `![[uid]]` image embeds — the referenced image entity's picture in place; exports as `![name](Images/…)` (a `|display` override changes the alt text). For image entities the plain `[[uid]]` form behaves identically — referencing an image is embedding it.
 - `%%` comment lines — visible (dimmed) in the editor, stripped on export.
 
 ## `.writingale/stats.json`

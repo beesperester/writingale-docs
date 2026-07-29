@@ -25,6 +25,10 @@ The [aside-material toggle](/guide/manuscript#material) — keeps the entity in 
 
 `From`, `To`, a human `Label` ("Ledger-day, morning"), and the `Row` the entity occupies on the timeline. Time is counted in the book's time unit (days, hours, years — set in Book Settings); **0 is the beginning of the book, negative values lie before it.**
 
+## Image — *image trait*
+
+A preview of the picture the entity labels, plus the stored file's content-hash path. To swap the picture, click **Replace…** (a file dialog, images only) or **drop an image file onto the preview** — the entity keeps its uid, label, notes, and every embed of it; only the stored binary changes (the old one is cleaned up unless another entity still uses it). See [Images](/guide/editor#images).
+
 ## Relationships — *relationships trait*
 
 Typed links to other entities with a free-form kind ("creditor", "old friend", "rivals") and an optional note. Relationships are edited here and rendered as edges in the graph.

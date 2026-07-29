@@ -25,7 +25,7 @@ Both retarget every reference project-wide, so annotations and links keep workin
 
 ## Material
 
-Toggle **Material** in the inspector to mark an entity as aside material: it stays visible in the tree (dimmed, with a paperclip badge) but is excluded from export, goals, and progress. Use it for deleted scenes you can't quite delete, voice experiments, or an opening you haven't committed to. The example book's *The Old Opening (cut)* is material.
+Toggle **Material** in the inspector to mark an entity as aside material: it stays visible in the tree (dimmed, with a small "material" badge) but is excluded from export, goals, and progress. Use it for deleted scenes you can't quite delete, voice experiments, or an opening you haven't committed to. The example book's *The Old Opening (cut)* is material.
 
 ## Ordering fallbacks
 
