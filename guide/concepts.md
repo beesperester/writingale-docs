@@ -70,7 +70,7 @@ Files on disk always contain uids, never names. The editor *displays* names; the
 <img src="/screenshots/character-dark.png" alt="A character with relationships, traits, and items in the inspector" class="dark-only">
 
 - The **sidebar** groups types into sections (Manuscript, Story World by default) and lists the derived **views** (Graph, Timeline).
-- The **list** shows the entities of the selected type — for manuscript types, as a nested tree with status dots and word counts.
+- The **list** shows the entities of the selected type — for manuscript types, as a nested tree with progress rings and word counts.
 - The **editor** shows the entity's markdown body.
 - The **inspector** shows the structured side: identity, status, goal, time, relationships, fields, backlinks, journey.
 

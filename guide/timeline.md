@@ -8,7 +8,7 @@ The timeline lays your story out against **story time**: a signed numeric axis i
 ## What you're seeing
 
 - **Container bands** across the top — parts and chapters with their derived progress (`2/4 final`), spanning the time their contents cover.
-- **Type rows** — each timeline-enabled type gets a row; cards show status dot, time label, and POV. Overlapping cards stack.
+- **Type rows** — each timeline-enabled type gets a row; cards show progress ring, time label, and POV. Overlapping cards stack.
 - **Named rows** — a type can declare its own row (the default Notes type uses *World Events*), and any single entity can override its row (`time: { row: Machine History }`), so different strands of world history read as separate strips.
 - **Journey lanes** at the bottom — one lane per journey-trait entity, marking where along the axis each character or item appears.
 

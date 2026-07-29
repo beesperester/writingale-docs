@@ -4,6 +4,9 @@ layout: home
 hero:
   name: Writingale
   text: Write books in plain markdown.
+  image:
+    src: /app-icon.png
+    alt: The Writingale app icon
   tagline: Linked, tracked, and yours — every chapter, character, and place is a plain text file you can read in any editor, forever.
   actions:
     - theme: brand

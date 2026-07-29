@@ -37,7 +37,7 @@ Traits are built-in behaviors you mix into a type:
 | Trait | What it adds |
 |---|---|
 | `manuscript` | The type belongs to the compiled manuscript: it appears in the manuscript tree, can nest children, counts toward goals, and exports. |
-| `status` | A completion workflow with configurable stages (default: outline → draft → revision → final), shown as colored dots and rolled up into container progress. |
+| `status` | A completion workflow with configurable stages (default: outline → draft → revision → final), shown as a colored progress ring that fills with the workflow and rolled up into container progress (one arc per nested chapter). |
 | `timeline` | Story-time data (`from`, `to`, `label`, `row`) and a card on the [timeline](/guide/timeline). A type can declare a default named row, e.g. `timeline: { row: World Events }`. |
 | `relationships` | Typed, annotated links between entities ("creditor", "old friend", …), edited in the inspector. |
 | `annotator` | The type can attach itself to other documents or quoted passages — see [Annotations](/guide/annotations). |

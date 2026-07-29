@@ -6,13 +6,18 @@ The manuscript is a tree. Any entity whose type has the `manuscript` trait can c
 
 - The canonical order of the **roots** lives in `book.yaml` under `manuscript:`.
 - Each container lists its children (in order) in its own `children:` frontmatter key.
-- The list column renders the tree with disclosure triangles, status dots, story-time hints, and word counts.
+- The list column renders the tree with disclosure triangles, progress rings, story-time hints, and word counts.
 
 Reorder by dragging, or use the context menu's **Move Into** to reparent. The inspector's **Nesting** section does the same with a picker, and **Contents** lists a container's children with quick add/create buttons ("New Sub-Chapter", "New Sub-Scene", …).
 
-## Container progress
+## Progress rings
 
-A container's status is derived, never set: it shows the *lowest* stage among its descendant leaves plus a tally — `2/4 final` means two of four leaves have reached the final stage. One glance at a part tells you how done it really is.
+Every entity with a status shows a small circular indicator, like a miniature of the goal ring:
+
+- A **single chapter's** ring fills clockwise in its stage's color by how far along the workflow the stage sits — a quarter of the way through a four-stage workflow fills a quarter of the circle; the final stage closes it.
+- A **container's** ring fills by the *average* progress of its nested chapters — one arc per chapter in that chapter's stage color, packed end to end, so a part shows both how done it is overall and the stage of each child at a glance. The ring only closes when every chapter is final.
+
+A container's status is always derived, never set. Hovering shows the lowest stage among its descendant leaves plus a tally, and the row's `2/4 final` count means two of four leaves have reached the final stage.
 
 ## Split & merge
 

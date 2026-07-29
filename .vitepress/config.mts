@@ -8,6 +8,8 @@ export default defineConfig({
   lastUpdated: true,
 
   themeConfig: {
+    logo: '/app-icon.png',
+
     nav: [
       { text: 'Guide', link: '/guide/what-is-writingale', activeMatch: '/guide/' },
       { text: 'Reference', link: '/reference/file-format', activeMatch: '/reference/' }
@@ -71,10 +73,6 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/beesperester/writingale' }
-    ],
 
     footer: {
       message: 'Writingale — write books in plain markdown, linked and tracked.'
