@@ -38,6 +38,21 @@ The document font family, size, and line height are app-wide preferences in **Se
 - **⌘-click** a reference to navigate to that entity (⌘-hover shows the pointing hand). **⌘[** and **⌘]** walk your navigation history like a browser.
 - Right-click → **Insert Reference** for a menu-driven alternative.
 
+## Images
+
+Drag an image file into the editor to embed it where it lands:
+
+- The picture is **copied into the book** (the `Images` folder) and stored under its **content hash** — dragging the same picture in twice never duplicates the file.
+- An **Image entity** is created for it. Its name is the image's **label**, editable like any entity name (list or inspector), and resolves as the alt text wherever the image appears.
+- The editor inserts an embed token, `![[uid]]`. On its own line the token renders as the picture itself; in raw markdown mode it stays a plain token. Like references, embeds are atomic and click-to-reveal.
+- **Referencing an image is embedding it**: `[[uid]]` and `![[uid]]` behave identically when the target is an image entity — both show the picture in the editor and become `![label](Images/…)` on export.
+- Typing `[[` (autocomplete) or right-click → Insert Reference embeds an already-imported image.
+- An image entity can carry its own markdown body — notes about the picture, sources, caption drafts. The body shows in the glance panel and inspector; it never travels into documents that embed the image.
+- Images show up as nodes in the [graph](/guide/graph), connected to every document that embeds them.
+- On [export](/guide/export), embeds become standard markdown images — `![label](Images/…)` — and the image files travel with a markdown export; PDF export renders them in place.
+
+To swap a picture everywhere it's embedded, replace it on the Image entity in the [inspector](/guide/inspector#image--image-trait) — Replace… or drop a file onto the preview. Deleting an Image entity also removes its stored file (unless another entity still points at it).
+
 ## Writing modes
 
 All in the **View menu**:

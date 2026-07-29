@@ -1,37 +1,19 @@
 # Installation
 
-Writingale currently builds from source. It is a native SwiftUI app.
+Writingale is a native macOS app, available on the **Mac App Store**.
 
 ## Requirements
 
 - macOS 14 or later
-- Xcode 15 or later
-- [XcodeGen](https://github.com/yonaskolb/XcodeGen) (the Xcode project is generated, not checked in)
 
-## Build from source
+## Install
 
-```sh
-brew install xcodegen
-git clone https://github.com/beesperester/writingale.git
-cd writingale
-xcodegen generate --spec App/project.yml
-open App/Writingale.xcodeproj
-```
-
-Then build and run the **Writingale** scheme in Xcode.
+Get Writingale from the Mac App Store. Updates arrive through the App Store like any other app — your books are plain files on disk and are never touched by an update.
 
 ::: tip Try the example book
-Open `ExampleBook/` from the welcome screen to explore a complete sample project, *The Machine Stops* (after E. M. Forster), that uses every feature.
+Open the bundled example book from the welcome screen to explore a complete sample project, *The Machine Stops* (after E. M. Forster), that uses every feature.
 :::
 
-## Command-line build
+## Your data stays yours
 
-```sh
-xcodebuild -project App/Writingale.xcodeproj -scheme Writingale build
-```
-
-The platform-independent core (`Sources/WritingaleCore`) also builds and tests on macOS and Linux:
-
-```sh
-swift test
-```
+Writingale has no accounts and no sync service of its own. A book is a folder of markdown and YAML files wherever you keep it — in iCloud Drive, Dropbox, a git repository, or a plain local folder. Removing the app never locks you out of your writing; see the [file format reference](/reference/file-format).

@@ -35,14 +35,14 @@ Because chapters carry structured data — cast, locations, story time, point of
 
 ## Made of configurable parts
 
-The five classic types — Chapter, Character, Location, Item, Note — are just the bundled default template. Every book defines its own kinds of entities in `types.yaml`: a type combines built-in behavior **traits** (manuscript, status, timeline, relationships, annotator, journey) with custom fields, an icon, a color, and a folder. See [Entity Types & Traits](/guide/entity-types).
+The bundled types — Chapter, Character, Location, Item, Image, Note — are just the default template. Every book defines its own kinds of entities in `types.yaml`: a type combines built-in behavior **traits** (manuscript, status, timeline, relationships, annotator, journey, image) with custom fields, an icon, a color, and a folder. See [Entity Types & Traits](/guide/entity-types).
 
 ## The example book
 
-The repository ships with an example project, *The Machine Stops* — an abridged retelling of E. M. Forster's 1909 story of a buried, machine-fed humanity and the one man who climbs back to the surface. It exercises every feature: nesting (parts → chapters), a custom type (Faction), goals, story time with negative dates, annotations, relationships, and aside material. Open `ExampleBook/` from the welcome screen to explore it; most screenshots in this documentation show it.
+Writingale comes with an example project, *The Machine Stops* — an abridged retelling of E. M. Forster's 1909 story of a buried, machine-fed humanity and the one man who climbs back to the surface. It exercises every feature: nesting (parts → chapters), a custom type (Faction), goals, story time with negative dates, annotations, relationships, images, and aside material. Open it from the welcome screen to explore it; most screenshots in this documentation show it.
 
 ## Next steps
 
-- [Install and build Writingale](/guide/installation)
+- [Install Writingale](/guide/installation)
 - [Create your first book](/guide/quick-start)
 - [Understand books and entities](/guide/concepts)

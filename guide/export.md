@@ -8,6 +8,7 @@ Open the export sheet with <kbd>⌘⇧E</kbd> (or **Book → Export Manuscript�
 
 - Walks the manuscript in canonical order (the tree you see in the list).
 - Replaces every `[[uid]]` with the entity's **current name**; `[[uid|display text]]` keeps your override.
+- Turns every `![[uid]]` image embed into a standard markdown image, `![label](Images/…)`, with the image entity's name as the alt text. A markdown export copies the embedded image files next to the output (keeping their `Images/…` paths) so the links resolve; a PDF renders the pictures in place.
 - Strips `%%` comment lines (code fences are respected — a `%%` inside a fence survives).
 - Skips [material](/guide/manuscript#material) entities.
 - Warns about **unresolved references** — a `[[uid]]` pointing at a deleted entity is listed, not silently printed.

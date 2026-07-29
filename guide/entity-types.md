@@ -42,6 +42,7 @@ Traits are built-in behaviors you mix into a type:
 | `relationships` | Typed, annotated links between entities ("creditor", "old friend", …), edited in the inspector. |
 | `annotator` | The type can attach itself to other documents or quoted passages — see [Annotations](/guide/annotations). |
 | `journey` | The entity's appearances throughout the manuscript are inferred and shown as a [journey](/guide/journeys). |
+| `image` | The type labels stored image assets: each entity points at a picture in the book (`file` key, content-hash named) and can be embedded in documents with `![[uid]]` — see [Images](/guide/editor#images). |
 
 Trait data is never destroyed: if you toggle a trait off, existing frontmatter keys survive on disk and come back when you re-enable it.
 
@@ -54,7 +55,7 @@ Four field kinds cover most structured data:
 - `list` — a list of strings (character traits, holdings)
 - `reference` — links to other entities, with `cardinality: one` or `many`, restricted to given `types`, and optionally `role: pov` to mark the field as the point-of-view reference used by journeys and the timeline
 
-Reserved keys (`uid`, `type`, `name`, `created`, `children`, `index`, `status`, `goal`, `material`, `time`, `relationships`, `annotations`) cannot be used as field keys.
+Reserved keys (`uid`, `type`, `name`, `created`, `children`, `index`, `status`, `goal`, `material`, `file`, `time`, `relationships`, `annotations`) cannot be used as field keys.
 
 ## The type editor
 
@@ -62,7 +63,7 @@ You don't have to write `types.yaml` by hand. **Book → Edit Entity Types…** 
 
 Two safety valves:
 
-- **Apply Default Template** adds the classic five types back *additively* — your custom types stay.
+- **Apply Default Template** adds the bundled types (the classic five plus Image) back *additively* — your custom types stay.
 - **Deleting a type** offers to keep its files. Kept files show up as "Unrecognized" and are fully restored the moment a type claims them again.
 
 ## Colors and icons
