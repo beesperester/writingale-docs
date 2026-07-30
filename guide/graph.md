@@ -9,10 +9,10 @@ The graph is a force-directed map of every entity and every reference between th
 
 - **The spine** — manuscript entities on the horizontal center line, left to right in reading order. A character whose edges all land on the right half of the spine doesn't appear until late in the book; you can see it without reading a page.
 - **Nodes** are entities, in their type's color (the example book's factions are the dark red nodes — a custom hex color). Manuscript containers draw no node of their own — they appear as their group's outline and label. [Images](/guide/editor#images) are nodes too, connected to every document that embeds them.
-- **Edges** are references. Consecutive manuscript entities are also connected by an implicit reading-order edge, so the spine reads as a continuous line even where chapters don't reference each other.
-- **Group outlines** trace nested manuscript containers, each labeled with the container's name — you can literally see each part wrapping its chapters. Story-world entities get the same treatment by type: characters, locations, and the rest gather into labeled clusters with their own outline, held clear of the manuscript line so they never sink into a chapter's hull.
+- **Edges** are references. Consecutive manuscript entities are also connected by an implicit reading-order edge, so the spine reads as a continuous line even where chapters don't reference each other. A reference into or out of a manuscript container — which draws no node of its own — lands on the container's outline label instead, rather than disappearing.
+- **Group outlines** trace nested manuscript containers, each labeled with the container's name — you can literally see each part wrapping its chapters. Story-world entities get the same treatment by type: characters, locations, and the rest gather into labeled clusters with their own outline, held clear of the manuscript line so they never sink into a chapter's hull. Even a lone instance of a type gets its own outline and label.
 
-Clicking a node shows its contents in the glance panel on the right — the same inspector the editor and timeline use (<kbd>⌘4</kbd> or the toolbar's sidebar button) — with an **Open** button to jump to the document. Double-clicking a node jumps straight there.
+Clicking a node shows its contents in the glance panel on the right — the same inspector the editor and timeline use (<kbd>⌘4</kbd> or the toolbar's sidebar button) — with an **Open** button to jump to the document; its edges also highlight, so you can trace what it connects to at a glance. Double-clicking a node jumps straight there.
 
 ## Controls
 
