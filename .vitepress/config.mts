@@ -8,7 +8,7 @@ export default defineConfig({
   lastUpdated: true,
 
   themeConfig: {
-    logo: '/app-icon.png',
+    logo: '/logo.svg',
 
     nav: [
       { text: 'Guide', link: '/guide/what-is-writingale', activeMatch: '/guide/' },
