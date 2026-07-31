@@ -15,22 +15,30 @@ Formatting uses lightweight marks that stay visible (dimmed) while the styled te
 | `**bold**` | **bold** |
 | `*italic*` or `_italic_` | *italic* |
 | `~~strikethrough~~` | ~~strikethrough~~ |
-| `> quote` | a quotation block |
+| `> quote` | a quotation block, set off by its own indent |
 | `- item` / `1. item` | bulleted / numbered lists |
 | `%% note to self` | a private comment — dimmed here, never exported |
 
 You don't have to type the marks: the **Markup menu** applies them — Bold <kbd>⌘B</kbd>, Italic <kbd>⌘I</kbd>, Comment <kbd>⌘/</kbd>, headings, lists, quote — and the right-click menu carries a Format submenu too.
+
+### Three views of your text
+
+The switcher centered above the editor shows which view you're in and flips between them: **live styling** (the pencil — where you write), a clean **reading preview** (the eye), and the **raw text** (the brackets). Every launch starts in live styling.
+
+### Preview
+
+**View → Preview** <kbd>⌘⇧P</kbd> — or the eye in the switcher — shows the document as it will read on the page: the formatting marks disappear, links read as plain names, and pictures sit in place. It's a reading view — the text can't be edited until you switch back (press <kbd>⌘⇧P</kbd> again).
 
 ### Raw markdown mode
 
 <img src="/screenshots/editor-raw-light.png" alt="Raw markdown mode: no styling, links shown as their underlying tokens" class="light-only">
 <img src="/screenshots/editor-raw-dark.png" alt="Raw markdown mode: no styling, links shown as their underlying tokens" class="dark-only">
 
-**View → Raw Markdown** <kbd>⌘⇧R</kbd> turns the live styling off and shows the text exactly as it sits in the file — including links as their underlying tokens (colored; red when pointing at something deleted). Everything stays editable; use it when you want to see or work on the plain text itself.
+**View → Raw Markdown** <kbd>⌘⇧R</kbd> — or the brackets in the switcher — turns the live styling off and shows the text exactly as it sits in the file — including links as their underlying tokens (colored; red when pointing at something deleted). Everything stays editable; use it when you want to see or work on the plain text itself.
 
 ### Font & line height
 
-The document font, size, and line height are set in **Settings** <kbd>⌘,</kbd>, with a live preview. The default is the system serif at 15.5 pt.
+The document font, size, and line height are set in **Settings** <kbd>⌘,</kbd>, with a live preview. The default is the system serif at 15.5 pt. Your choice follows your story everywhere it's read: the editor, [Preview](#preview), glance panels, and the [export](/guide/export) preview and PDF.
 
 ## Links
 

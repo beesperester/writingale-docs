@@ -101,7 +101,7 @@ Crops (source composition → crop):
 | `inspector-referencedby` | same → `297x240+1215+695` | [inspector.md](guide/inspector.md) |
 | `inspector-journey` | "Kuno" + inspector, scrolled to bottom → `297x610+1215+325` | [inspector.md](guide/inspector.md) |
 | `editor-focus` | "The Journey North", `-editor.focusHighlight sentence`, caret clicked into the last paragraph's second sentence → `1000x580+500+55` | [editor.md](guide/editor.md) |
-| `editor-raw` | "The Journey North", `-editor.rawMarkdown YES` → `1000x580+500+55` | [editor.md](guide/editor.md) |
+| `editor-raw` | "The Journey North", `-editor.markdownMode raw` → `1000x580+500+55` | [editor.md](guide/editor.md) |
 | `goal-popover` | Goal ring clicked (293,131 screen), Goal tab → region capture, crop `340x330+0+40` | [goals.md](guide/goals.md) |
 | `goal-history` | …then History tab clicked (326,181) → same crop. Needs a seeded `.writingale/stats.json` in the /tmp book copy or the tab shows all zeros. | [goals.md](guide/goals.md) |
 
@@ -117,12 +117,25 @@ timeline columns don't stack.
 
 - **Hide Interface mode** ([editor.md § Writing modes](guide/editor.md))
   — described in text, no shot.
+- **Preview mode** ([editor.md § Preview](guide/editor.md)) — the
+  read-only rendered view (`-editor.markdownMode preview`) has no
+  shot; same composition as `editor-raw` would work.
 - **Annotate-from-selection context menu** ([annotations.md](guide/annotations.md))
   — the right-click flow is described but not pictured.
 - **The type editor** ([entity-types.md](guide/entity-types.md)) — the
   Edit Entity Types… sheet has no screenshot.
-- **Export sheet** ([export.md](guide/export.md)) — the live preview
-  has no screenshot.
+- **Export dialog** ([export.md](guide/export.md)) — the export sheet
+  (options + live preview) has no screenshot; wanted as a **cropped
+  close-up of the dialog itself**, not a full-window shot.
+- **Book Settings dialog** — no screenshot; wanted as a **cropped
+  close-up of the dialog itself**. Several pages send the reader
+  there: [goals.md](guide/goals.md) (the book goal),
+  [timeline.md](guide/timeline.md) (the time unit),
+  [concepts.md](guide/concepts.md) (title/author). Both dialogs are
+  sheets attached to the main window — capture the full window and
+  crop to the sheet's bounds, same technique as the goal popover
+  (and remember the sheet needs opening via menu/keystroke first:
+  Book → Book Settings…, or ⌘⇧E for export).
 
 Pages with no screenshots that may not need one (simpler/textual
 content — use judgement, not a hard rule): `installation.md`,
