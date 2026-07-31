@@ -7,7 +7,10 @@ Annotations let one entity comment on another — a research note pinned to a ch
 - **Whole document** — the note is about the target as a whole.
 - **Quoted passage** — the note anchors to an exact quote inside the target. The quoted passage is highlighted in the editor.
 
-To annotate a passage, **select the text and right-click** — the menu offers to attach an existing note or create a new one on the spot. Whole-document notes can also be attached from the target's inspector (**Notes → Attach**).
+To annotate a passage, **select the text and right-click** — the menu offers to attach an existing note or create a new one on the spot.
+
+<img src="/screenshots/annotate-menu-light.png" alt="Right-clicking a selection: Annotate Selection with Note" class="light-only">
+<img src="/screenshots/annotate-menu-dark.png" alt="Right-clicking a selection: Annotate Selection with Note" class="dark-only"> Whole-document notes can also be attached from the target's inspector (**Notes → Attach**).
 
 ## Quotes that survive editing
 

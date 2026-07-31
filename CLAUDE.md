@@ -40,7 +40,9 @@ requirements below. When recreating it, build these requirements in
 rather than porting the old script as-is. Capture mechanics that still
 apply: build with a fresh `-derivedDataPath`, launch against a /tmp
 copy of `app/ExampleBook` with the automation args (`-autoOpenPath`,
-`-autoSelectName`, `-autoInspector YES`, `-autoSection`), force
+`-autoSelectName`, `-autoInspector YES`, `-autoSection`,
+`-autoSheet export|settings|types` — the last opens the export sheet,
+the book settings sheet, or its Entity Types tab directly), force
 appearance per shot (`-NSRequiresAquaSystemAppearance YES` /
 `-AppleInterfaceStyle Dark`), normalize the window to 1512×949 pt,
 capture per-window with `screencapture -l`, and verify focus by
@@ -77,6 +79,7 @@ Full-window:
 | `welcome` | Welcome screen, no automation args | [what-is-writingale.md](guide/what-is-writingale.md), [quick-start.md](guide/quick-start.md) |
 | `editor` | "The Journey North" open | [editor.md](guide/editor.md), [quick-start.md](guide/quick-start.md) |
 | `editor-split` | Same, second editor toggled (⌥⌘3 via System Events keystroke) | [editor.md](guide/editor.md) |
+| `editor-hidden` | "The Journey North", Hide Interface toggled (⌘. via System Events keystroke) | [editor.md](guide/editor.md) |
 | `character` | "Vashti" with inspector open | [concepts.md](guide/concepts.md) |
 | `journey` | "Kuno" with inspector open, scrolled to bottom (30 ticks) | [journeys.md](guide/journeys.md) |
 | `graph` | Graph view, settled layout | [graph.md](guide/graph.md) |
@@ -101,7 +104,12 @@ Crops (source composition → crop):
 | `inspector-referencedby` | same → `297x240+1215+695` | [inspector.md](guide/inspector.md) |
 | `inspector-journey` | "Kuno" + inspector, scrolled to bottom → `297x610+1215+325` | [inspector.md](guide/inspector.md) |
 | `editor-focus` | "The Journey North", `-editor.focusHighlight sentence`, caret clicked into the last paragraph's second sentence → `1000x580+500+55` | [editor.md](guide/editor.md) |
-| `editor-raw` | "The Journey North", `-editor.rawMarkdown YES` → `1000x580+500+55` | [editor.md](guide/editor.md) |
+| `editor-raw` | "The Journey North", `-editor.markdownMode raw` → `1000x580+500+55` | [editor.md](guide/editor.md) |
+| `editor-preview` | "The Journey North", `-editor.markdownMode preview` → `1000x580+500+55` | [editor.md](guide/editor.md) |
+| `export-sheet` | "The Journey North", `-autoSheet export` → `800x600+360+180` | [export.md](guide/export.md) |
+| `book-settings` | "The Journey North", `-autoSheet settings` → `470x530+525+210` | [goals.md](guide/goals.md) |
+| `type-editor` | "The Journey North", `-autoSheet types` → `800x600+360+180` | [entity-types.md](guide/entity-types.md) |
+| `annotate-menu` | "The Journey North"; drag-select a phrase on the "commits an atrocity" line (CGEvent drag ~+665+247 → +850+247 window-relative), right-click the selection, **full-screen** capture (the menu is its own window) → crop `640x270+500+118` window-relative | [annotations.md](guide/annotations.md) |
 | `goal-popover` | Goal ring clicked (293,131 screen), Goal tab → region capture, crop `340x330+0+40` | [goals.md](guide/goals.md) |
 | `goal-history` | …then History tab clicked (326,181) → same crop. Needs a seeded `.writingale/stats.json` in the /tmp book copy or the tab shows all zeros. | [goals.md](guide/goals.md) |
 
@@ -115,14 +123,9 @@ timeline columns don't stack.
 
 ### Screenshot gaps
 
-- **Hide Interface mode** ([editor.md § Writing modes](guide/editor.md))
-  — described in text, no shot.
-- **Annotate-from-selection context menu** ([annotations.md](guide/annotations.md))
-  — the right-click flow is described but not pictured.
-- **The type editor** ([entity-types.md](guide/entity-types.md)) — the
-  Edit Entity Types… sheet has no screenshot.
-- **Export sheet** ([export.md](guide/export.md)) — the live preview
-  has no screenshot.
+None currently — every interaction called out here has a capture
+(2026-07-31). When app changes make a shot stale or add a new
+interaction, list it here.
 
 Pages with no screenshots that may not need one (simpler/textual
 content — use judgement, not a hard rule): `installation.md`,
