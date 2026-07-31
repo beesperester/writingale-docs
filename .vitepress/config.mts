@@ -6,6 +6,12 @@ export default defineConfig({
   lang: 'en-US',
   cleanUrls: true,
   lastUpdated: true,
+  srcExclude: ['CLAUDE.md'],
+
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['link', { rel: 'alternate icon', href: '/favicon.ico' }]
+  ],
 
   themeConfig: {
     logo: '/logo.svg',
