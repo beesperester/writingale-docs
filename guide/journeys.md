@@ -2,7 +2,7 @@
 
 A journey is the answer to "where does this character actually appear?" — inferred from the manuscript, never maintained by hand.
 
-For every entity whose type has the `journey` trait, Writingale scans the manuscript for appearances: prose references, cast lists, POV fields, item ownership. The result is an ordered itinerary through the book.
+Writingale scans the manuscript for appearances — mentions in prose, cast lists, POV, item ownership — and turns them into an ordered itinerary through the book. Characters have journeys out of the box; any kind of thing can be given one (see [Entity Types & Traits](/guide/entity-types)).
 
 <img src="/screenshots/journey-light.png" alt="A character's journey in the inspector" class="light-only">
 <img src="/screenshots/journey-dark.png" alt="A character's journey in the inspector" class="dark-only">
@@ -11,11 +11,11 @@ For every entity whose type has the `journey` trait, Writingale scans the manusc
 
 Each stop lists:
 
-- the manuscript entity (chapter or scene) and its **position** in reading order,
-- the **story time** of that appearance ("Ledger-day, morning (day 0)"),
-- a **POV badge** when the character is the point-of-view of that chapter or scene (via the field marked `role: pov`),
-- a **"mentioned" badge** when the entity is only referenced in prose rather than present in structured fields,
-- the **co-referenced entities** of that stop, grouped by type — who else is in the scene, where it happens, what objects are present.
+- the chapter or scene and its **position** in reading order,
+- the **story time** of that appearance ("Kuno's account (month 3)"),
+- a **POV badge** when the chapter looks through this character's eyes,
+- a **"mentioned" badge** when the character is only name-dropped in the prose rather than listed in the cast,
+- the **company** at that stop, grouped by kind — who else is in the scene, where it happens, what objects are present.
 
 ## Where journeys appear
 

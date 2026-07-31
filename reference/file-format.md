@@ -22,7 +22,7 @@ MyBook/
 ```yaml
 title: The Machine Stops
 author: after E. M. Forster (1909)
-timeUnit: year           # the unit story time is counted in
+timeUnit: month          # the unit story time is counted in
 goal:                    # optional book-wide writing goal
   comparator: at-least   # about | at-least | at-most
   count: 12000
@@ -101,7 +101,7 @@ status: revision           # stage id (status trait)
 goal: 1800                 # per-entity word target
 pov: chr-cc000002          # custom field (reference)
 time:                      # timeline trait
-  from: 0
+  from: 3
   label: Kuno's account
 ---
 

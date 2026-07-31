@@ -1,31 +1,37 @@
 # Goals & Statistics
 
-Writingale tracks two kinds of targets: a **book-wide goal** and **per-entity goals** — plus a writing history that records how much you actually wrote each day.
+Writingale tracks two kinds of targets: a **book-wide goal** and **per-chapter goals** — plus a writing history that records how much you actually wrote each day.
 
 ## The book goal
 
-Set in **Book Settings** (or `book.yaml` directly):
+Set your goal in **Book → Book Settings…**: a target count (words or characters), how strict it is, and an optional deadline.
 
-```yaml
-goal:
-  comparator: at-least   # about | at-least | at-most
-  count: 60000
-  unit: words            # words | characters
-  deadline: 2026-12-31   # optional
-```
+- ***At least*** is the classic novel target — 60,000 words by December.
+- ***At most*** fits short-form limits — a competition cap, a query letter.
+- ***About*** is a soft aim.
 
-- *At least* is the classic novel target; *at most* fits short-form limits; *about* is a soft aim.
-- Only **manuscript** words count — [material](/guide/manuscript#material) entities and notes never inflate your progress.
+Only the manuscript itself counts — [aside material](/guide/manuscript#material) and notes never inflate your progress.
 
-The **goal ring** in the sidebar header fills as you approach the target. Click it for the goal popover with two tabs:
+## The goal ring
+
+The ring in the sidebar header fills as you approach the target. Click it for the goal popover:
+
+<img src="/screenshots/goal-popover-light.png" alt="The goal popover: progress, target, deadline" class="light-only">
+<img src="/screenshots/goal-popover-dark.png" alt="The goal popover: progress, target, deadline" class="dark-only">
 
 - **Goal** — current count, target, and deadline.
 - **History** — words written this session, daily average, daily best, this week's total, and a bar chart of the last seven days.
 
-## Per-entity goals
+<img src="/screenshots/goal-history-light.png" alt="The goal popover's History tab with the last seven days" class="light-only">
+<img src="/screenshots/goal-history-dark.png" alt="The goal popover's History tab with the last seven days" class="dark-only">
 
-Any manuscript entity can carry its own word target (`goal: 1500` in frontmatter, or the inspector's **Writing Goal** field). The list column shows live progress — `363 / 1500 words` under the chapter name.
+## Per-chapter goals
+
+Any chapter (or scene, or part) can carry its own word target — set it in the inspector's **Writing Goal** field. The list column shows live progress right under the chapter's name (`363 / 1500 words`), independent of the book-wide goal.
+
+<img src="/screenshots/inspector-goal-light.png" alt="The inspector's Writing Goal section with a target and progress ring" class="light-only">
+<img src="/screenshots/inspector-goal-dark.png" alt="The inspector's Writing Goal section with a target and progress ring" class="dark-only">
 
 ## How history is recorded
 
-Writing statistics are stored per book in `.writingale/stats.json` — delta-based and **never decreasing**: deleting a paragraph doesn't erase the fact that you wrote it. The file is local state and is gitignored by default.
+Writing statistics are stored privately inside the book folder, per book. The history only ever grows: deleting a paragraph doesn't erase the fact that you wrote it — your "words today" reflect the work you did, not just the words that survived.

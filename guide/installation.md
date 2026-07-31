@@ -16,4 +16,4 @@ Open the bundled example book from the welcome screen to explore a complete samp
 
 ## Your data stays yours
 
-Writingale has no accounts and no sync service of its own. A book is a folder of markdown and YAML files wherever you keep it — in iCloud Drive, Dropbox, a git repository, or a plain local folder. Removing the app never locks you out of your writing; see the [file format reference](/reference/file-format).
+Writingale has no accounts and no sync service of its own. A book is a folder of plain text files wherever you keep it — in iCloud Drive, Dropbox, or a plain local folder. Removing the app never locks you out of your writing; every file opens in any text editor (see the [file format reference](/reference/file-format) if you're curious what's inside).

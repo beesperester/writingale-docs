@@ -1,71 +1,51 @@
 # Entity Types & Traits
 
-Chapters, characters, locations, items, and notes are not hard-coded. Every book declares its own entity types in `types.yaml`, and the whole app — sidebar, list, inspector, graph, timeline — reshapes itself around them.
+Chapters, characters, locations, items, and notes are not hard-coded. Every book defines its own **types** — its own kinds of things — and the whole app reshapes itself around them: sidebar, list, inspector, graph, timeline.
 
 The example book adds a custom type on top of the defaults: **Faction** (organizations with a motto, members, holdings, and a founding year — the Central Committee and the Homeless).
 
-## Anatomy of a type
-
-```yaml
-- id: faction
-  name: Faction
-  plural: Factions
-  prefix: fac          # uid prefix: fac-xxxxxxxx
-  folder: Factions     # where its files live
-  section: Story World # sidebar section
-  icon: flag           # any SF Symbol
-  color: "#B03A48"     # named palette color or hex
-  traits: [relationships, journey]
-  fields:
-    - { key: motto,    label: Motto,          kind: text }
-    - { key: founded,  label: Founded (year), kind: number }
-    - { key: holdings, label: Holdings,       kind: list }
-    - { key: members,  label: Members,        kind: reference, cardinality: many,
-        types: [character] }
-    - { key: seat,     label: Seat,           kind: reference, cardinality: one,
-        types: [location] }
-  template: |
-    ## Charter
-
-    ## Methods
-```
-
-## Traits
-
-Traits are built-in behaviors you mix into a type:
-
-| Trait | What it adds |
-|---|---|
-| `manuscript` | The type belongs to the compiled manuscript: it appears in the manuscript tree, can nest children, counts toward goals, and exports. |
-| `status` | A completion workflow with configurable stages (default: outline → draft → revision → final), shown as a colored progress ring that fills with the workflow and rolled up into container progress (one arc per nested chapter). |
-| `timeline` | Story-time data (`from`, `to`, `label`, `row`) and a card on the [timeline](/guide/timeline). A type can declare a default named row, e.g. `timeline: { row: World Events }`. |
-| `relationships` | Typed, annotated links between entities ("creditor", "old friend", …), edited in the inspector. |
-| `annotator` | The type can attach itself to other documents or quoted passages — see [Annotations](/guide/annotations). |
-| `journey` | The entity's appearances throughout the manuscript are inferred and shown as a [journey](/guide/journeys). |
-| `image` | The type labels stored image assets: each entity points at a picture in the book (`file` key, content-hash named) and can be embedded in documents with `![[uid]]` — see [Images](/guide/editor#images). |
-
-Trait data is never destroyed: if you toggle a trait off, existing frontmatter keys survive on disk and come back when you re-enable it.
-
-## Custom fields
-
-Four field kinds cover most structured data:
-
-- `text` — a free-form string (a motto, an epithet)
-- `number` — a numeric value (a founding year, a population)
-- `list` — a list of strings (character traits, holdings)
-- `reference` — links to other entities, with `cardinality: one` or `many`, restricted to given `types`, and optionally `role: pov` to mark the field as the point-of-view reference used by journeys and the timeline
-
-Reserved keys (`uid`, `type`, `name`, `created`, `children`, `index`, `status`, `goal`, `material`, `file`, `time`, `relationships`, `annotations`) cannot be used as field keys.
-
 ## The type editor
 
-You don't have to write `types.yaml` by hand. **Book → Edit Entity Types…** opens the type editor: create, reorder, and delete types; pick SF Symbols and colors; define stages, traits, and fields; and edit the starter template each new entity of that type receives.
+**Book → Edit Entity Types…** opens the type editor. There you can:
+
+- create, reorder, and delete types;
+- pick each type's **icon** (searchable symbol picker) and **color** (a named palette or any custom color);
+- choose which sidebar **section** it appears under and what its things are called ("Faction" / "Factions");
+- define its completion **stages**, its **traits**, and its custom **fields**;
+- write the starter **template** every new entity of that type begins with.
 
 Two safety valves:
 
-- **Apply Default Template** adds the bundled types (the classic five plus Image) back *additively* — your custom types stay.
-- **Deleting a type** offers to keep its files. Kept files show up as "Unrecognized" and are fully restored the moment a type claims them again.
+- **Apply Default Template** adds the built-in types (the classic five plus Image) back *additively* — your custom types stay untouched.
+- **Deleting a type** offers to keep its files. Kept files show up as "Unrecognized" and come back fully the moment a type claims them again.
 
-## Colors and icons
+## Traits
 
-Named palette colors: `accent`, `red`, `orange`, `yellow`, `green`, `mint`, `teal`, `cyan`, `blue`, `indigo`, `purple`, `pink`, `brown`, `gray` — or any `#RRGGBB` hex value. Icons are SF Symbols, searchable from the built-in picker.
+Traits are ready-made behaviors you mix into a type. Give a type a trait and everything the trait implies appears throughout the app:
+
+| Trait | What it adds |
+|---|---|
+| **manuscript** | The type is part of the book itself: it appears in the manuscript tree, can nest children (parts hold chapters, chapters hold scenes), counts toward writing goals, and exports. |
+| **status** | A completion workflow with stages you name yourself (default: outline → draft → revision → final), shown as a colored progress ring everywhere the entity appears. |
+| **timeline** | A place in story time — from, to, a label — and a card on the [timeline](/guide/timeline). A type can have its own named timeline row (the example book's notes share a "World Events" row). |
+| **relationships** | Named connections between entities of the same kind ("creditor", "old friend", "rivals"), edited in the inspector and drawn in the graph. |
+| **annotator** | Entities of this type can pin themselves to other documents or to exact quoted passages — see [Annotations](/guide/annotations). |
+| **journey** | The entity's appearances throughout the manuscript are worked out automatically and shown as a [journey](/guide/journeys). |
+| **image** | Entities of this type each stand for a picture stored in the book, ready to embed in any document — see [Images](/guide/editor#images). |
+
+Nothing is ever destroyed by turning a trait off: the entity's recorded facts survive on disk and come back if you re-enable it.
+
+## Custom fields
+
+Four kinds of field cover most story facts:
+
+- **Text** — free words (a motto, an epithet).
+- **Number** — a numeric value (a founding year, a population).
+- **List** — several short entries (character traits, holdings).
+- **Reference** — links to other entities: a single one (an item's owner) or several (a faction's members), optionally limited to particular types. A reference field can also be marked as the **point-of-view** field, which is how journeys and the timeline know whose eyes a chapter looks through.
+
+Fields appear in the inspector in the order you define them — see [the inspector's Fields section](/guide/inspector#fields).
+
+::: info Editing types by hand
+Types can also be defined directly in the book folder's settings file — useful for sharing a setup between books or keeping it in a template. See the [file format reference](/reference/file-format).
+:::

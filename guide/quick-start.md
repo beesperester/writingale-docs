@@ -1,42 +1,42 @@
 # Quick Start
 
-This walkthrough takes you from an empty folder to an exported manuscript in about ten minutes.
+This walkthrough takes you from nothing to an exported manuscript in about ten minutes.
 
 ## 1. Create a book
 
-Launch Writingale. On the welcome screen, click **Create a New Book…**, give it a title and author, and choose a folder.
+Launch Writingale. On the welcome screen, click **Create a New Book…**, give it a title and author, and choose where to keep it.
 
 <img src="/screenshots/welcome-light.png" alt="The welcome screen" class="light-only">
 <img src="/screenshots/welcome-dark.png" alt="The welcome screen" class="dark-only">
 
-Writingale writes the folder for you: a `book.yaml` manifest, a `types.yaml` with the default entity types (Chapter, Character, Location, Item, Note), the type folders, and a `.gitignore`. The folder is a normal git-ready directory — nothing hidden, nothing binary.
+Writingale sets the folder up for you — a place for chapters, characters, locations, items, and notes. Everything it creates is a plain text file you could open anywhere.
 
 ## 2. Add a chapter and write
 
-The main window has four columns: **sidebar** (types and views), **list** (entities of the selected type, with the manuscript tree), **editor**, and **inspector**.
+The main window has four columns: **sidebar** (the kinds of things in your book, and the views), **list** (everything of the selected kind, with the manuscript tree), **editor**, and **inspector**.
 
 1. Select **Chapters** in the sidebar.
 2. Click **+** above the list to create a chapter.
-3. Type. The editor styles markdown live — headings, `**bold**`, `*italic*`, lists, quotes — while keeping the file plain text. Saving is automatic.
+3. Type. The editor styles your text as you write — headings, `**bold**`, `*italic*`, lists, quotes — and saves automatically. There is no save button to remember.
 
 <img src="/screenshots/editor-light.png" alt="The editor with a chapter from the example book" class="light-only">
 <img src="/screenshots/editor-dark.png" alt="The editor with a chapter from the example book" class="dark-only">
 
 ## 3. Link your world together
 
-Create a character the same way (select **Characters**, click **+**). Back in your chapter, type `[[` — an autocomplete popup lists every entity, grouped by type. Pick the character.
+Create a character the same way (select **Characters**, click **+**). Back in your chapter, type `[[` — a popup lists everything in your book, grouped by kind. Pick the character.
 
-What lands in the file is a stable reference like `[[chr-a1b2c3d4]]`, but the editor displays it as the character's current name in accent color. Rename the character next month and every mention follows. **⌘-click** a reference to jump to it.
+The mention appears as the character's name, in the accent color. It's a **link**: it points at the character herself, not at her current spelling — rename her next month and every mention across the book follows. **⌘-click** any link to jump to what it names.
 
-::: tip Display overrides
-`[[uid|her brother]]` shows "her brother" instead of the entity name — useful for prose where the narrator wouldn't use a name.
+::: tip Your own wording
+Sometimes the narrator wouldn't use a name. Pick the entity, then write it your way: a link can display any text you choose — "her brother" — while still pointing at the right character underneath.
 :::
 
-## 4. Fill in the structured bits
+## 4. Fill in the story facts
 
-With a chapter selected, the inspector on the right offers what the chapter's type supports: completion **status** (outline → draft → revision → final), **story time** (day 0 is where your story starts; negative numbers are before it), **POV**, **cast**, and **locations**.
+With a chapter selected, the inspector on the right holds the chapter's facts: its completion **status** (outline → draft → revision → final), its place in **story time** (0 is where your story starts; negative numbers are before it), the **POV** character, the **cast**, and the **locations**.
 
-These fields are what power the [graph](/guide/graph), the [timeline](/guide/timeline), and each character's [journey](/guide/journeys) — the more you fill in, the more the views can tell you.
+These facts are what power the [graph](/guide/graph), the [timeline](/guide/timeline), and each character's [journey](/guide/journeys) — the more you fill in, the more the views can tell you.
 
 ## 5. Set a goal
 
@@ -44,7 +44,7 @@ Click the ring in the sidebar header to set a writing goal — e.g. *at least 60
 
 ## 6. Export
 
-Press <kbd>⌘⇧E</kbd> (or **Book → Export Manuscript…**). The export sheet shows a live preview of the compiled manuscript: chapters in manuscript order, headings tracking nesting depth, `[[uid]]` references replaced with current names, `%%` comment lines stripped. Save it as a single clean markdown file — ready for Pandoc, an agent, or a typesetter.
+Press <kbd>⌘⇧E</kbd> (or **Book → Export Manuscript…**). The export sheet shows a live preview of the finished manuscript: chapters in order, headings tracking parts and chapters, every link written out as a proper name, your private `%%` comments stripped. Save it as one clean file — markdown or PDF — ready for an agent, an editor, or a printer.
 
 ## Where to go next
 

@@ -1,74 +1,81 @@
 # The Editor
 
-The editor shows the markdown source of the selected entity, styled in place — the file stays plain text, but headings scale, emphasis renders, and references become readable names.
+The editor is where you write. It styles your text in place as you type — headings scale, emphasis renders, links show as names — while the file underneath stays plain text you could open anywhere.
 
 <img src="/screenshots/editor-light.png" alt="The editor showing a chapter from the example book" class="light-only">
 <img src="/screenshots/editor-dark.png" alt="The editor showing a chapter from the example book" class="dark-only">
 
-## Markdown styling
+## Styling as you type
 
-Writingale styles as you type, Obsidian-style: the markers stay visible (dimmed), the styled text reads like the finished page.
+Formatting uses lightweight marks that stay visible (dimmed) while the styled text reads like the finished page:
 
-| Syntax | Result |
+| You type | You get |
 |---|---|
-| `# … ######` | Headings H1–H6, scaled by level |
+| `# … ######` | Headings, scaled by level |
 | `**bold**` | **bold** |
 | `*italic*` or `_italic_` | *italic* |
 | `~~strikethrough~~` | ~~strikethrough~~ |
-| `` `inline code` `` | `inline code` |
-| `> quote` | blockquote |
+| `> quote` | a quotation block |
 | `- item` / `1. item` | bulleted / numbered lists |
-| `%% comment` | a comment line — dimmed in the editor, stripped from export |
+| `%% note to self` | a private comment — dimmed here, never exported |
 
-Formatting lives in the **Markup menu** (Ulysses-style — no toolbar strip): Bold <kbd>⌘B</kbd>, Italic <kbd>⌘I</kbd>, Comment <kbd>⌘/</kbd>, headings, lists, quote, strikethrough, inline code. The right-click menu carries a Format submenu too.
+You don't have to type the marks: the **Markup menu** applies them — Bold <kbd>⌘B</kbd>, Italic <kbd>⌘I</kbd>, Comment <kbd>⌘/</kbd>, headings, lists, quote — and the right-click menu carries a Format submenu too.
 
 ### Raw markdown mode
 
-**View → Raw Markdown** <kbd>⌘⇧R</kbd> turns the live styling off: no scaled headings, no dimmed markers, and references stay as their raw `[[uid]]` tokens (accent-colored; red when broken). The text remains fully editable — use it to inspect exactly what's on disk or to work on the markup itself.
+<img src="/screenshots/editor-raw-light.png" alt="Raw markdown mode: no styling, links shown as their underlying tokens" class="light-only">
+<img src="/screenshots/editor-raw-dark.png" alt="Raw markdown mode: no styling, links shown as their underlying tokens" class="dark-only">
+
+**View → Raw Markdown** <kbd>⌘⇧R</kbd> turns the live styling off and shows the text exactly as it sits in the file — including links as their underlying tokens (colored; red when pointing at something deleted). Everything stays editable; use it when you want to see or work on the plain text itself.
 
 ### Font & line height
 
-The document font family, size, and line height are app-wide preferences in **Settings** <kbd>⌘,</kbd>, with a live preview. The default is the system serif at 15.5 pt with 1.25× line height.
+The document font, size, and line height are set in **Settings** <kbd>⌘,</kbd>, with a live preview. The default is the system serif at 15.5 pt.
 
-## References
+## Links
 
-- Type `[[` to open the **autocomplete popup**, grouped by entity type.
-- `[[uid]]` tokens render collapsed as the entity's current name in accent color; click one to reveal the raw token. Tokens are atomic for the caret — one press of delete removes the whole reference.
-- `[[uid|display text]]` keeps your own wording while still linking.
-- **⌘-click** a reference to navigate to that entity (⌘-hover shows the pointing hand). **⌘[** and **⌘]** walk your navigation history like a browser.
-- Right-click → **Insert Reference** for a menu-driven alternative.
+- Type `[[` to open the popup — everything in your book, grouped by kind. Pick one and the mention appears as its name in the accent color.
+- Rename the entity any time; every mention follows. Click a mention to peek at what's underneath; press delete once to remove the whole link.
+- Want your own wording? A link can display any text — "her brother" — while still pointing at the right character.
+- **⌘-click** a link to jump to what it names; **⌘[** and **⌘]** walk back and forward like a browser.
+- Right-click → **Insert Reference** is the menu-driven alternative to typing `[[`.
 
 ## Images
 
-Drag an image file into the editor to embed it where it lands:
+Drag a picture into the editor and it lands where you drop it:
 
-- The picture is **copied into the book** (the `Images` folder) and stored under its **content hash** — dragging the same picture in twice never duplicates the file.
-- An **Image entity** is created for it. Its name is the image's **label**, editable like any entity name (list or inspector), and resolves as the alt text wherever the image appears.
-- The editor inserts an embed token, `![[uid]]`. On its own line the token renders as the picture itself; in raw markdown mode it stays a plain token. Like references, embeds are atomic and click-to-reveal.
-- **Referencing an image is embedding it**: `[[uid]]` and `![[uid]]` behave identically when the target is an image entity — both show the picture in the editor and become `![label](Images/…)` on export.
-- Typing `[[` (autocomplete) or right-click → Insert Reference embeds an already-imported image.
-- An image entity can carry its own markdown body — notes about the picture, sources, caption drafts. The body shows in the glance panel and inspector; it never travels into documents that embed the image.
-- Images show up as nodes in the [graph](/guide/graph), connected to every document that embeds them.
-- On [export](/guide/export), embeds become standard markdown images — `![label](Images/…)` — and the image files travel with a markdown export; PDF export renders them in place.
+- The picture is **copied into the book**, so the book folder stays complete and portable. Dropping the same picture twice never stores it twice.
+- The picture becomes an entity of its own — its name is the caption-like **label** you'll see wherever it appears, editable like any name.
+- In the text, the picture shows right in place. Like other links, it's one unit: click to see what's underneath, delete once to remove.
+- To place an already-imported picture, type `[[` and pick it, like linking anything else.
+- A picture entity can carry its own notes — sources, art direction, caption drafts — which stay with the picture and never leak into your chapters.
+- Pictures appear in the [graph](/guide/graph), connected to every document that shows them.
+- On [export](/guide/export), pictures travel with the manuscript; a PDF renders them in place.
 
-To swap a picture everywhere it's embedded, replace it on the Image entity in the [inspector](/guide/inspector#image--image-trait) — Replace… or drop a file onto the preview. Deleting an Image entity also removes its stored file (unless another entity still points at it).
+To swap a picture everywhere at once, replace it on the picture's own entity in the [inspector](/guide/inspector#image) — the layout, label, and placements all stay.
 
 ## Writing modes
 
 All in the **View menu**:
 
-- **Highlight** — dim everything except the current *line*, *sentence*, or *paragraph*.
-- **Fixed Scrolling** — typewriter mode: keep the caret line pinned to the *top*, *center*, or *bottom* of the view.
-- **Hide Interface** <kbd>⌘.</kbd> — distraction-free writing: a centered column with a floating word counter, nothing else.
+- **Highlight** — dim everything except what you're working on: the current *line*, *sentence*, or *paragraph*. Below: sentence focus.
+- **Fixed Scrolling** — typewriter mode: keep the line you're typing pinned to the *top*, *center*, or *bottom* of the window instead of drifting down the screen.
+- **Hide Interface** <kbd>⌘.</kbd> — distraction-free writing: a centered column of text and a floating word counter, nothing else. Press it again to come back.
+
+<img src="/screenshots/editor-focus-light.png" alt="Sentence focus: the sentence at the cursor is dark, everything else dimmed" class="light-only">
+<img src="/screenshots/editor-focus-dark.png" alt="Sentence focus: the sentence at the cursor is dark, everything else dimmed" class="dark-only">
 
 ## Split editor
 
-**Toggle Second Editor** <kbd>⌘⌥3</kbd> opens a second pane. Each pane has its own selection; the list follows whichever pane is focused. Perfect for writing a chapter while its outline or a research note sits alongside.
+<img src="/screenshots/editor-split-light.png" alt="The split editor: two documents side by side" class="light-only">
+<img src="/screenshots/editor-split-dark.png" alt="The split editor: two documents side by side" class="dark-only">
+
+**View → Toggle Second Editor** <kbd>⌘⌥3</kbd> opens a second pane. Each pane shows its own document — write the chapter on the left while its outline or a research note sits on the right. The pane you're working in shows its title in the accent color, and the list column follows it.
 
 ## Find
 
-<kbd>⌘F</kbd> opens Find, <kbd>⌘⌥F</kbd> Find & Replace — the standard macOS find bar, scoped to the current document. For project-wide search, see [Search & Filtering](/guide/search).
+<kbd>⌘F</kbd> opens Find, <kbd>⌘⌥F</kbd> Find & Replace — scoped to the current document. For questions about the whole book, see [Search & Filtering](/guide/search).
 
 ## Saving
 
-Saving is automatic (debounced, under a second after you stop typing). The status bar shows *Editing… / Saved*, the current word count, and the word count of the selection while text is selected.
+Saving is automatic, moments after you stop typing — there is no save button. The status bar shows *Editing… / Saved*, the word count, and the word count of just the selection while text is selected.

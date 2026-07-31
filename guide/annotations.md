@@ -1,34 +1,27 @@
 # Annotations
 
-Annotations let one entity comment on another — a research note pinned to a chapter, an editor's remark attached to one specific sentence. Any type with the `annotator` trait (Notes, in the default template) can do this.
+Annotations let one entity comment on another — a research note pinned to a chapter, an editor's remark attached to one specific sentence. Notes can do this out of the box; any type can be given the ability (the *annotator* trait — see [Entity Types & Traits](/guide/entity-types)).
 
 ## Two kinds of attachment
 
 - **Whole document** — the note is about the target as a whole.
-- **Quoted passage** — the note anchors to an exact quote inside the target. The quoted range is highlighted in the editor; selecting text and right-clicking offers **annotation actions** to attach a note to the selection.
+- **Quoted passage** — the note anchors to an exact quote inside the target. The quoted passage is highlighted in the editor.
 
-On disk it's plain YAML on the annotating entity:
+To annotate a passage, **select the text and right-click** — the menu offers to attach an existing note or create a new one on the spot. Whole-document notes can also be attached from the target's inspector (**Notes → Attach**).
 
-```yaml
-annotations:
-- target: scn-11b11b11
-  quote: It was a drain.
-- target: chp-12121212        # whole-document
-```
-
-## Self-healing quotes
+## Quotes that survive editing
 
 Prose moves. Writingale keeps quoted annotations attached through three layers:
 
-1. **Live tracking** — while a document is open, edits move annotation ranges along with the text.
-2. **Exact relocation** — on reload, the quote is searched for verbatim and re-anchored where it now lives.
-3. **Fuzzy matching** — if the wording changed, a word-level match re-anchors the annotation when it's confident enough, updating the stored quote.
+1. **Live tracking** — while a document is open, edits move the annotation along with its text.
+2. **Exact relocation** — when the document is reloaded, the quote is looked up and re-anchored where it now lives.
+3. **Fuzzy matching** — if the wording itself changed, a close-enough match re-anchors the annotation and updates the stored quote to the new wording.
 
 ## Stale annotations
 
-If all three layers fail — the passage is genuinely gone — the annotation is flagged **stale** rather than silently dropped. Stale annotations are marked in the inspector so you can re-anchor them to new text or retire them deliberately. The example book keeps one stale annotation on purpose (*Note on the old opening*), pointing at an opening paragraph that was cut in the second draft.
+If all three layers fail — the passage is genuinely gone — the annotation is flagged **stale** rather than silently dropped. Stale annotations are marked in red in the inspector so you can re-anchor them to new text or retire them deliberately. The example book keeps one stale annotation on purpose (*Note on the old opening*), pointing at an opening paragraph that was cut in the second draft.
 
 ::: tip Where to see annotations
-- On the **annotating** entity: the inspector's *Annotates* section lists targets with quote previews and stale flags.
-- On the **annotated** document: attached notes are listed in the inspector, and quoted passages are highlighted in the editor.
+- On the **note**: the inspector's *Annotates* section lists everything it's pinned to, with quote previews and stale flags.
+- On the **annotated document**: attached notes are listed in the inspector's *Notes* section, and quoted passages are highlighted in the editor.
 :::

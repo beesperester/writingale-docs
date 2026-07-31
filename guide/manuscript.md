@@ -1,37 +1,39 @@
 # Manuscript Structure
 
-The manuscript is a tree. Any entity whose type has the `manuscript` trait can contain any other — parts hold chapters, chapters can hold scenes, and the nesting is as deep as your book needs. The example book runs two levels: *Part I — The Air-Ship* → *The Room and the Plate*.
+The manuscript is a tree. Parts hold chapters, chapters can hold scenes, and the nesting goes as deep as your book needs. The example book runs two levels: *Part I — The Air-Ship* → *The Room and the Plate*.
 
 ## The tree
 
-- The canonical order of the **roots** lives in `book.yaml` under `manuscript:`.
-- Each container lists its children (in order) in its own `children:` frontmatter key.
-- The list column renders the tree with disclosure triangles, progress rings, story-time hints, and word counts.
+The list column shows the manuscript as a tree, with disclosure triangles, progress rings, story-time hints, and word counts. The book remembers the order — it *is* the order of your finished manuscript.
 
-Reorder by dragging, or use the context menu's **Move Into** to reparent. The inspector's **Nesting** section does the same with a picker, and **Contents** lists a container's children with quick add/create buttons ("New Sub-Chapter", "New Sub-Scene", …).
+To restructure:
+
+- **Drag** entries up, down, or into each other.
+- Right-click → **Move Into** to re-parent from a menu.
+- Or use the inspector's **Nesting** picker and **Contents** list, which do the same with buttons — including **New Sub-Chapter** to create a child in place. See [the inspector](/guide/inspector#nesting-progress--contents).
 
 ## Progress rings
 
-Every entity with a status shows a small circular indicator, like a miniature of the goal ring:
+Every chapter with a status shows a small circular indicator, like a miniature of the goal ring:
 
 - A **single chapter's** ring fills clockwise in its stage's color by how far along the workflow the stage sits — a quarter of the way through a four-stage workflow fills a quarter of the circle; the final stage closes it.
-- A **container's** ring fills by the *average* progress of its nested chapters — one arc per chapter in that chapter's stage color, packed end to end, so a part shows both how done it is overall and the stage of each child at a glance. The ring only closes when every chapter is final.
+- A **part's** ring fills by the *average* progress of its chapters — one arc per chapter in that chapter's stage color, laid end to end, so a part shows both how done it is overall and how each child is doing, at a glance. The ring only closes when every chapter is final.
 
-A container's status is always derived, never set. Hovering shows the lowest stage among its descendant leaves plus a tally, and the row's `2/4 final` count means two of four leaves have reached the final stage.
+A part's status is always derived from its chapters, never set by hand. Hover for the details; the row's `2/4 final` count means two of four chapters have reached the final stage.
 
 ## Split & merge
 
-Two structural operations work directly from the editor:
+Two structural moves work right from the editor:
 
-- **Split Here** (right-click at the caret) breaks the current document into two siblings at that point.
+- **Split Here** (right-click at the cursor) breaks the current document in two at that point.
 - **Merge into previous sibling** joins a document onto the one before it.
 
-Both retarget every reference project-wide, so annotations and links keep working.
+Both keep every link and annotation across the whole book pointing at the right text.
 
 ## Material
 
-Toggle **Material** in the inspector to mark an entity as aside material: it stays visible in the tree (dimmed, with a small "material" badge) but is excluded from export, goals, and progress. Use it for deleted scenes you can't quite delete, voice experiments, or an opening you haven't committed to. The example book's *The Old Opening (cut)* is material.
+Toggle **Material** in the inspector to mark something as aside material: it stays visible in the tree (dimmed, with a small "material" badge) but is left out of export, goals, and progress. Use it for deleted scenes you can't quite delete, voice experiments, or an opening you haven't committed to. The example book's *The Old Opening (cut)* is material.
 
-## Ordering fallbacks
+## Documents from outside
 
-Entities that aren't listed in any `children:` array fall back to their `index:` frontmatter key for ordering. This also lets externally created files slot themselves into a sensible position before you drag them where they belong.
+If a file arrives in the book folder from outside the app — copied in, synced, restored — it slots into a sensible position automatically, and you can drag it where it belongs.

@@ -1,40 +1,32 @@
 # Timeline View
 
-The timeline lays your story out against **story time**: a signed numeric axis in the book's time unit (years for the example book — configurable in Book Settings). 0 is the beginning of the book; negative values are backstory.
+The timeline lays your story out against **story time**, counted in a unit you choose in Book Settings — months for the example book, days or years for yours. 0 is the beginning of the book; negative values are backstory.
 
 <img src="/screenshots/timeline-light.png" alt="The timeline view of the example book" class="light-only">
 <img src="/screenshots/timeline-dark.png" alt="The timeline view of the example book" class="dark-only">
 
 ## What you're seeing
 
-- **Container bands** across the top — parts and chapters with their derived progress (`2/4 final`), spanning the time their contents cover.
-- **Type rows** — each timeline-enabled type gets a row; cards show progress ring, time label, and POV. Overlapping cards stack.
-- **Named rows** — a type can declare its own row (the default Notes type uses *World Events*), and any single entity can override its row (`time: { row: Machine History }`), so different strands of world history read as separate strips.
-- **Journey lanes** at the bottom — one lane per journey-trait entity, marking where along the axis each character or item appears.
+- **Container bands** across the top — parts with their derived progress (`2/4 final`), spanning the time their chapters cover.
+- **Type rows** — each kind of thing with a place in time gets a row; cards show the progress ring, the time label, and the POV character. Cards that overlap in time stack.
+- **Named rows** — a kind can have its own row (the example book's notes share a *World Events* row), and any single entity can be moved to a row of its own from the inspector — so different strands of world history read as separate strips.
+- **Journey lanes** at the bottom — one lane per character (or item), marking where along the axis they appear. See [Journeys](/guide/journeys).
 
-The example book's *Kuno's ascent* sits at year −1 — backstory visible at a glance to the left of year 0.
+The example book's *Kuno's ascent* sits at month −12 — backstory, visible at a glance to the left of 0.
 
 ## The glance panel
 
-Clicking any timeline item — a card, a container band, or a journey marker — shows its contents in the inspector panel on the right: status, story time, POV, and the full body rendered with references resolved. You can skim a chapter without leaving the timeline; the **Open** button jumps to it in the editor when you want to write. The panel is the same inspector you know from the editor: the toolbar's sidebar button and <kbd>⌘4</kbd> show and hide it, and arriving with an entity selected pre-fills it.
+Clicking any timeline item — a card, a band, or a journey marker — shows it in the panel on the right: status, story time, POV, and the full text with every link readable. You can skim a chapter without leaving the timeline; the **Open** button jumps to it in the editor when you want to write. The panel is the same inspector you know from the editor — the toolbar's sidebar button and <kbd>⌘4</kbd> show and hide it.
 
 ## Story order vs. manuscript order
 
 The toggle at the top switches the horizontal arrangement:
 
 - **Story Order** — position by story time (the picture above).
-- **Manuscript Order** — position by place in the manuscript tree, which makes flashbacks and non-linear structure jump out: a card that sits early in manuscript order but far left in story time is a flashback.
+- **Manuscript Order** — position by place in the book, which makes flashbacks and non-linear structure jump out: a chapter that sits late in the book but early in story time is a flashback, and here you can see it.
 
 Cards can be dragged to reorder where the view allows it.
 
-## Story time on entities
+## Giving something a place in time
 
-Time lives in the entity's frontmatter and is edited in the inspector's **Story Time** section:
-
-```yaml
-time:
-  from: 6        # start (required to appear on the timeline)
-  to: 7          # optional span end
-  label: the last day
-  row: Machine History   # optional row override
-```
+Select the entity and fill in the inspector's **Story Time** section: **From** (required to appear on the timeline), an optional **To** for things that span time, a human-readable **Label** ("the last day"), and optionally a **Row** of its own. See [the inspector](/guide/inspector#story-time).
