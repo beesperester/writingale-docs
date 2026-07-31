@@ -4,6 +4,9 @@ Export compiles the manuscript into **one clean file** — the version you hand 
 
 Open the export sheet with <kbd>⌘⇧E</kbd> (or **Book → Export Manuscript…**).
 
+<img src="/screenshots/export-sheet-light.png" alt="The export sheet: contents and format options beside a live preview" class="light-only">
+<img src="/screenshots/export-sheet-dark.png" alt="The export sheet: contents and format options beside a live preview" class="dark-only">
+
 ## What export does
 
 - Walks the manuscript in order — exactly the tree you see in the list.

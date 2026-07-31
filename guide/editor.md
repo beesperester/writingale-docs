@@ -27,6 +27,9 @@ The switcher centered above the editor shows which view you're in and flips betw
 
 ### Preview
 
+<img src="/screenshots/editor-preview-light.png" alt="Preview: the chapter rendered clean, without formatting marks" class="light-only">
+<img src="/screenshots/editor-preview-dark.png" alt="Preview: the chapter rendered clean, without formatting marks" class="dark-only">
+
 **View → Preview** <kbd>⌘⇧P</kbd> — or the eye in the switcher — shows the document as it will read on the page: the formatting marks disappear, links read as plain names, and pictures sit in place. It's a reading view — the text can't be edited until you switch back (press <kbd>⌘⇧P</kbd> again).
 
 ### Raw markdown mode
@@ -69,6 +72,9 @@ All in the **View menu**:
 - **Highlight** — dim everything except what you're working on: the current *line*, *sentence*, or *paragraph*. Below: sentence focus.
 - **Fixed Scrolling** — typewriter mode: keep the line you're typing pinned to the *top*, *center*, or *bottom* of the window instead of drifting down the screen.
 - **Hide Interface** <kbd>⌘.</kbd> — distraction-free writing: a centered column of text and a floating word counter, nothing else. Press it again to come back.
+
+<img src="/screenshots/editor-hidden-light.png" alt="Hide Interface: a centered column of text and a floating word counter" class="light-only">
+<img src="/screenshots/editor-hidden-dark.png" alt="Hide Interface: a centered column of text and a floating word counter" class="dark-only">
 
 <img src="/screenshots/editor-focus-light.png" alt="Sentence focus: the sentence at the cursor is dark, everything else dimmed" class="light-only">
 <img src="/screenshots/editor-focus-dark.png" alt="Sentence focus: the sentence at the cursor is dark, everything else dimmed" class="dark-only">

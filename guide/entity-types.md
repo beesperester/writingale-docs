@@ -6,6 +6,9 @@ The example book adds a custom type on top of the defaults: **Faction** (organiz
 
 ## The type editor
 
+<img src="/screenshots/type-editor-light.png" alt="The type editor: the book's kinds on the left, the selected kind's settings on the right" class="light-only">
+<img src="/screenshots/type-editor-dark.png" alt="The type editor: the book's kinds on the left, the selected kind's settings on the right" class="dark-only">
+
 **Book → Edit Entity Types…** opens the type editor. There you can:
 
 - create, reorder, and delete types;
