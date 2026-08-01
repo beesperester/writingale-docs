@@ -19,7 +19,7 @@ Formatting uses lightweight marks that stay visible (dimmed) while the styled te
 | `- item` / `1. item` | bulleted / numbered lists |
 | `%% note to self` | a private comment — dimmed here, never exported |
 
-You don't have to type the marks: the **Markup menu** applies them — Bold <kbd>⌘B</kbd>, Italic <kbd>⌘I</kbd>, Comment <kbd>⌘/</kbd>, headings, lists, quote — and the right-click menu carries a Format submenu too.
+You don't have to type the marks. The **format buttons above the editor** style whatever is selected — headings, bold, italic, strikethrough, code, lists, quote, and comment, one click each. The **Markup menu** applies the same styles — Bold <kbd>⌘B</kbd>, Italic <kbd>⌘I</kbd>, Comment <kbd>⌘/</kbd> — and the right-click menu carries a Format submenu too.
 
 ### Three views of your text
 
@@ -50,6 +50,7 @@ The document font, size, and line height are set in **Settings** <kbd>⌘,</kbd>
 - Want your own wording? A link can display any text — "her brother" — while still pointing at the right character.
 - **⌘-click** a link to jump to what it names; **⌘[** and **⌘]** walk back and forward like a browser.
 - Right-click → **Insert Reference** is the menu-driven alternative to typing `[[`.
+- Or **drag one in from the list**: switch the sidebar to Characters (or any other kind — your document stays open), then drag a name from the list into your text. The cursor follows the drag so you can see exactly where the mention will land; drop it and it appears as the name, linked like any other mention.
 
 ## Images
 
