@@ -1,6 +1,6 @@
 # The Editor
 
-The editor is where you write. It styles your text in place as you type — headings scale, emphasis renders, links show as names — while the file underneath stays plain text you could open anywhere.
+The editor is where you write. It styles your text in place as you type — headings scale, emphasis renders, links show as names — while the file underneath stays plain text you could open anywhere. A slim title bar above the text always names the document you're in, and marks unsaved changes with a `*` after the name.
 
 <img src="/screenshots/editor-light.png" alt="The editor showing a chapter from the example book" class="light-only">
 <img src="/screenshots/editor-dark.png" alt="The editor showing a chapter from the example book" class="dark-only">
@@ -87,10 +87,22 @@ All in the **View menu**:
 
 **View → Toggle Second Editor** <kbd>⌘⌥3</kbd> opens a second pane. Each pane shows its own document — write the chapter on the left while its outline or a research note sits on the right. The pane you're working in shows its title in the accent color, and the list column follows it.
 
+## Continuous scroll
+
+**View → Toggle Continuous Scroll** <kbd>⌘⇧L</kbd> (or the button beside the view-mode switcher in the toolbar) turns the editor into one flowing view of your whole manuscript, in reading order. A labeled divider marks where each chapter begins, so the boundaries stay visible while the text reads as one piece — and everything stays editable right there. As you scroll, the chapter currently on screen is highlighted in the list; click a chapter in the list to jump the view to it. Toggle again to return to one document at a time.
+
+## Adding documents from your Mac
+
+Drop a `.md` or `.txt` file into the editor to bring it into the book. Writingale asks what it should become — a chapter, a note, whatever type fits — creates it, and inserts a link to it right where you dropped the file. You can also drop files on the list or the sidebar; see [Manuscript Structure](/guide/manuscript#documents-from-outside).
+
 ## Find
 
 <kbd>⌘F</kbd> opens Find, <kbd>⌘⌥F</kbd> Find & Replace — scoped to the current document. For questions about the whole book, see [Search & Filtering](/guide/search).
 
 ## Saving
 
-Saving is automatic, moments after you stop typing — there is no save button. The status bar shows *Editing… / Saved*, the word count, and the word count of just the selection while text is selected.
+You decide when your work goes to disk: **File → Save** <kbd>⌘S</kbd> saves the document you're in, **File → Save All** <kbd>⌥⌘S</kbd> saves everything at once. Until then, edits live safely in the app and are clearly marked — a `*` after the document's name in the title bar, *Edited* in the status bar, and a small dot next to changed documents in the lists (a category in the sidebar shows the dot when anything inside it has unsaved changes).
+
+If you quit or close the book while something is unsaved, Writingale asks whether to save it all, discard, or stay.
+
+The status bar also shows the word count — and the word count of just the selection while text is selected.

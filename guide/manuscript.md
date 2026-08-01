@@ -36,4 +36,8 @@ Toggle **Material** in the inspector to mark something as aside material: it sta
 
 ## Documents from outside
 
+Drop a `.md` or `.txt` file from your Mac onto a category in the sidebar, onto the list, or straight into the editor. Writingale asks what the file should become — the category you dropped it on is preselected — and creates it: the file's name becomes the document's name, its text becomes the content. Dropping into the editor also inserts a link at your cursor.
+
+It works the other way too: drag any document out of the list onto the desktop or into a Finder window to get it as a plain `.md` file.
+
 If a file arrives in the book folder from outside the app — copied in, synced, restored — it slots into a sensible position automatically, and you can drag it where it belongs.

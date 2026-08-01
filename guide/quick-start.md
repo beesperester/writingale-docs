@@ -17,7 +17,7 @@ The main window has four columns: **sidebar** (the kinds of things in your book,
 
 1. Select **Chapters** in the sidebar.
 2. Click **+** above the list to create a chapter.
-3. Type. The editor styles your text as you write — headings, `**bold**`, `*italic*`, lists, quotes — and saves automatically. There is no save button to remember.
+3. Type. The editor styles your text as you write — headings, `**bold**`, `*italic*`, lists, quotes. Press <kbd>⌘S</kbd> to save when you're happy; unsaved documents are marked with a `*` and a dot in the list, and Writingale asks before anything unsaved could be lost.
 
 <img src="/screenshots/editor-light.png" alt="The editor with a chapter from the example book" class="light-only">
 <img src="/screenshots/editor-dark.png" alt="The editor with a chapter from the example book" class="dark-only">
