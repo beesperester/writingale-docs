@@ -40,7 +40,10 @@ requirements below. When recreating it, build these requirements in
 rather than porting the old script as-is. Capture mechanics that still
 apply: build with a fresh `-derivedDataPath`, launch against a /tmp
 copy of `app/ExampleBook` with the automation args (`-autoOpenPath`,
-`-autoSelectName`, `-autoInspector YES`, `-autoSection`,
+`-autoSelectName`, `-autoInspector YES`, `-autoSection` — `graph`,
+`timeline`, or an entity section by plural name like `characters`,
+which combined with `-autoSelectName` gives "document open, different
+list shown" for the drag-to-reference shot,
 `-autoSheet export|settings|types` — the last opens the export sheet,
 the book settings sheet, or its Entity Types tab directly), force
 appearance per shot (`-NSRequiresAquaSystemAppearance YES` /
@@ -123,9 +126,16 @@ timeline columns don't stack.
 
 ### Screenshot gaps
 
-None currently — every interaction called out here has a capture
-(2026-07-31). When app changes make a shot stale or add a new
-interaction, list it here.
+- **All `editor*` full-window shots are stale (2026-07-31)**: the
+  window toolbar gained a format capsule (heading menu, bold, italic,
+  strikethrough, code, lists menu) left of the view-mode switcher.
+  Recapture `editor`, `editor-split`, and any crop whose band includes
+  the toolbar.
+- **Format capsule close-up** ([editor.md](guide/editor.md) "Styling
+  as you type"): a crop of the toolbar's format buttons.
+- **Drag-to-reference** ([editor.md](guide/editor.md) "Links"): a shot
+  mid-drag — a character row dragged from the list over the editor
+  with the insertion caret visible.
 
 Pages with no screenshots that may not need one (simpler/textual
 content — use judgement, not a hard rule): `installation.md`,
