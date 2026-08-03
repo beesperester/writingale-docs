@@ -115,6 +115,7 @@ Crops (source composition → crop):
 | `type-editor` | "The Journey North", `-autoSheet types` → `800x600+360+180` | [entity-types.md](guide/entity-types.md) |
 | `annotate-menu` | "The Journey North"; drag-select a phrase on the "commits an atrocity" line (CGEvent drag ~+665+247 → +850+247 window-relative), right-click the selection, **full-screen** capture (the menu is its own window) → crop `640x270+500+118` window-relative | [annotations.md](guide/annotations.md) |
 | `split-here` | "The Journey North"; right-click in the editor body (CGEvent right-click, screen 1500,700 with the window at 976,268), **region** capture of the menu's app items → `370x160` at screen `1455,678` (the menu is its own window, so capture the screen region, not the app window) | [manuscript.md](guide/manuscript.md) |
+| `quick-insert` | "The Journey North"; ⌘K then type `vash` → region capture of the card, `580x162+468+141` window-relative | [editor.md](guide/editor.md) |
 | `goal-popover` | Goal ring clicked (293,131 screen), Goal tab → region capture, crop `340x330+0+40` | [goals.md](guide/goals.md) |
 | `goal-history` | …then History tab clicked (326,181) → same crop. Needs a seeded `.writingale/stats.json` in the /tmp book copy or the tab shows all zeros. | [goals.md](guide/goals.md) |
 
