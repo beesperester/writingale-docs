@@ -23,7 +23,7 @@ You don't have to type the marks. The **format buttons above the editor** style 
 
 ### Three views of your text
 
-The switcher centered above the editor shows which view you're in and flips between them: **live styling** (the pencil — where you write), a clean **reading preview** (the eye), and the **raw text** (the brackets). Every launch starts in live styling.
+The switcher in the toolbar shows which view you're in and flips between them: **live styling** (the pencil — where you write), a clean **reading preview** (the eye), and the **raw text** (the brackets). The view belongs to the editor you're working in, so with the [split editor](#split-editor) open you can read one document while writing in the other. Every launch starts in live styling.
 
 ### Preview
 
@@ -80,16 +80,24 @@ All in the **View menu**:
 <img src="/screenshots/editor-focus-light.png" alt="Sentence focus: the sentence at the cursor is dark, everything else dimmed" class="light-only">
 <img src="/screenshots/editor-focus-dark.png" alt="Sentence focus: the sentence at the cursor is dark, everything else dimmed" class="dark-only">
 
-## Split editor
+## Three ways to lay out the editor
+
+The switcher in the toolbar — and the matching group in the **View menu** — offers three layouts. You're always in exactly one of them, and the switcher shows which:
+
+- **Single editor** <kbd>⌘⌥1</kbd> — one document at a time. The everyday view.
+- **Split editor** <kbd>⌘⌥2</kbd> — two documents side by side.
+- **Continuous scroll** <kbd>⌘⌥3</kbd> — the whole manuscript as one flowing text.
+
+### Split editor
 
 <img src="/screenshots/editor-split-light.png" alt="The split editor: two documents side by side" class="light-only">
 <img src="/screenshots/editor-split-dark.png" alt="The split editor: two documents side by side" class="dark-only">
 
-**View → Toggle Second Editor** <kbd>⌘⌥3</kbd> opens a second pane. Each pane shows its own document — write the chapter on the left while its outline or a research note sits on the right. The pane you're working in shows its title in the accent color, and the list column follows it.
+Each pane shows its own document — write the chapter on the left while its outline or a research note sits on the right. The pane you're working in shows its title in the accent color, and the list column follows it. Leaving this layout closes the second pane.
 
-## Continuous scroll
+### Continuous scroll
 
-**View → Toggle Continuous Scroll** <kbd>⌘⇧L</kbd> (or the button beside the view-mode switcher in the toolbar) turns the editor into one flowing view of your whole manuscript, in reading order. A labeled divider marks where each chapter begins, so the boundaries stay visible while the text reads as one piece — and everything stays editable right there. As you scroll, the chapter currently on screen is highlighted in the list; click a chapter in the list to jump the view to it. Toggle again to return to one document at a time.
+Your whole manuscript becomes one flowing view, in reading order. A labeled divider marks where each chapter begins, so the boundaries stay visible while the text reads as one piece — and everything stays editable right there. As you scroll, the chapter currently on screen is highlighted in the list; click a chapter in the list to jump the view to it.
 
 ## Adding documents from your Mac
 
