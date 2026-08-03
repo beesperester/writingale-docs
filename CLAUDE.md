@@ -83,6 +83,7 @@ Full-window:
 | `welcome` | Welcome screen, no automation args | [what-is-writingale.md](guide/what-is-writingale.md), [quick-start.md](guide/quick-start.md) |
 | `editor` | "The Journey North" open | [editor.md](guide/editor.md), [quick-start.md](guide/quick-start.md) |
 | `editor-split` | "The Journey North", Editor → Split Down then Open Timeline | [editor.md](guide/editor.md) |
+| `editor-tab-drag` | Three tabs open, middle tab dragged (CGEvent drag, screen 886,185 → 1185,970 with the window at 200,120) and captured **mid-drag** so the bottom-edge drop zone is lit | [editor.md](guide/editor.md) |
 | `editor-hidden` | "The Journey North", Hide Interface toggled (⌘. via System Events keystroke) | [editor.md](guide/editor.md) |
 | `character` | "Vashti" with inspector open | [concepts.md](guide/concepts.md) |
 | `journey` | "Kuno" with inspector open, scrolled to bottom (30 ticks) | [journeys.md](guide/journeys.md) |

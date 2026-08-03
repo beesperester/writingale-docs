@@ -1,6 +1,6 @@
 # The Editor
 
-The editor is where you write. It styles your text in place as you type — headings scale, emphasis renders, links show as names — while the file underneath stays plain text you could open anywhere. A slim title bar above the text always names the document you're in, and marks unsaved changes with a `*` after the name.
+The editor is where you write. It styles your text in place as you type — headings scale, emphasis renders, links show as names — while the file underneath stays plain text you could open anywhere. The [tab](#tabs) above the text names the document you're in, and marks unsaved changes with a `*` after the name.
 
 <img src="/screenshots/editor-light.png" alt="The editor showing a chapter from the example book" class="light-only">
 <img src="/screenshots/editor-dark.png" alt="The editor showing a chapter from the example book" class="dark-only">
@@ -86,16 +86,29 @@ Documents open in **tabs**, and the editor area can be **split** into as many pa
 
 ### Tabs
 
-Click a document in the list and it opens as a tab in the editor. Click another and it *replaces* that tab rather than adding one: a tab you've only glanced at shows its name in italics, and browsing the list never leaves a trail of tabs behind. The moment you type in it — or open it deliberately with **Open in Tab** from its right-click menu — the tab is yours and stays put.
+Click a document in the list and it opens as a tab in the editor. Click another and it *replaces* that tab rather than adding one: a tab you've only glanced at shows its name in italics, and browsing the list never leaves a trail of tabs behind. **Double-click** the row — or type in it, or use **Open in Tab** from its right-click menu — and the tab is yours and stays put.
 
 Each tab shows the document's icon, its name, an `*` while it has unsaved changes, and a close button. <kbd>⌘W</kbd> closes the one you're in; <kbd>⌘⇧]</kbd> and <kbd>⌘⇧[</kbd> step through them.
 
 <img src="/screenshots/editor-tabs-light.png" alt="A pane's tabs: a chapter, the timeline, and an italic tab opened for a look" class="light-only">
 <img src="/screenshots/editor-tabs-dark.png" alt="A pane's tabs: a chapter, the timeline, and an italic tab opened for a look" class="dark-only">
 
+### Dragging tabs
+
+Tabs move by hand:
+
+- **Along the strip** to reorder them. A blue line shows where the tab will land.
+- **Onto another pane's strip**, or anywhere in another pane, to move it there.
+- **Onto the edge of a pane** — the outer quarter, top, bottom, left or right — to split that pane and drop the tab into the new half. The half that will open is highlighted while you hover, so you can see the layout before you commit to it.
+
+<img src="/screenshots/editor-tab-drag-light.png" alt="A tab dragged over the lower edge of a pane, with the bottom half highlighted" class="light-only">
+<img src="/screenshots/editor-tab-drag-dark.png" alt="A tab dragged over the lower edge of a pane, with the bottom half highlighted" class="dark-only">
+
+Dragging a tab always keeps it: a document you bothered to move somewhere is no longer provisional. Drag a pane's last tab away and the empty pane closes behind it.
+
 ### Splitting
 
-**Editor → Split Right** (<kbd>⌘⌥→</kbd>) and **Split Down** (<kbd>⌘⌥↓</kbd>) divide the pane you're in; the toolbar has buttons for both. The new pane starts on the same document, so the usual next step is to open something else in it — or to leave it, and read the same chapter in two places at once.
+**Editor → Split Right** (<kbd>⌘⌥→</kbd>) and **Split Down** (<kbd>⌘⌥↓</kbd>) divide the pane you're in; the toolbar has buttons for both. The new pane starts on the same document, so the usual next step is to open something else in it — or to leave it, and read the same chapter in two places at once. Dragging a tab to a pane's edge (above) does the same thing in one gesture.
 
 <img src="/screenshots/editor-split-light.png" alt="A chapter above the timeline, each in its own pane with its own tabs" class="light-only">
 <img src="/screenshots/editor-split-dark.png" alt="A chapter above the timeline, each in its own pane with its own tabs" class="dark-only">
