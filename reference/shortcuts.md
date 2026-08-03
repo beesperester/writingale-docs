@@ -34,6 +34,7 @@
 
 | Shortcut | Action |
 |---|---|
+| <kbd>⌘K</kbd> | Quick insert (reference or command) |
 | <kbd>⌘F</kbd> | Find in document |
 | <kbd>⌘⌥F</kbd> | Find and replace in document |
 | `[[` | Reference autocomplete popup |

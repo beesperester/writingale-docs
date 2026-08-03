@@ -52,6 +52,21 @@ The document font, size, and line height are set in **Settings** <kbd>⌘,</kbd>
 - Right-click → **Insert Reference** is the menu-driven alternative to typing `[[`.
 - Or **drag one in from the list**: switch the sidebar to Characters (or any other kind — your document stays open), then drag a name from the list into your text. The cursor follows the drag so you can see exactly where the mention will land; drop it and it appears as the name, linked like any other mention.
 
+## Quick insert
+
+Press <kbd>⌘K</kbd> and a search field opens over the window. Type a few letters and it offers matching people, places, chapters, notes — press <kbd>Return</kbd> and the mention lands at your cursor. It's the fastest way in when you already know who you mean.
+
+<img src="/screenshots/quick-insert-light.png" alt="Quick insert offering matching entities" class="light-only">
+<img src="/screenshots/quick-insert-dark.png" alt="Quick insert offering matching entities" class="dark-only">
+
+Narrow the search to one kind by starting with its name and a colon: **`Characters: vash`** searches only characters. You don't have to type the whole word — `char: vash` works too, and the palette offers the prefixes for you: with the field empty it lists every kind, and picking one fills the prefix in.
+
+The same field runs commands. Type `bold`, `heading`, `export`, `timeline` — anything you'd otherwise hunt for in a menu — and the matching action appears, with a note of which menu it also lives under. Which actions are offered depends on where you are: the formatting commands only show up when there's text to format.
+
+Away from the editor — in the [graph](/guide/graph) or the [timeline](/guide/timeline) — the same shortcut becomes a document jumper: type a name, press <kbd>Return</kbd>, and that document opens.
+
+<kbd>Esc</kbd>, or a click outside, closes the field without doing anything.
+
 ## Images
 
 Drag a picture into the editor and it lands where you drop it:
