@@ -17,10 +17,19 @@
 | <kbd>⌘2</kbd> | Focus list |
 | <kbd>⌘3</kbd> | Focus editor |
 | <kbd>⌘4</kbd> | Show/Hide inspector (editor and timeline) |
-| <kbd>⌘⌥3</kbd> | Toggle second editor (split view) |
 | <kbd>⌘[</kbd> / <kbd>⌘]</kbd> | Navigation history back / forward |
 | <kbd>⌘.</kbd> | Hide interface (distraction-free) |
 | <kbd>⌘⇧R</kbd> | Raw Markdown mode |
+
+## Panes & tabs
+
+| Shortcut | Action |
+|---|---|
+| <kbd>⌘⌥→</kbd> | Split the editor right |
+| <kbd>⌘⌥↓</kbd> | Split the editor down |
+| <kbd>⌘⌥W</kbd> | Close the focused editor pane |
+| <kbd>⌘W</kbd> | Close the current tab |
+| <kbd>⌘⇧]</kbd> / <kbd>⌘⇧[</kbd> | Next / previous tab |
 
 ## Markup
 
@@ -41,4 +50,4 @@
 | `[[` | Reference autocomplete popup |
 | <kbd>⌘</kbd>-click | Follow reference / open annotation |
 
-Menus not listed here (View → Highlight, View → Fixed Scrolling, Book → Book Settings…, Book → Edit Entity Types…) have no default shortcut.
+Menus not listed here (View → Highlight, View → Fixed Scrolling, Book → Book Settings…, Book → Edit Entity Types…, Book → Export Graph/Timeline as PDF…) have no default shortcut.

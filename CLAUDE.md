@@ -82,7 +82,7 @@ Full-window:
 |---|---|---|
 | `welcome` | Welcome screen, no automation args | [what-is-writingale.md](guide/what-is-writingale.md), [quick-start.md](guide/quick-start.md) |
 | `editor` | "The Journey North" open | [editor.md](guide/editor.md), [quick-start.md](guide/quick-start.md) |
-| `editor-split` | Same, split layout (⌥⌘2 via System Events keystroke) | [editor.md](guide/editor.md) |
+| `editor-split` | "The Journey North" above a timeline tab, each pane with its own tab strip (⌘⌥↓, then Views → Timeline in the new pane) | [editor.md](guide/editor.md) |
 | `editor-hidden` | "The Journey North", Hide Interface toggled (⌘. via System Events keystroke) | [editor.md](guide/editor.md) |
 | `character` | "Vashti" with inspector open | [concepts.md](guide/concepts.md) |
 | `journey` | "Kuno" with inspector open, scrolled to bottom (30 ticks) | [journeys.md](guide/journeys.md) |
@@ -116,6 +116,9 @@ Crops (source composition → crop):
 | `annotate-menu` | "The Journey North"; drag-select a phrase on the "commits an atrocity" line (CGEvent drag ~+665+247 → +850+247 window-relative), right-click the selection, **full-screen** capture (the menu is its own window) → crop `640x270+500+118` window-relative | [annotations.md](guide/annotations.md) |
 | `split-here` | "The Journey North"; right-click in the editor body (CGEvent right-click, screen 1500,700 with the window at 976,268), **region** capture of the menu's app items → `370x160` at screen `1455,678` (the menu is its own window, so capture the screen region, not the app window) | [manuscript.md](guide/manuscript.md) |
 | `quick-insert` | "The Journey North"; ⌘K then type `vash` → region capture of the card, `580x162+468+141` window-relative | [editor.md](guide/editor.md) |
+| `editor-tabs` | "The Journey North" pinned, a timeline tab, and a provisional (italic) tab from a single list click → crop of the tab strip | [editor.md](guide/editor.md) |
+| `editor-tab-drag` | A tab dragged over the lower quarter of a pane, bottom half highlighted → crop of the editor area mid-drag | [editor.md](guide/editor.md) |
+| `graph-controls` | Graph tab, `-autoSection graph` → crop of the control row (chips, outlines, re-layout, reset, share) | [graph.md](guide/graph.md) |
 | `goal-popover` | Goal ring clicked (293,131 screen), Goal tab → region capture, crop `340x330+0+40` | [goals.md](guide/goals.md) |
 | `goal-history` | …then History tab clicked (326,181) → same crop. Needs a seeded `.writingale/stats.json` in the /tmp book copy or the tab shows all zeros. | [goals.md](guide/goals.md) |
 
@@ -129,23 +132,25 @@ timeline columns don't stack.
 
 ### Screenshot gaps
 
-- **All `editor*` full-window shots are stale (2026-07-31)**: the
-  window toolbar gained a format capsule (heading menu, bold, italic,
-  strikethrough, code, lists menu) left of the view-mode switcher.
-  Recapture `editor`, `editor-split`, and any crop whose band includes
-  the toolbar.
+- **The `editor` full-window shot is stale (2026-07-31, worse since
+  2026-08-03)**: the window toolbar gained a format capsule (heading
+  menu, bold, italic, strikethrough, code, lists menu) left of the
+  view-mode switcher, and the editor gained a tab strip in place of
+  the slim title bar. Recapture `editor` and any crop whose band
+  includes the toolbar. (`editor-split` was recaptured for panes and
+  tabs on 2026-08-03.)
 - **Format capsule close-up** ([editor.md](guide/editor.md) "Styling
   as you type"): a crop of the toolbar's format buttons.
 - **Drag-to-reference** ([editor.md](guide/editor.md) "Links"): a shot
   mid-drag — a character row dragged from the list over the editor
   with the insertion caret visible.
-- **Editor-layout switcher** ([editor.md](guide/editor.md) "Three ways
-  to lay out the editor"): a crop of the toolbar capsule showing the
-  three layouts with one selected. `-autoContinuous YES` opens the
-  continuous layout directly.
-- **Continuous scroll** (same section): a shot of the flowing column
-  with a labeled chapter divider mid-view, and the chapter in view
-  highlighted in the list.
+- **Split buttons in the toolbar** ([editor.md](guide/editor.md)
+  "Splitting"): a crop of the split-right/split-down buttons. The
+  layout switcher they replaced is gone, along with its shot.
+- **The Manuscript tab** ([editor.md](guide/editor.md) "More than
+  documents"): a shot of the flowing column with a labeled chapter
+  divider mid-view, and the chapter in view highlighted in the list.
+  `-autoContinuous YES` opens the manuscript tab directly.
 
 Pages with no screenshots that may not need one (simpler/textual
 content — use judgement, not a hard rule): `installation.md`,
