@@ -34,7 +34,7 @@ features:
     details: Writingale reads your structured data backwards — who appears where, when, and with whom — and draws the map, the timeline, and each character's journey for you.
   - icon: ✍️
     title: A focused markdown editor
-    details: Live markdown styling, reference autocomplete, focus and typewriter modes, a split editor, and a distraction-free view.
+    details: Live markdown styling, reference autocomplete, focus and typewriter modes, tabs and split panes, and a distraction-free view.
   - icon: 📤
     title: One clean manuscript
     details: Export compiles the manuscript tree into a single clean markdown file, with references resolved to names and comments stripped.

@@ -5,6 +5,8 @@ The timeline lays your story out against **story time**, counted in a unit you c
 <img src="/screenshots/timeline-light.png" alt="The timeline view of the example book" class="light-only">
 <img src="/screenshots/timeline-dark.png" alt="The timeline view of the example book" class="dark-only">
 
+Open the timeline from **Views** in the sidebar and it appears as a tab in the editor — put it in a [split](/guide/editor#splitting) and you can write with the shape of the book underneath you.
+
 ## What you're seeing
 
 - **Container bands** across the top — parts with their derived progress (`2/4 final`), spanning the time their chapters cover.
@@ -30,3 +32,7 @@ Cards can be dragged to reorder where the view allows it.
 ## Giving something a place in time
 
 Select the entity and fill in the inspector's **Story Time** section: **From** (required to appear on the timeline), an optional **To** for things that span time, a human-readable **Label** ("the last day"), and optionally a **Row** of its own. See [the inspector](/guide/inspector#story-time).
+
+## Saving the timeline
+
+The share button in the top-right corner writes the timeline to a **PDF** — every column, however far it scrolls off screen, on a single page in whichever order you're viewing. See [Exporting](/guide/export#exporting-the-graph-and-the-timeline).

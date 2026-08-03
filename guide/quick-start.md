@@ -49,6 +49,6 @@ Press <kbd>⌘⇧E</kbd> (or **Book → Export Manuscript…**). The export shee
 ## Where to go next
 
 - [Books & Entities](/guide/concepts) — the mental model behind everything
-- [The Editor](/guide/editor) — markup, writing modes, and the split editor
+- [The Editor](/guide/editor) — markup, writing modes, and tabs and split panes
 - [Manuscript Structure](/guide/manuscript) — parts, chapters, scenes, and material
 - [Entity Types & Traits](/guide/entity-types) — make the app fit your book

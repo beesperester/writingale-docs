@@ -5,6 +5,8 @@ The graph is a living map of everything in your book and every connection betwee
 <img src="/screenshots/graph-light.png" alt="The graph view of the example book" class="light-only">
 <img src="/screenshots/graph-dark.png" alt="The graph view of the example book" class="dark-only">
 
+Open the graph from **Views** in the sidebar and it appears as a tab in the editor — put it in a [split](/guide/editor#splitting) and it sits beside the chapter you're writing.
+
 ## Reading the graph
 
 - **The spine** — chapters on the horizontal center line, left to right in reading order. A character whose connections all land on the right half of the spine doesn't appear until late in the book; you can see it without reading a page.
@@ -16,8 +18,13 @@ Clicking a dot shows its contents in the glance panel on the right — the same 
 
 ## Controls
 
+<img src="/screenshots/graph-controls-light.png" alt="The graph's control row: one chip per kind, then group outlines, re-layout, reset, and share" class="light-only">
+<img src="/screenshots/graph-controls-dark.png" alt="The graph's control row: one chip per kind, then group outlines, re-layout, reset, and share" class="dark-only">
+
 - The **chips** along the top toggle each kind on and off — hide notes to see the story's social web, or show only chapters to see pure structure.
+- The **folder button** turns the group outlines on and off.
 - **Re-layout** rearranges the map; **reset** restores pan and zoom.
+- The **share button** saves the graph as a PDF — the whole map fitted to one page, not just the part on screen. See [Exporting](/guide/export#exporting-the-graph-and-the-timeline).
 - Pan and zoom with the usual gestures.
 
 ## Keeping a kind off the map
