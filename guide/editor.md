@@ -113,7 +113,7 @@ Dragging a tab always keeps it: a document you bothered to move somewhere is no 
 <img src="/screenshots/editor-split-light.png" alt="A chapter above the timeline, each in its own pane with its own tabs" class="light-only">
 <img src="/screenshots/editor-split-dark.png" alt="A chapter above the timeline, each in its own pane with its own tabs" class="dark-only">
 
-Splits nest: split right, then split the right half downward, and you have a chapter beside its outline above your notes. **Close Editor** (<kbd>⌘⌥W</kbd>) removes the pane you're in, and closing a pane's last tab does the same.
+Splits nest: split right, then split the right half downward, and you have a chapter beside its outline above your notes. **Drag the separator** between two panes to change how they share the space. **Close Editor** (<kbd>⌘⌥W</kbd>) removes the pane you're in, and closing a pane's last tab does the same.
 
 Each pane carries its own **word count and saved state** in the bar along its bottom, and its own [view mode](#three-views-of-your-text) — a reading preview on one side, live text on the other. The pane you're working in is the bright one; the others recede. Everything in the menu bar — formatting, saving, find — acts on that pane.
 
