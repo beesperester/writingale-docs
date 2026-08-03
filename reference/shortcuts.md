@@ -7,6 +7,7 @@
 | <kbd>⌘N</kbd> | New entity (of the selected type) |
 | <kbd>⌘R</kbd> | Reload from Disk |
 | <kbd>⌘⇧E</kbd> | Export Manuscript… |
+| <kbd>⌘⇧W</kbd> | Close Book (back to the welcome screen) |
 
 ## Navigation & layout
 
