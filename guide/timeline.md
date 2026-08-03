@@ -27,6 +27,10 @@ The toggle at the top switches the horizontal arrangement:
 
 Cards can be dragged to reorder where the view allows it.
 
+## Saving the timeline
+
+The share button in the top-right corner writes the timeline to a **PDF** — every column, however far it scrolls off screen, on a single page in whichever order you're viewing. See [Exporting](/guide/export#exporting-the-graph-and-the-timeline).
+
 ## Giving something a place in time
 
 Select the entity and fill in the inspector's **Story Time** section: **From** (required to appear on the timeline), an optional **To** for things that span time, a human-readable **Label** ("the last day"), and optionally a **Row** of its own. See [the inspector](/guide/inspector#story-time).

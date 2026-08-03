@@ -39,4 +39,4 @@
 | `[[` | Reference autocomplete popup |
 | <kbd>⌘</kbd>-click | Follow reference / open annotation |
 
-Menus not listed here (View → Highlight, View → Fixed Scrolling, Book → Book Settings…, Book → Edit Entity Types…) have no default shortcut.
+Menus not listed here (View → Highlight, View → Fixed Scrolling, Book → Book Settings…, Book → Edit Entity Types…, Book → Export Graph/Timeline as PDF…) have no default shortcut.
