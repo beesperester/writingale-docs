@@ -106,6 +106,8 @@ Tabs move by hand:
 
 Dragging a tab always keeps it: a document you bothered to move somewhere is no longer provisional. Drag a pane's last tab away and the empty pane closes behind it.
 
+Documents can be dragged **in from the list**, too: drop one on a pane's tab bar and it opens there. (Dropped into the text instead, the same document becomes a [link](#links) — the tab bar opens, the page mentions.)
+
 ### Splitting
 
 **Editor → Split Right** (<kbd>⌘⌥→</kbd>) and **Split Down** (<kbd>⌘⌥↓</kbd>) divide the pane you're in; the toolbar has buttons for both. The new pane starts on the same document, so the usual next step is to open something else in it — or to leave it, and read the same chapter in two places at once. Dragging a tab to a pane's edge (above) does the same thing in one gesture.
