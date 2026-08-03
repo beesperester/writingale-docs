@@ -1,5 +1,7 @@
 # Graph View
 
+Open the graph from **Views** in the sidebar and it appears as a [tab](/guide/editor#more-than-documents) in the editor — put it in a [split](/guide/editor#splitting) and it sits beside the chapter you're writing.
+
 The graph is a living map of everything in your book and every connection between them — mentions in your prose, cast lists and other fields, and relationships all become lines. The manuscript acts as the graph's **spine**: chapters sit on a horizontal line in reading order, and the story world arranges itself around that main line.
 
 <img src="/screenshots/graph-light.png" alt="The graph view of the example book" class="light-only">

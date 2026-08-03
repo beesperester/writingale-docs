@@ -34,7 +34,7 @@ On disk, every mention records the entity's permanent ID, never its name. The ed
 <img src="/screenshots/character-light.png" alt="A character with relationships, traits, and items in the inspector" class="light-only">
 <img src="/screenshots/character-dark.png" alt="A character with relationships, traits, and items in the inspector" class="dark-only">
 
-- The **sidebar** groups the kinds into sections (Manuscript and Story World, by default) and lists the derived **views** (Graph, Timeline).
+- The **sidebar** groups the kinds into sections (Manuscript and Story World, by default) and lists the whole-book **views** (Manuscript, Graph, Timeline), which open as tabs in the editor.
 - The **list** shows everything of the selected kind — for manuscript kinds, as a nested tree with progress rings and word counts.
 - The **editor** shows the selected entity's text.
 - The **inspector** shows its facts: identity, status, goal, story time, relationships, fields, backlinks, journey. See [The Inspector](/guide/inspector).

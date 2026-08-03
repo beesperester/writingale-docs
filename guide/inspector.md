@@ -1,6 +1,6 @@
 # The Inspector
 
-The inspector (<kbd>⌘4</kbd>, or the toolbar button) is where the selected entity's **facts** live — everything about a chapter or character that isn't its prose. It's the same panel behind the editor, the graph's glance panel, and the timeline. It starts closed; open it when you need it, and it follows whichever pane is focused when the [split editor](/guide/editor#split-editor) is open.
+The inspector (<kbd>⌘4</kbd>, or the toolbar button) is where the selected entity's **facts** live — everything about a chapter or character that isn't its prose. It's the same panel behind the editor, the graph's glance panel, and the timeline. It starts closed; open it when you need it, and it follows whichever [pane](/guide/editor#splitting) is focused.
 
 What the inspector shows depends on what's selected: a chapter offers completion and story time, a character offers relationships and a journey, your custom faction offers its own fields. Every screenshot below is a real close-up from the bundled example book, *The Machine Stops*.
 

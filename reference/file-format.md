@@ -13,7 +13,7 @@ MyBook/
   Notes/…
   Images/…            # image entities + their binaries (content-hash names)
   …
-  .writingale/        # local app state (stats.json) — gitignored
+  .writingale/        # local app state (stats.json, workspace.json) — gitignored
   Export/             # ignored by the entity scanner
 ```
 
@@ -146,3 +146,7 @@ Plain markdown. Three extensions:
 ```
 
 Local, per-book writing history. Delta-based and never decreasing. Gitignored by the generated `.gitignore`.
+
+## `.writingale/workspace.json`
+
+Which documents you had open, in which panes — restored when you reopen the book. Local and gitignored like the stats; deleting it simply starts you with one empty pane. Nothing about the book itself lives here, so it never matters to anyone you share the folder with.

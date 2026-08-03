@@ -23,7 +23,7 @@ You don't have to type the marks. The **format buttons above the editor** style 
 
 ### Three views of your text
 
-The switcher in the toolbar shows which view you're in and flips between them: **live styling** (the pencil — where you write), a clean **reading preview** (the eye), and the **raw text** (the brackets). The view belongs to the editor you're working in, so with the [split editor](#split-editor) open you can read one document while writing in the other. Every launch starts in live styling.
+The switcher in the toolbar shows which view you're in and flips between them: **live styling** (the pencil — where you write), a clean **reading preview** (the eye), and the **raw text** (the brackets). The view belongs to the pane you're working in, so with the editor [split](#splitting) you can read one document while writing in the other. Every launch starts in live styling.
 
 ### Preview
 
@@ -80,24 +80,40 @@ All in the **View menu**:
 <img src="/screenshots/editor-focus-light.png" alt="Sentence focus: the sentence at the cursor is dark, everything else dimmed" class="light-only">
 <img src="/screenshots/editor-focus-dark.png" alt="Sentence focus: the sentence at the cursor is dark, everything else dimmed" class="dark-only">
 
-## Three ways to lay out the editor
+## Tabs and split editors
 
-The switcher in the toolbar — and the matching group in the **View menu** — offers three layouts. You're always in exactly one of them, and the switcher shows which:
+Documents open in **tabs**, and the editor area can be **split** into as many panes as you have room for — the same way a code editor works, but for chapters.
 
-- **Single editor** <kbd>⌘⌥1</kbd> — one document at a time. The everyday view.
-- **Split editor** <kbd>⌘⌥2</kbd> — two documents side by side.
-- **Continuous scroll** <kbd>⌘⌥3</kbd> — the whole manuscript as one flowing text.
+### Tabs
 
-### Split editor
+Click a document in the list and it opens as a tab in the editor. Click another and it *replaces* that tab rather than adding one: a tab you've only glanced at shows its name in italics, and browsing the list never leaves a trail of tabs behind. The moment you type in it — or open it deliberately with **Open in Tab** from its right-click menu — the tab is yours and stays put.
 
-<img src="/screenshots/editor-split-light.png" alt="The split editor: two documents side by side" class="light-only">
-<img src="/screenshots/editor-split-dark.png" alt="The split editor: two documents side by side" class="dark-only">
+Each tab shows the document's icon, its name, an `*` while it has unsaved changes, and a close button. <kbd>⌘W</kbd> closes the one you're in; <kbd>⌘⇧]</kbd> and <kbd>⌘⇧[</kbd> step through them.
 
-Each pane shows its own document — write the chapter on the left while its outline or a research note sits on the right. The pane you're working in shows its title in the accent color, and the list column follows it. Leaving this layout closes the second pane.
+<img src="/screenshots/editor-tabs-light.png" alt="A pane's tabs: a chapter, the timeline, and an italic tab opened for a look" class="light-only">
+<img src="/screenshots/editor-tabs-dark.png" alt="A pane's tabs: a chapter, the timeline, and an italic tab opened for a look" class="dark-only">
 
-### Continuous scroll
+### Splitting
 
-Your whole manuscript becomes one flowing view, in reading order. A labeled divider marks where each chapter begins, so the boundaries stay visible while the text reads as one piece — and everything stays editable right there. As you scroll, the chapter currently on screen is highlighted in the list; click a chapter in the list to jump the view to it.
+**Editor → Split Right** (<kbd>⌘⌥→</kbd>) and **Split Down** (<kbd>⌘⌥↓</kbd>) divide the pane you're in; the toolbar has buttons for both. The new pane starts on the same document, so the usual next step is to open something else in it — or to leave it, and read the same chapter in two places at once.
+
+<img src="/screenshots/editor-split-light.png" alt="A chapter above the timeline, each in its own pane with its own tabs" class="light-only">
+<img src="/screenshots/editor-split-dark.png" alt="A chapter above the timeline, each in its own pane with its own tabs" class="dark-only">
+
+Splits nest: split right, then split the right half downward, and you have a chapter beside its outline above your notes. **Close Editor** (<kbd>⌘⌥W</kbd>) removes the pane you're in, and closing a pane's last tab does the same.
+
+Each pane carries its own **word count and saved state** in the bar along its bottom, and its own [view mode](#three-views-of-your-text) — a reading preview on one side, live text on the other. The pane you're working in is the bright one; the others recede. Everything in the menu bar — formatting, saving, find — acts on that pane.
+
+### More than documents
+
+Tabs aren't only for chapters. The **Views** in the sidebar open as tabs too:
+
+- **Manuscript** — your whole manuscript as one flowing text, in reading order. A labeled divider marks where each chapter begins, so the boundaries stay visible while the text reads as one piece — and everything stays editable right there. As you scroll, the chapter on screen is highlighted in the list; click a chapter in the list to jump the view to it.
+- **[Graph](/guide/graph)** and **[Timeline](/guide/timeline)** — the whole-book views, now openable *beside* a chapter instead of taking the window over. Write with the timeline underneath and watch the shape of the book as you go.
+
+### It's remembered
+
+Your panes and tabs are saved with the book. Close it, come back next week, and the same documents are open in the same arrangement.
 
 ## Adding documents from your Mac
 

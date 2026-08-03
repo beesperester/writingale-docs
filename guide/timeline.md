@@ -1,5 +1,7 @@
 # Timeline View
 
+Open the timeline from **Views** in the sidebar and it appears as a [tab](/guide/editor#more-than-documents) in the editor — put it in a [split](/guide/editor#splitting) and you can write with the shape of the book underneath you.
+
 The timeline lays your story out against **story time**, counted in a unit you choose in Book Settings — months for the example book, days or years for yours. 0 is the beginning of the book; negative values are backstory.
 
 <img src="/screenshots/timeline-light.png" alt="The timeline view of the example book" class="light-only">
