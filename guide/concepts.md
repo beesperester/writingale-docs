@@ -8,6 +8,8 @@ Your book lives in an ordinary folder you choose — no library buried in the ap
 
 Writingale watches the folder. If you edit a file in another app — or a sync service updates it — Writingale notices and reloads; **Reload from Disk** (<kbd>⌘R</kbd>) forces a refresh if you ever want one. The exact file format is documented in the [file format reference](/reference/file-format), but you never need to know it to use the app.
 
+One book is open at a time. To switch, choose **File → Close Book** (<kbd>⌘⇧W</kbd>): you land back on the welcome screen, where you can pick a recent book, open another folder, or start a new one. Anything unsaved is offered to you first, so closing never loses work.
+
 ## Entities
 
 Everything in your book is an **entity**: each chapter, each character, each location, each note. An entity is one file — its written body plus a few recorded facts (its name, its kind, its place in the story). Three of those facts matter everywhere:
