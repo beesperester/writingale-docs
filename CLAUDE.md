@@ -45,7 +45,8 @@ copy of `app/ExampleBook` with the automation args (`-autoOpenPath`,
 which combined with `-autoSelectName` gives "document open, different
 list shown" for the drag-to-reference shot,
 `-autoSheet export|settings|types` — the last opens the export sheet,
-the book settings sheet, or its Entity Types tab directly), force
+the book settings sheet, or its Entity Types tab directly;
+`-autoContinuous YES` opens the continuous-scroll layout), force
 appearance per shot (`-NSRequiresAquaSystemAppearance YES` /
 `-AppleInterfaceStyle Dark`), normalize the window to 1512×949 pt,
 capture per-window with `screencapture -l`, and verify focus by
@@ -81,7 +82,7 @@ Full-window:
 |---|---|---|
 | `welcome` | Welcome screen, no automation args | [what-is-writingale.md](guide/what-is-writingale.md), [quick-start.md](guide/quick-start.md) |
 | `editor` | "The Journey North" open | [editor.md](guide/editor.md), [quick-start.md](guide/quick-start.md) |
-| `editor-split` | Same, second editor toggled (⌥⌘3 via System Events keystroke) | [editor.md](guide/editor.md) |
+| `editor-split` | Same, split layout (⌥⌘2 via System Events keystroke) | [editor.md](guide/editor.md) |
 | `editor-hidden` | "The Journey North", Hide Interface toggled (⌘. via System Events keystroke) | [editor.md](guide/editor.md) |
 | `character` | "Vashti" with inspector open | [concepts.md](guide/concepts.md) |
 | `journey` | "Kuno" with inspector open, scrolled to bottom (30 ticks) | [journeys.md](guide/journeys.md) |
@@ -136,6 +137,13 @@ timeline columns don't stack.
 - **Drag-to-reference** ([editor.md](guide/editor.md) "Links"): a shot
   mid-drag — a character row dragged from the list over the editor
   with the insertion caret visible.
+- **Editor-layout switcher** ([editor.md](guide/editor.md) "Three ways
+  to lay out the editor"): a crop of the toolbar capsule showing the
+  three layouts with one selected. `-autoContinuous YES` opens the
+  continuous layout directly.
+- **Continuous scroll** (same section): a shot of the flowing column
+  with a labeled chapter divider mid-view, and the chapter in view
+  highlighted in the list.
 
 Pages with no screenshots that may not need one (simpler/textual
 content — use judgement, not a hard rule): `installation.md`,
