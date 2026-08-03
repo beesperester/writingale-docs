@@ -95,6 +95,8 @@ The switcher in the toolbar — and the matching group in the **View menu** — 
 
 Each pane shows its own document — write the chapter on the left while its outline or a research note sits on the right. The pane you're working in shows its title in the accent color, and the list column follows it. Leaving this layout closes the second pane.
 
+**Same document in both panes?** Then a **Sync Scrolling** button appears in the toolbar (also **View → Sync Scrolling**, <kbd>⌘⌥⇧S</kbd>). Turn it on and the two panes keep the same place in the document, whichever one you scroll — handy with the [reading preview](#preview) on one side and the [raw text](#raw-markdown-mode) on the other. The button only shows when both panes hold the same document, which is the only time it means anything.
+
 ### Continuous scroll
 
 Your whole manuscript becomes one flowing view, in reading order. A labeled divider marks where each chapter begins, so the boundaries stay visible while the text reads as one piece — and everything stays editable right there. As you scroll, the chapter currently on screen is highlighted in the list; click a chapter in the list to jump the view to it.
