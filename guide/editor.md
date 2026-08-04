@@ -140,7 +140,7 @@ Each pane carries its own **word count and saved state** in the bar along its bo
 
 Tabs aren't only for chapters. The **Views** in the sidebar open as tabs too:
 
-- **Manuscript** — your whole manuscript as one flowing text, in reading order. A labeled divider marks where each chapter begins, so the boundaries stay visible while the text reads as one piece — and everything stays editable right there. As you scroll, the chapter on screen is highlighted in the list; click a chapter in the list to jump the view to it.
+- **Manuscript** — your whole manuscript as one flowing text, in reading order. A labeled divider marks where each document begins, so the boundaries stay visible while the text reads as one piece — and everything stays editable right there. Parts and groups appear too, in their place in the order: a part's own page is text you wrote, so you can read and edit it here exactly as it will export. As you scroll, the document on screen is highlighted in the list; click one in the list to jump the view to it.
 - **Graph** and **Timeline** — the whole-book views, now openable *beside* a chapter instead of taking the window over. Write with the timeline underneath and watch the shape of the book as you go.
 
 ### It's remembered

@@ -12,7 +12,9 @@ Open the timeline from **Views** in the sidebar and it appears as a tab in the e
 - **A scale, not a list.** Distance along the board is elapsed time: a card starts where it starts and is as wide as it is long. Two chapters a day apart sit almost on top of each other; two a decade apart sit a decade apart.
 - **Container bands** across the top — parts with their derived progress (`2/4 final`), spanning the time their chapters cover.
 - **Type rows** — each kind of thing with a place in time gets a row; cards show the progress ring, the time label, and the POV character. Cards that would overlap stack.
-- **Named rows** — a kind can have its own row (the example book's notes share a *World Events* row), and any single entity can be moved to a row of its own — so different strands of world history read as separate strips.
+- **Named rows** — a kind can have its own row (the example book's notes share a *World Events* row), and any single entity can be moved to a row of its own — so different strands of world history read as separate strips. The example book puts the narrator's chapters and his brother's on two rows, which is how you see that they happen at the same time rather than one after the other.
+
+Row names stay pinned to the left edge as you scroll sideways, and so does what's written on a card: when a long span's left edge slides off screen, its title, progress ring and POV label slide along with the view rather than disappearing, stopping at the card's own right edge. A book-length board never becomes a row of anonymous bars.
 - **Journey lanes** at the bottom — one lane per character (or item), marking where along the axis they appear. See [Journeys](/guide/journeys).
 - **An *Unscheduled* strip** at the far right, holding chapters you haven't placed in time yet.
 
