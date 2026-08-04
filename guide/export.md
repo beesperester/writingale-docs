@@ -37,6 +37,7 @@ Exporting the manuscript or a single document opens the export sheet.
 |---|---|
 | **Title page** | Start with the book title and author. Whole-book exports only — a single document is titled by its own heading |
 | **Chapter headings** | Insert each chapter's name as a heading, sized by its depth — parts largest, then chapters, then scenes |
+| **Part and group text** | A part or group's own page — its summary, epigraph, or working notes. Turn it off to export the prose without the scaffolding: the heading stays, and the documents nested inside are never affected. Offered wherever the export contains a container |
 | **Include material** | Bring aside material along after all. Offered for the book, and for a document with others nested inside it — a document you export by name always exports, material or not |
 | **Format** | **Markdown** writes the plain-text file; **PDF** writes paginated pages styled like the preview |
 
