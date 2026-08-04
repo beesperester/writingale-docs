@@ -1,6 +1,6 @@
 # Manuscript Structure
 
-The manuscript is a tree. Parts hold chapters, chapters can hold scenes, and the nesting goes as deep as your book needs. The example book runs two levels: *Part I — The Air-Ship* → *The Room and the Plate*.
+The manuscript is a tree. Parts hold chapters, chapters can hold scenes, and the nesting goes as deep as your book needs. The example book runs two levels: *Part I — The Coming of the Martians* → *The Falling Star*.
 
 ## The tree
 
@@ -36,7 +36,7 @@ Everything from that point down moves into a **new document right after this one
 A few things worth knowing:
 
 - **The break happens where you right-clicked**, not where the cursor was — click exactly at the line you want the new document to start with.
-- **If the new part starts with a heading, that heading becomes its name** (`## The Air-Ship` → a document called "The Air-Ship"). Otherwise it's named "Untitled" plus its kind, ready to rename in the [inspector](/guide/inspector).
+- **If the new part starts with a heading, that heading becomes its name** (`## Dead London` → a document called "Dead London"). Otherwise it's named "Untitled" plus its kind, ready to rename in the [inspector](/guide/inspector).
 - The new document **opens right away**, so you can carry on writing in it.
 - The command appears only in documents that are part of the manuscript, and only when there's text below the click to move.
 
@@ -48,7 +48,7 @@ Merging is offered only where it makes sense — the two must be neighbours at t
 
 ## Material
 
-Toggle **Material** in the inspector to mark something as aside material: it stays visible in the tree (dimmed, with a small "material" badge) but is left out of export, goals, and progress. Use it for deleted scenes you can't quite delete, voice experiments, or an opening you haven't committed to. The example book's *The Old Opening (cut)* is material.
+Toggle **Material** in the inspector to mark something as aside material: it stays visible in the tree (dimmed, with a small "material" badge) but is left out of export, goals, and progress. Use it for deleted scenes you can't quite delete, voice experiments, or an opening you haven't committed to. The example book's *The Martian Preface (cut)* is material.
 
 ## Documents from outside
 

@@ -13,7 +13,7 @@ There is one Export button, in the top-right of the window, and one menu item be
 | **Graph** | The graph, as a one-page PDF |
 | **Timeline** | The timeline, as a one-page PDF |
 
-The menu item says which it is before you pick it — *Export Manuscript…*, *Export “The Air-Ship”…* — so there's no guessing. To export the whole book, open the Manuscript tab first.
+The menu item says which it is before you pick it — *Export Manuscript…*, *Export “Dead London”…* — so there's no guessing. To export the whole book, open the Manuscript tab first.
 
 ## The export sheet
 

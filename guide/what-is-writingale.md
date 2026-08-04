@@ -11,11 +11,11 @@ A Writingale book is a folder of plain text files on your Mac — one file per c
 
 ```
 MyBook/
-  Chapters/the-room-and-the-plate.md
-  Characters/vashti.md
-  Locations/the-air-ship.md
-  Items/the-book-of-the-machine.md
-  Notes/why-the-machine-stops.md
+  Chapters/the-falling-star.md
+  Characters/the-artilleryman.md
+  Locations/horsell-common.md
+  Items/the-heat-ray.md
+  Notes/why-the-martians-fail.md
 ```
 
 There is no account, no sync service, and no locked format. That buys you things a closed writing app can't:
@@ -44,7 +44,7 @@ Chapters, characters, locations, items, and notes are only the starting set. A f
 
 ## The example book
 
-Writingale comes with an example project, *The Machine Stops* — an abridged retelling of E. M. Forster's 1909 story of a buried, machine-fed humanity and the one man who climbs back to the surface. It uses every feature: parts and chapters, a custom Faction type, writing goals, a story timeline with events before the book opens, notes pinned to passages, character relationships, images, and a cut scene kept as aside material. Open it from the welcome screen; most screenshots in this documentation show it.
+Writingale comes with an example project, *The War of the Worlds* — an abridged retelling of H. G. Wells's 1898 story of an ordinary Surrey summer interrupted by an invasion nobody is equipped to imagine. It uses every feature: parts and chapters, a custom Faction type, writing goals, a story timeline with events before the book opens, notes pinned to passages, character relationships, images, and a cut scene kept as aside material. Open it from the welcome screen; most screenshots in this documentation show it.
 
 ## Next steps
 

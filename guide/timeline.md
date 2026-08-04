@@ -16,7 +16,7 @@ Open the timeline from **Views** in the sidebar and it appears as a tab in the e
 - **Journey lanes** at the bottom — one lane per character (or item), marking where along the axis they appear. See [Journeys](/guide/journeys).
 - **An *Unscheduled* strip** at the far right, holding chapters you haven't placed in time yet.
 
-The example book's *Kuno's ascent* sits at month −12 — backstory, visible at a glance to the left of 0.
+The example book's *The gas jets on Mars* sits at days −60 to −50 — backstory, visible at a glance to the left of 0.
 
 ### Skipped stretches
 
