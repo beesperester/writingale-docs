@@ -1,6 +1,6 @@
 # Manuscript Structure
 
-The manuscript is a tree. Parts hold chapters, chapters can hold scenes, and the nesting goes as deep as your book needs. The example book runs two levels: *Part I — The Coming of the Martians* → *The Falling Star*.
+The manuscript is a tree. Parts hold chapters, chapters can hold scenes, and the nesting goes as deep as your book needs. The example book runs two levels: *Book One — The Coming of the Martians* → *The Falling Star*.
 
 ## The tree
 
@@ -48,7 +48,7 @@ Merging is offered only where it makes sense — the two must be neighbours at t
 
 ## Material
 
-Toggle **Material** in the inspector to mark something as aside material: it stays visible in the tree (dimmed, with a small "material" badge) but is left out of export, goals, and progress. Use it for deleted scenes you can't quite delete, voice experiments, or an opening you haven't committed to. The example book's *The Martian Preface (cut)* is material.
+Toggle **Material** in the inspector to mark something as aside material: it stays visible in the tree (dimmed, with a small "material" badge) but is left out of export, goals, and progress. Use it for deleted scenes you can't quite delete, voice experiments, or an opening you haven't committed to. The example book's *Text and rights (not part of the book)* is material.
 
 ## Documents from outside
 

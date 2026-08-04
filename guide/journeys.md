@@ -12,7 +12,7 @@ Writingale scans the manuscript for appearances — mentions in prose, cast list
 Each stop lists:
 
 - the chapter or scene and its **position** in reading order,
-- the **story time** of that appearance ("the exodus (days 4–6)"),
+- the **story time** of that appearance ("the exodus (hour 72)"),
 - a **POV badge** when the chapter looks through this character's eyes,
 - a **"mentioned" badge** when the character is only name-dropped in the prose rather than listed in the cast,
 - the **company** at that stop, grouped by kind — who else is in the scene, where it happens, what objects are present.

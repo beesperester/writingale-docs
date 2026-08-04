@@ -11,7 +11,7 @@ A Writingale book is a folder of plain text files on your Mac — one file per c
 
 ```
 MyBook/
-  Chapters/the-falling-star.md
+  Chapters/02-the-falling-star.md
   Characters/the-artilleryman.md
   Locations/horsell-common.md
   Items/the-heat-ray.md
@@ -44,7 +44,7 @@ Chapters, characters, locations, items, and notes are only the starting set. A f
 
 ## The example book
 
-Writingale comes with an example project, *The War of the Worlds* — an abridged retelling of H. G. Wells's 1898 story of an ordinary Surrey summer interrupted by an invasion nobody is equipped to imagine. It uses every feature: parts and chapters, a custom Faction type, writing goals, a story timeline with events before the book opens, notes pinned to passages, character relationships, images, and a cut scene kept as aside material. Open it from the welcome screen; most screenshots in this documentation show it.
+Writingale comes with an example project, *The War of the Worlds* — H. G. Wells's 1898 novel in full, twenty-seven chapters across two books, marked up as a working manuscript. It uses every feature: parts and chapters, a custom Faction type, writing goals, a story timeline with events before the book opens, notes pinned to passages, character relationships, images, and a cut scene kept as aside material. Open it from the welcome screen; most screenshots in this documentation show it.
 
 ## Next steps
 

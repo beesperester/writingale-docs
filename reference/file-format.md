@@ -21,11 +21,11 @@ MyBook/
 
 ```yaml
 title: The War of the Worlds
-author: after H. G. Wells (1898)
-timeUnit: day            # the unit story time is counted in
+author: H. G. Wells (1898)
+timeUnit: hour           # the unit story time is counted in
 goal:                    # optional book-wide writing goal
   comparator: at-least   # about | at-least | at-most
-  count: 15000
+  count: 60000
   unit: words            # words | characters
   deadline: 2026-12-31   # optional, yyyy-MM-dd
 manuscript:              # canonical order of the manuscript roots
@@ -95,20 +95,21 @@ One markdown file per entity: YAML frontmatter, then the body.
 ---
 uid: chp-bb000003          # <prefix>-<8 hex>, immutable
 type: chapter              # authoritative type id
-name: The Exodus from London
+name: The Days of Imprisonment
 created: 2026-08-04        # yyyy-MM-dd
-status: revision           # stage id (status trait)
-goal: 1800                 # per-entity word target
-pov: chr-cc000002          # custom field (reference)
+status: draft              # stage id (status trait)
+goal: 6000                 # per-entity word target
+pov: chr-cc000001          # custom field (reference)
 time:                      # timeline trait
-  from: 4
-  to: 6
-  label: the exodus
-  row: The Brother         # optional named timeline row
+  from: 120
+  to: 456
+  label: the days of imprisonment
+  row: The Narrator        # optional named timeline row
 ---
 
-My brother was in [[loc-dd000005]] for all of it, and this chapter is
-his, told to me afterwards over a great many evenings…
+The body is ordinary markdown. References to other entities are
+`[[uid]]` tokens, optionally with display text: `[[chr-cc000004|the
+curate]]` renders as *the curate* and still points at the entity…
 ```
 
 ### Frontmatter keys

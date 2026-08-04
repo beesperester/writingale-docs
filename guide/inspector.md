@@ -11,7 +11,7 @@ A row of small chips sits at the top — status, word count against any goal, ho
 <img src="/screenshots/inspector-overview-light.png" alt="The overview chips at the top of the inspector" class="light-only">
 <img src="/screenshots/inspector-overview-dark.png" alt="The overview chips at the top of the inspector" class="dark-only">
 
-*"The Exodus from London": in revision, 527 of 1,800 words, seven things point here and it points at six, no notes, set on days 4–6.*
+*"The Days of Imprisonment": in draft, 1,935 of 6,000 words, four things point here and it points at four, no notes, spanning hours 120–456.*
 
 ## Identity
 
@@ -43,7 +43,7 @@ Parts don't have their own Completion — their standing is always derived from 
 
 **Target words** gives this one chapter its own word goal, separate from the book-wide goal. A small ring fills as you write, and the list column shows the same progress under the chapter's name. See [Goals & Statistics](/guide/goals).
 
-**Material** marks the entity as aside material: it keeps its place in the manuscript tree but is left out of export, goals, and progress — for deleted scenes you're not ready to delete, voice tests, cut openings. Above: *The Martian Preface (cut)*, the example book's cut opening, with its own 400-word target — it still tracks its own progress, but adds nothing to the book's counts. See [Manuscript Structure § Material](/guide/manuscript#material).
+**Material** marks the entity as aside material: it keeps its place in the manuscript tree but is left out of export, goals, and progress — for deleted scenes you're not ready to delete, voice tests, cut openings. Above: *Text and rights (not part of the book)*, the example book's provenance page — it keeps its place in the tree but adds nothing to the book's counts. See [Manuscript Structure § Material](/guide/manuscript#material).
 
 ## Relationships
 
@@ -59,7 +59,7 @@ A relationship is one entry on one side — the narrator's "brother" doesn't aut
 <img src="/screenshots/inspector-storytime-light.png" alt="The Story Time section with a negative position, before the book opens" class="light-only">
 <img src="/screenshots/inspector-storytime-dark.png" alt="The Story Time section with a negative position, before the book opens" class="dark-only">
 
-Where the entity sits in your story's chronology, counted in the unit your book uses (days here — months or years work the same). **0 is the moment your book begins, and negative numbers are backstory**: above, *The gas jets on Mars* were recorded sixty days before page one. **From** places it (and is all the timeline needs); **To** turns it into a span; **Label** is your own description of the moment; **Row** picks which strip of the [timeline](/guide/timeline) it renders in.
+Where the entity sits in your story's chronology, counted in the unit your book uses (hours here — days, months or years work the same). **0 is the moment your book begins, and negative numbers are backstory**: above, *The gas jets on Mars* spans hours −1,440 to −1,200, two months before page one. **From** places it (and is all the timeline needs); **To** turns it into a span; **Label** is your own description of the moment; **Row** picks which strip of the [timeline](/guide/timeline) it renders in.
 
 ## Nesting, Progress & Contents
 
@@ -79,7 +79,7 @@ See [Manuscript Structure](/guide/manuscript) for the tree as a whole.
 <img src="/screenshots/inspector-annotates-light.png" alt="The Annotates section of a note, with a stale quoted passage" class="light-only">
 <img src="/screenshots/inspector-annotates-dark.png" alt="The Annotates section of a note, with a stale quoted passage" class="dark-only">
 
-On a note: everything the note is pinned to — a whole document, or an exact quoted passage, shown underneath. If the quoted passage no longer exists in the target, the pin is flagged **stale** in red rather than silently discarded; above, the example book's *Note on the cut preface* deliberately points at a paragraph that was cut. Pinning happens in the editor — select text, right-click — or from the target's own Notes section.
+On a note: everything the note is pinned to — a whole document, or an exact quoted passage, shown underneath. If the quoted passage no longer exists in the target, the pin is flagged **stale** in red rather than silently discarded; above, the example book's *Note on the epigraph* deliberately points at a passage that has since moved off that chapter. Pinning happens in the editor — select text, right-click — or from the target's own Notes section.
 
 ## Notes
 
