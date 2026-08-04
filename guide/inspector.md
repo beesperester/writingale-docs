@@ -2,7 +2,7 @@
 
 The inspector (<kbd>⌘4</kbd>, or the toolbar button) is where the selected entity's **facts** live — everything about a chapter or character that isn't its prose. It's the same panel behind the editor, the graph's glance panel, and the timeline. It starts closed; open it when you need it, and it follows whichever [pane](/guide/editor#splitting) is focused.
 
-What the inspector shows depends on what's selected: a chapter offers completion and story time, a character offers relationships and a journey, your custom faction offers its own fields. Every screenshot below is a real close-up from the bundled example book, *The Machine Stops*.
+What the inspector shows depends on what's selected: a chapter offers completion and story time, a character offers relationships and a journey, your custom faction offers its own fields. Every screenshot below is a real close-up from the bundled example book, *The War of the Worlds*.
 
 ## Overview
 
@@ -11,7 +11,7 @@ A row of small chips sits at the top — status, word count against any goal, ho
 <img src="/screenshots/inspector-overview-light.png" alt="The overview chips at the top of the inspector" class="light-only">
 <img src="/screenshots/inspector-overview-dark.png" alt="The overview chips at the top of the inspector" class="dark-only">
 
-*"Kuno's Story": in revision, 389 of 1,800 words, six things point here and it points at six, no notes, set in month 3.*
+*"The Days of Imprisonment": in draft, 1,935 of 6,000 words, four things point here and it points at four, no notes, spanning hours 120–456.*
 
 ## Identity
 
@@ -43,23 +43,23 @@ Parts don't have their own Completion — their standing is always derived from 
 
 **Target words** gives this one chapter its own word goal, separate from the book-wide goal. A small ring fills as you write, and the list column shows the same progress under the chapter's name. See [Goals & Statistics](/guide/goals).
 
-**Material** marks the entity as aside material: it keeps its place in the manuscript tree but is left out of export, goals, and progress — for deleted scenes you're not ready to delete, voice tests, cut openings. Above: *The Old Opening (cut)*, the example book's cut first chapter, with its own 400-word target — it still tracks its own progress, but adds nothing to the book's counts. See [Manuscript Structure § Material](/guide/manuscript#material).
+**Material** marks the entity as aside material: it keeps its place in the manuscript tree but is left out of export, goals, and progress — for deleted scenes you're not ready to delete, voice tests, cut openings. Above: *Text and rights (not part of the book)*, the example book's provenance page — it keeps its place in the tree but adds nothing to the book's counts. See [Manuscript Structure § Material](/guide/manuscript#material).
 
 ## Relationships
 
 <img src="/screenshots/inspector-relationships-light.png" alt="The Relationships section with a mother–son relationship" class="light-only">
 <img src="/screenshots/inspector-relationships-dark.png" alt="The Relationships section with a mother–son relationship" class="dark-only">
 
-Who is what to whom. Each relationship names a target, a **kind** in your own words — "sister", "rival", "creditor", nothing is prescribed — and an optional note. **Add Relationship** lists every possible partner (relationships connect things of the same kind: characters to characters, factions to factions). Above, Vashti's entry for Kuno: *son*, "Assigned to the other hemisphere at birth."
+Who is what to whom. Each relationship names a target, a **kind** in your own words — "sister", "rival", "creditor", nothing is prescribed — and an optional note. **Add Relationship** lists every possible partner (relationships connect things of the same kind: characters to characters, factions to factions). Above, the narrator's entry for his brother: *brother*, "In London through the exodus; they do not meet again until it is over."
 
-A relationship is one entry on one side — Vashti's "son" doesn't automatically write "mother" on Kuno — so record it where it matters, or on both sides as the book needs. Relationships also draw as connecting lines in the [graph](/guide/graph).
+A relationship is one entry on one side — the narrator's "brother" doesn't automatically write the answering entry on his brother — so record it where it matters, or on both sides as the book needs. Relationships also draw as connecting lines in the [graph](/guide/graph).
 
 ## Story Time
 
 <img src="/screenshots/inspector-storytime-light.png" alt="The Story Time section with a negative position, before the book opens" class="light-only">
 <img src="/screenshots/inspector-storytime-dark.png" alt="The Story Time section with a negative position, before the book opens" class="dark-only">
 
-Where the entity sits in your story's chronology, counted in the unit your book uses (months here — days or years work the same). **0 is the moment your book begins, and negative numbers are backstory**: above, *Kuno's ascent* happened twelve months before page one. **From** places it (and is all the timeline needs); **To** turns it into a span; **Label** is your own description of the moment; **Row** picks which strip of the [timeline](/guide/timeline) it renders in.
+Where the entity sits in your story's chronology, counted in the unit your book uses (hours here — days, months or years work the same). **0 is the moment your book begins, and negative numbers are backstory**: above, *The gas jets on Mars* spans hours −1,440 to −1,200, two months before page one. **From** places it (and is all the timeline needs); **To** turns it into a span; **Label** is your own description of the moment; **Row** picks which strip of the [timeline](/guide/timeline) it renders in.
 
 ## Nesting, Progress & Contents
 
@@ -79,7 +79,7 @@ See [Manuscript Structure](/guide/manuscript) for the tree as a whole.
 <img src="/screenshots/inspector-annotates-light.png" alt="The Annotates section of a note, with a stale quoted passage" class="light-only">
 <img src="/screenshots/inspector-annotates-dark.png" alt="The Annotates section of a note, with a stale quoted passage" class="dark-only">
 
-On a note: everything the note is pinned to — a whole document, or an exact quoted passage, shown underneath. If the quoted passage no longer exists in the target, the pin is flagged **stale** in red rather than silently discarded; above, the example book's *Note on the old opening* deliberately points at a paragraph that was cut. Pinning happens in the editor — select text, right-click — or from the target's own Notes section.
+On a note: everything the note is pinned to — a whole document, or an exact quoted passage, shown underneath. If the quoted passage no longer exists in the target, the pin is flagged **stale** in red rather than silently discarded; above, the example book's *Note on the epigraph* deliberately points at a passage that has since moved off that chapter. Pinning happens in the editor — select text, right-click — or from the target's own Notes section.
 
 ## Notes
 

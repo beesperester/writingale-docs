@@ -2,7 +2,7 @@
 
 Chapters, characters, locations, items, and notes are not hard-coded. Every book defines its own **types** — its own kinds of things — and the whole app reshapes itself around them: sidebar, list, inspector, graph, timeline.
 
-The example book adds a custom type on top of the defaults: **Faction** (organizations with a motto, members, holdings, and a founding year — the Central Committee and the Homeless).
+The example book adds a custom type on top of the defaults: **Faction** (organizations with a motto, members, holdings, and a founding year — the Martians and the artilleryman's New Order).
 
 ## The type editor
 

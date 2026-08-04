@@ -1,6 +1,6 @@
 # File Format
 
-Complete reference for the on-disk format. Everything is YAML and markdown; nothing is binary. The examples come from the bundled example book, *The Machine Stops* (after E. M. Forster's 1909 story).
+Complete reference for the on-disk format. Everything is YAML and markdown; nothing is binary. The examples come from the bundled example book, *The War of the Worlds* (after H. G. Wells's 1898 story).
 
 ## Book folder layout
 
@@ -20,12 +20,12 @@ MyBook/
 ## `book.yaml`
 
 ```yaml
-title: The Machine Stops
-author: after E. M. Forster (1909)
-timeUnit: month          # the unit story time is counted in
+title: The War of the Worlds
+author: H. G. Wells (1898)
+timeUnit: hour           # the unit story time is counted in
 goal:                    # optional book-wide writing goal
   comparator: at-least   # about | at-least | at-most
-  count: 12000
+  count: 60000
   unit: words            # words | characters
   deadline: 2026-12-31   # optional, yyyy-MM-dd
 manuscript:              # canonical order of the manuscript roots
@@ -63,7 +63,7 @@ types:
             - { id: final,    name: Final,    color: green }
     fields:
       - { key: pov, label: POV, kind: reference, cardinality: one,
-          types: [character], role: pov }
+          types: [character], role: pov }   # types may list several
     template: ""         # starter body for new entities
 ```
 
@@ -95,18 +95,21 @@ One markdown file per entity: YAML frontmatter, then the body.
 ---
 uid: chp-bb000003          # <prefix>-<8 hex>, immutable
 type: chapter              # authoritative type id
-name: Kuno's Story
-created: 2026-07-28        # yyyy-MM-dd
-status: revision           # stage id (status trait)
-goal: 1800                 # per-entity word target
-pov: chr-cc000002          # custom field (reference)
+name: The Days of Imprisonment
+created: 2026-08-04        # yyyy-MM-dd
+status: draft              # stage id (status trait)
+goal: 6000                 # per-entity word target
+pov: chr-cc000001          # custom field (reference)
 time:                      # timeline trait
-  from: 3
-  label: Kuno's account
+  from: 120
+  to: 456
+  label: the days of imprisonment
+  row: The Narrator        # optional named timeline row
 ---
 
-He tells it plainly, in his own cell, with the plate switched off
-between them for the first time in their lives…
+The body is ordinary markdown. References to other entities are
+`[[uid]]` tokens, optionally with display text: `[[chr-cc000004|the
+curate]]` renders as *the curate* and still points at the entity…
 ```
 
 ### Frontmatter keys

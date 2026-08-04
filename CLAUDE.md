@@ -70,8 +70,11 @@ Recording + Accessibility permissions.
 
 ### Currently captured
 
-All from the bundled example book, *The Machine Stops*, at a 1512×949
-window. **Full-window** shots introduce whole views; everything else is
+All from the bundled example book, *The War of the Worlds* — Wells's
+complete novel, 27 chapters across two books — at a 1512×949 window. **Every checked-in screenshot predates the
+2026-08-04 example-book rebuild and therefore shows the retired
+*Machine Stops* material — all of them need recapturing; the
+compositions below are already written for the new book.** **Full-window** shots introduce whole views; everything else is
 a **crop** of a full-window capture (crop geometries in points,
 `WxH+X+Y`, window origin top-left; the inspector column is
 `297x…+1215+…`).
@@ -81,13 +84,13 @@ Full-window:
 | name | composition | used on |
 |---|---|---|
 | `welcome` | Welcome screen, no automation args | [what-is-writingale.md](guide/what-is-writingale.md), [quick-start.md](guide/quick-start.md) |
-| `editor` | "The Journey North" open | [editor.md](guide/editor.md), [quick-start.md](guide/quick-start.md) |
-| `editor-split` | "The Journey North" above a timeline tab, each pane with its own tab strip (⌘⌥↓, then Views → Timeline in the new pane) | [editor.md](guide/editor.md) |
-| `editor-hidden` | "The Journey North", Hide Interface toggled (⌘. via System Events keystroke) | [editor.md](guide/editor.md) |
-| `character` | "Vashti" with inspector open | [concepts.md](guide/concepts.md) |
-| `journey` | "Kuno" with inspector open, scrolled to bottom (30 ticks) | [journeys.md](guide/journeys.md) |
+| `editor` | "The Heat-Ray" open | [editor.md](guide/editor.md), [quick-start.md](guide/quick-start.md) |
+| `editor-split` | "The Heat-Ray" above a timeline tab, each pane with its own tab strip (⌘⌥↓, then Views → Timeline in the new pane) | [editor.md](guide/editor.md) |
+| `editor-hidden` | "The Heat-Ray", Hide Interface toggled (⌘. via System Events keystroke) | [editor.md](guide/editor.md) |
+| `character` | "The Narrator" with inspector open | [concepts.md](guide/concepts.md) |
+| `journey` | "The Narrator" with inspector open, scrolled to bottom (30 ticks) | [journeys.md](guide/journeys.md) |
 | `graph` | Graph view, settled layout | [graph.md](guide/graph.md) |
-| `timeline` | Timeline view (month-based spacing — chapters at months 0/2/3/4, spans to 84) | [timeline.md](guide/timeline.md) |
+| `timeline` | Timeline view (hour-based spacing — 27 chapters across hours 0–900 on two rows, the observatory span at −1,440…−1,200, the epilogue at 17,520) | [timeline.md](guide/timeline.md) |
 
 **`timeline` is stale as of 2026-08-04** — Story Order was rebuilt on a
 proportional axis (cards positioned and sized by time, a numbered
@@ -103,30 +106,30 @@ Crops (source composition → crop):
 
 | name | source + crop | used on |
 |---|---|---|
-| `inspector-overview` | "Kuno's Story" + inspector, top → `297x70+1215+62` | [inspector.md](guide/inspector.md) |
+| `inspector-overview` | "The Days of Imprisonment" + inspector, top → `297x70+1215+62` | [inspector.md](guide/inspector.md) |
 | `inspector-identity` | same → `297x175+1215+135` | [inspector.md](guide/inspector.md) |
 | `inspector-completion` | same → `297x70+1215+312` | [inspector.md](guide/inspector.md) |
-| `inspector-goal` | "The Old Opening (cut)" + inspector (material on, goal 400) → `297x200+1215+362` | [inspector.md](guide/inspector.md), [goals.md](guide/goals.md) |
-| `inspector-storytime` | "Kuno's ascent" + inspector (From −12 months) → `297x225+1215+300` | [inspector.md](guide/inspector.md) |
+| `inspector-goal` | "The Days of Imprisonment" + inspector (goal 6,000); "Text and rights (not part of the book)" for the material flag → `297x200+1215+362` | [inspector.md](guide/inspector.md), [goals.md](guide/goals.md) |
+| `inspector-storytime` | "The gas jets on Mars" + inspector (From −1,440, To −1,200 hours) → `297x225+1215+300` | [inspector.md](guide/inspector.md) |
 | `inspector-image` | "Cover" + inspector → `297x430+1215+285` | [inspector.md](guide/inspector.md) |
-| `inspector-relationships` | "Vashti" + inspector → `297x155+1215+285` | [inspector.md](guide/inspector.md) |
-| `inspector-nesting` | "Part I — The Air-Ship" + inspector, scrolled 8 ticks → `297x407+1215+128` | [inspector.md](guide/inspector.md) |
-| `inspector-annotates` | "Note on the old opening" + inspector → `297x110+1215+515` | [inspector.md](guide/inspector.md) |
-| `inspector-notes` | "The Room and the Plate" + inspector, scrolled 14 ticks → `297x132+1215+228` | [inspector.md](guide/inspector.md) |
-| `inspector-fields-single` | "The Central Committee" + inspector → `297x130+1215+485` | [inspector.md](guide/inspector.md) |
-| `inspector-fields-multi` | "Kuno's Story" + inspector, scrolled 14 ticks → `297x350+1215+330` | [inspector.md](guide/inspector.md) |
+| `inspector-relationships` | "The Narrator" + inspector → `297x155+1215+285` | [inspector.md](guide/inspector.md) |
+| `inspector-nesting` | "Book One — The Coming of the Martians" + inspector, scrolled 8 ticks → `297x407+1215+128` | [inspector.md](guide/inspector.md) |
+| `inspector-annotates` | "Note on the epigraph" + inspector → `297x110+1215+515` | [inspector.md](guide/inspector.md) |
+| `inspector-notes` | "Dead London" + inspector, scrolled 14 ticks → `297x132+1215+228` | [inspector.md](guide/inspector.md) |
+| `inspector-fields-single` | "The New Order" + inspector → `297x130+1215+485` | [inspector.md](guide/inspector.md) |
+| `inspector-fields-multi` | "The Days of Imprisonment" + inspector, scrolled 14 ticks → `297x350+1215+330` | [inspector.md](guide/inspector.md) |
 | `inspector-referencedby` | same → `297x240+1215+695` | [inspector.md](guide/inspector.md) |
-| `inspector-journey` | "Kuno" + inspector, scrolled to bottom → `297x610+1215+325` | [inspector.md](guide/inspector.md) |
-| `editor-focus` | "The Journey North", `-editor.focusHighlight sentence`, caret clicked into the last paragraph's second sentence → `1000x580+500+55` | [editor.md](guide/editor.md) |
-| `editor-raw` | "The Journey North", `-editor.markdownMode raw` → `1000x580+500+55` | [editor.md](guide/editor.md) |
-| `editor-preview` | "The Journey North", `-editor.markdownMode preview` → `1000x580+500+55` | [editor.md](guide/editor.md) |
-| `export-sheet` | "The Journey North", `-autoSheet export` → `800x600+360+180` | [export.md](guide/export.md) |
-| `book-settings` | "The Journey North", `-autoSheet settings` → `470x530+525+210` | [goals.md](guide/goals.md) |
-| `type-editor` | "The Journey North", `-autoSheet types` → `800x600+360+180` | [entity-types.md](guide/entity-types.md) |
-| `annotate-menu` | "The Journey North"; drag-select a phrase on the "commits an atrocity" line (CGEvent drag ~+665+247 → +850+247 window-relative), right-click the selection, **full-screen** capture (the menu is its own window) → crop `640x270+500+118` window-relative | [annotations.md](guide/annotations.md) |
-| `split-here` | "The Journey North"; right-click in the editor body (CGEvent right-click, screen 1500,700 with the window at 976,268), **region** capture of the menu's app items → `370x160` at screen `1455,678` (the menu is its own window, so capture the screen region, not the app window) | [manuscript.md](guide/manuscript.md) |
-| `quick-insert` | "The Journey North"; ⌘K then type `vash` → region capture of the card, `580x162+468+141` window-relative | [editor.md](guide/editor.md) |
-| `editor-tabs` | "The Journey North" pinned, a timeline tab, and a provisional (italic) tab from a single list click → crop of the tab strip | [editor.md](guide/editor.md) |
+| `inspector-journey` | "The Narrator" + inspector, scrolled to bottom → `297x610+1215+325` | [inspector.md](guide/inspector.md) |
+| `editor-focus` | "The Heat-Ray", `-editor.focusHighlight sentence`, caret clicked into the last paragraph's second sentence → `1000x580+500+55` | [editor.md](guide/editor.md) |
+| `editor-raw` | "The Heat-Ray", `-editor.markdownMode raw` → `1000x580+500+55` | [editor.md](guide/editor.md) |
+| `editor-preview` | "The Heat-Ray", `-editor.markdownMode preview` → `1000x580+500+55` | [editor.md](guide/editor.md) |
+| `export-sheet` | "The Heat-Ray", `-autoSheet export` → `800x600+360+180` | [export.md](guide/export.md) |
+| `book-settings` | "The Heat-Ray", `-autoSheet settings` → `470x530+525+210` | [goals.md](guide/goals.md) |
+| `type-editor` | "The Heat-Ray", `-autoSheet types` → `800x600+360+180` | [entity-types.md](guide/entity-types.md) |
+| `annotate-menu` | "The Heat-Ray"; drag-select a phrase in the paragraph where the beam is first described (CGEvent drag ~+665+247 → +850+247 window-relative), right-click the selection, **full-screen** capture (the menu is its own window) → crop `640x270+500+118` window-relative | [annotations.md](guide/annotations.md) |
+| `split-here` | "The Heat-Ray"; right-click in the editor body (CGEvent right-click, screen 1500,700 with the window at 976,268), **region** capture of the menu's app items → `370x160` at screen `1455,678` (the menu is its own window, so capture the screen region, not the app window) | [manuscript.md](guide/manuscript.md) |
+| `quick-insert` | "The Heat-Ray"; ⌘K then type `arti` → region capture of the card, `580x162+468+141` window-relative | [editor.md](guide/editor.md) |
+| `editor-tabs` | "The Heat-Ray" pinned, a timeline tab, and a provisional (italic) tab from a single list click → crop of the tab strip | [editor.md](guide/editor.md) |
 | `editor-tab-drag` | A tab dragged over the lower quarter of a pane, bottom half highlighted → crop of the editor area mid-drag | [editor.md](guide/editor.md) |
 | `graph-controls` | Graph tab, `-autoSection graph` → crop of the control row (chips, outlines, re-layout, reset) | [graph.md](guide/graph.md) |
 | `goal-popover` | Goal ring clicked (293,131 screen), Goal tab → region capture, crop `340x330+0+40` | [goals.md](guide/goals.md) |
@@ -134,11 +137,14 @@ Crops (source composition → crop):
 
 Capture-supporting edits to `app/ExampleBook`, made so sections aren't
 photographed empty (all covered by `swift test --filter
-ExampleBookTests`): Vashti/Kuno carry a mother/son `relationships:`
-entry; *The Old Opening (cut)* has `goal: 400` (and, deliberately, no
-`time:` — as material it sits in the timeline's untimed trailing
-column); story times are **month-based** (`timeUnit: month`), spaced so
-timeline columns don't stack.
+ExampleBookTests`): the narrator carries `relationships:` entries for
+his brother and the curate; *Text and rights (not part of the book)* is
+`material: true` (and, deliberately, has no `time:` — as material it
+sits in the timeline's untimed trailing strip); story times are
+**hour-based** (`timeUnit: hour`), spread across the invasion so cards
+don't stack; every chapter carries a timeline `row:` ("The Narrator",
+"The Brother") so the timeline shows both threads running in parallel;
+two chapters carry a `goal:` so the goal ring has something to show.
 
 ### Screenshot gaps
 

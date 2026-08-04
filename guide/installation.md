@@ -11,7 +11,7 @@ Writingale is a native macOS app, available on the **Mac App Store**.
 Get Writingale from the Mac App Store. Updates arrive through the App Store like any other app — your books are plain files on disk and are never touched by an update.
 
 ::: tip Try the example book
-Open the bundled example book from the welcome screen to explore a complete sample project, *The Machine Stops* (after E. M. Forster), that uses every feature.
+Open the bundled example book from the welcome screen to explore a complete sample project, *The War of the Worlds* (after H. G. Wells), that uses every feature.
 :::
 
 ## Try the demo

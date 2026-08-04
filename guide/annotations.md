@@ -22,7 +22,7 @@ Prose moves. Writingale keeps quoted annotations attached through three layers:
 
 ## Stale annotations
 
-If all three layers fail — the passage is genuinely gone — the annotation is flagged **stale** rather than silently dropped. Stale annotations are marked in red in the inspector so you can re-anchor them to new text or retire them deliberately. The example book keeps one stale annotation on purpose (*Note on the old opening*), pointing at an opening paragraph that was cut in the second draft.
+If all three layers fail — the passage is genuinely gone — the annotation is flagged **stale** rather than silently dropped. Stale annotations are marked in red in the inspector so you can re-anchor them to new text or retire them deliberately. The example book keeps one stale annotation on purpose (*Note on the epigraph*), pointing at a passage that has since moved off the chapter it was pinned to.
 
 ::: tip Where to see annotations
 - On the **note**: the inspector's *Annotates* section lists everything it's pinned to, with quote previews and stale flags.
