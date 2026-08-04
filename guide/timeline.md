@@ -59,4 +59,4 @@ Drag it onto the board, or select it and fill in the inspector's **Story Time** 
 
 ## Saving the timeline
 
-The share button in the top-right corner writes the timeline to a **PDF** — the whole board, however far it scrolls off screen, on a single page in whichever order you're viewing. See [Exporting](/guide/export#exporting-the-graph-and-the-timeline).
+With the timeline tab in front, **Export** writes it to a **PDF** — the whole board, however far it scrolls off screen, on a single page in whichever order you're viewing. See [Exporting](/guide/export#exporting-the-graph-and-the-timeline).

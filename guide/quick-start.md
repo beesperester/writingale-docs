@@ -44,7 +44,9 @@ Click the ring in the sidebar header to set a writing goal — e.g. *at least 60
 
 ## 6. Export
 
-Press <kbd>⌘⇧E</kbd> (or **Book → Export Manuscript…**). The export sheet shows a live preview of the finished manuscript: chapters in order, headings tracking parts and chapters, every link written out as a proper name, your private `%%` comments stripped. Save it as one clean file — markdown or PDF — ready for an agent, an editor, or a printer.
+Open the **Manuscript** tab, then press <kbd>⌘⇧E</kbd> (or the Export button in the top-right). The export sheet shows a live preview of the finished manuscript: chapters in order, headings tracking parts and chapters, every link written out as a proper name, your private `%%` comments stripped. Save it as one clean file — markdown or PDF — ready for an agent, an editor, or a printer.
+
+Export always acts on the tab you're in, so the same button hands you a single chapter, the graph, or the timeline when that's what's in front of you.
 
 ## Where to go next
 

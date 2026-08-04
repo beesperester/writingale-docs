@@ -6,7 +6,7 @@
 |---|---|
 | <kbd>⌘N</kbd> | New entity (of the selected type) |
 | <kbd>⌘R</kbd> | Reload from Disk |
-| <kbd>⌘⇧E</kbd> | Export Manuscript… |
+| <kbd>⌘⇧E</kbd> | Export whatever the current tab shows (manuscript, document, graph, or timeline) |
 | <kbd>⌘⇧W</kbd> | Close Book (back to the welcome screen) |
 
 ## Navigation & layout
@@ -50,4 +50,4 @@
 | `[[` | Reference autocomplete popup |
 | <kbd>⌘</kbd>-click | Follow reference / open annotation |
 
-Menus not listed here (View → Highlight, View → Fixed Scrolling, Book → Book Settings…, Book → Edit Entity Types…, Book → Export Graph/Timeline as PDF…) have no default shortcut.
+Menus not listed here (View → Highlight, View → Fixed Scrolling, Book → Book Settings…, Book → Edit Entity Types…) have no default shortcut.

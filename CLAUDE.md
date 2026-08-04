@@ -94,6 +94,11 @@ proportional axis (cards positioned and sized by time, a numbered
 ruler with scale-break marks, a trailing *Unscheduled* strip) and
 Manuscript Order is now an evenly numbered strip. Recapture both.
 
+**`graph-controls` is stale as of 2026-08-04** — the graph's and the
+timeline's own share buttons are gone; exporting either is now the one
+context-aware Export button in the window toolbar. Recapture the
+control row without it.
+
 Crops (source composition → crop):
 
 | name | source + crop | used on |
@@ -123,7 +128,7 @@ Crops (source composition → crop):
 | `quick-insert` | "The Journey North"; ⌘K then type `vash` → region capture of the card, `580x162+468+141` window-relative | [editor.md](guide/editor.md) |
 | `editor-tabs` | "The Journey North" pinned, a timeline tab, and a provisional (italic) tab from a single list click → crop of the tab strip | [editor.md](guide/editor.md) |
 | `editor-tab-drag` | A tab dragged over the lower quarter of a pane, bottom half highlighted → crop of the editor area mid-drag | [editor.md](guide/editor.md) |
-| `graph-controls` | Graph tab, `-autoSection graph` → crop of the control row (chips, outlines, re-layout, reset, share) | [graph.md](guide/graph.md) |
+| `graph-controls` | Graph tab, `-autoSection graph` → crop of the control row (chips, outlines, re-layout, reset) | [graph.md](guide/graph.md) |
 | `goal-popover` | Goal ring clicked (293,131 screen), Goal tab → region capture, crop `340x330+0+40` | [goals.md](guide/goals.md) |
 | `goal-history` | …then History tab clicked (326,181) → same crop. Needs a seeded `.writingale/stats.json` in the /tmp book copy or the tab shows all zeros. | [goals.md](guide/goals.md) |
 
@@ -156,6 +161,12 @@ timeline columns don't stack.
   documents"): a shot of the flowing column with a labeled chapter
   divider mid-view, and the chapter in view highlighted in the list.
   `-autoContinuous YES` opens the manuscript tab directly.
+- **Reordering and nesting by drag** ([manuscript.md](guide/manuscript.md)
+  "The tree", added 2026-08-04): two crops of the manuscript list
+  mid-drag — one with the insertion rule on a row's edge (reorder),
+  one with the outline around a part (nest). Both need a held drag, so
+  the capture has to drive the mouse (`left_mouse_down`, move, capture,
+  then release) rather than screenshot a settled window.
 
 Pages with no screenshots that may not need one (simpler/textual
 content — use judgement, not a hard rule): `installation.md`,

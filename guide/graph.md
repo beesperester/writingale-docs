@@ -24,8 +24,9 @@ Clicking a dot shows its contents in the glance panel on the right — the same 
 - The **chips** along the top toggle each kind on and off — hide notes to see the story's social web, or show only chapters to see pure structure.
 - The **folder button** turns the group outlines on and off.
 - **Re-layout** rearranges the map; **reset** restores pan and zoom.
-- The **share button** saves the graph as a PDF — the whole map fitted to one page, not just the part on screen. See [Exporting](/guide/export#exporting-the-graph-and-the-timeline).
 - Pan and zoom with the usual gestures.
+
+With the graph tab in front, **Export** saves it as a PDF — the whole map fitted to one page, not just the part on screen. See [Exporting](/guide/export#exporting-the-graph-and-the-timeline).
 
 ## Keeping a kind off the map
 
