@@ -43,6 +43,8 @@ The switcher in the toolbar shows which view you're in and flips between them: *
 
 The document font, size, and line height are set in **Settings** <kbd>⌘,</kbd>, with a live preview. The default is the system serif at 15.5 pt. Your choice follows your story everywhere it's read: the editor, [Preview](#preview), glance panels, and the [export](/guide/export) preview and PDF.
 
+Settings also holds the [timeline's handling of empty stretches](/guide/timeline#skipped-stretches). Both are app-wide preferences, not part of any one book.
+
 ## Links
 
 - Type `[[` to open the popup — everything in your book, grouped by kind. Pick one and the mention appears as its name in the accent color.
@@ -143,7 +145,7 @@ Tabs aren't only for chapters. The **Views** in the sidebar open as tabs too:
 
 ### It's remembered
 
-Your panes and tabs are saved with the book. Close it, come back next week, and the same documents are open in the same arrangement.
+Your panes and tabs are saved with the book — including how you sized them. Close it, come back next week, and the same documents are open in the same arrangement, with the separators where you left them.
 
 ## Adding documents from your Mac
 

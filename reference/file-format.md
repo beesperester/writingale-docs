@@ -149,4 +149,4 @@ Local, per-book writing history. Delta-based and never decreasing. Gitignored by
 
 ## `.writingale/workspace.json`
 
-Which documents you had open, in which panes — restored when you reopen the book. Local and gitignored like the stats; deleting it simply starts you with one empty pane. Nothing about the book itself lives here, so it never matters to anyone you share the folder with.
+Which documents you had open, in which panes, and how you had sized the splits — restored when you reopen the book. Local and gitignored like the stats; deleting it simply starts you with one empty pane. Nothing about the book itself lives here, so it never matters to anyone you share the folder with.
