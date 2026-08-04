@@ -89,6 +89,11 @@ Full-window:
 | `graph` | Graph view, settled layout | [graph.md](guide/graph.md) |
 | `timeline` | Timeline view (month-based spacing — chapters at months 0/2/3/4, spans to 84) | [timeline.md](guide/timeline.md) |
 
+**`timeline` is stale as of 2026-08-04** — Story Order was rebuilt on a
+proportional axis (cards positioned and sized by time, a numbered
+ruler with scale-break marks, a trailing *Unscheduled* strip) and
+Manuscript Order is now an evenly numbered strip. Recapture both.
+
 Crops (source composition → crop):
 
 | name | source + crop | used on |

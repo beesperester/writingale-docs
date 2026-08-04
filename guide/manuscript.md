@@ -8,9 +8,9 @@ The list column shows the manuscript as a tree, with disclosure triangles, progr
 
 To restructure:
 
-- **Drag** entries up, down, or into each other.
-- Right-click → **Move Into** to re-parent from a menu.
-- Or use the inspector's **Nesting** picker and **Contents** list, which do the same with buttons — including **New Sub-Chapter** to create a child in place. See [the inspector](/guide/inspector#nesting-progress--contents).
+- Right-click → **Move Into** to move an entry inside a part, or back out to the top level.
+- Use the inspector's **Nesting** picker and **Contents** list, which do the same with buttons — including reorder arrows and **New Sub-Chapter** to create a child in place. See [the inspector](/guide/inspector#nesting-progress--contents).
+- Or **drag** the cards in the [timeline's Manuscript Order](/guide/timeline#story-order-vs-manuscript-order), where the whole book is laid out as one strip in reading order — chapters individually, or a whole part at once by its band.
 
 ## Progress rings
 
