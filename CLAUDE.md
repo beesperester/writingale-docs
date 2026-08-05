@@ -148,6 +148,20 @@ two chapters carry a `goal:` so the goal ring has something to show.
 
 ### Screenshot gaps
 
+- **Line numbers + wrap column — docs AND shots pending**
+  (2026-08-05, deferred at the user's request): the app gained a
+  line-number gutter (logical lines; hidden in distraction-free,
+  absent from the continuous column), a `Ln, Col` caret readout in
+  the pane's status bar, and an optional wrap column (Settings →
+  Editor, off by default, 80 characters measured in digit widths).
+  [editor.md](guide/editor.md) has **no prose for any of this yet**
+  (natural homes: a "Wrap column" subsection under "Font & line
+  height", a "Line numbers" section, and a mention in the Saving
+  section's status-bar sentence); every editor shot also now lacks
+  the gutter and readout. New shots wanted: a crop of the gutter
+  beside a wrapped paragraph (numbers skip continuation lines) and a
+  crop of the Settings window's Editor section.
+
 - **The `editor` full-window shot is stale (2026-07-31, worse since
   2026-08-03)**: the window toolbar gained a format capsule (heading
   menu, bold, italic, strikethrough, code, lists menu) left of the
