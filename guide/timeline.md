@@ -30,7 +30,7 @@ How long is "long" is up to you: **Writingale → Settings → Timeline** has a 
 
 A card is never drawn narrower than it takes to read it, which means that at any given scale the narrowest card still covers a real stretch of story time — in a book counted in months, roughly ten of them. Chapters closer together than that crowd under one another, and there's no room to place them precisely.
 
-The **slider** in the top-right corner is the way out: drag it right and the board stretches, so the same card width covers less time and the crowd spreads apart. Drag it left to pull the whole book back into view. Double-click the reading beside it to go back to 1×. It's only offered in Story Order — the manuscript strip is evenly spaced by definition.
+The **zoom buttons** in the top-right corner are the way out: **+** doubles the board's width, so the same card width covers less time and the crowd spreads apart; **−** halves it to pull the whole book back into view. Each click keeps the moment at the centre of your view in place, and double-clicking the reading between the buttons goes back to 1×. Zoom is only offered in Story Order — the manuscript strip is evenly spaced by definition.
 
 ## Rearranging by dragging
 
