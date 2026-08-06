@@ -18,13 +18,14 @@ Clicking a dot shows its contents in the glance panel on the right — the same 
 
 ## Controls
 
-<img src="/screenshots/graph-controls-light.png" alt="The graph's control row: one chip per kind, then group outlines, re-layout, reset, and share" class="light-only">
-<img src="/screenshots/graph-controls-dark.png" alt="The graph's control row: one chip per kind, then group outlines, re-layout, reset, and share" class="dark-only">
+<img src="/screenshots/graph-controls-light.png" alt="The graph's control row: one chip per kind, then group outlines, re-layout and reset" class="light-only">
+<img src="/screenshots/graph-controls-dark.png" alt="The graph's control row: one chip per kind, then group outlines, re-layout and reset" class="dark-only">
 
 - The **chips** along the top toggle each kind on and off — hide notes to see the story's social web, or show only chapters to see pure structure.
 - The **folder button** turns the group outlines on and off.
 - **Re-layout** rearranges the map; **reset** restores pan and zoom.
-- Pan and zoom with the usual gestures.
+- **Drag the background** to pan, and **pinch** to zoom. A book of any length draws a map wider than the window, so getting around it is expected — the picture above is one stretch of a much longer spine.
+- <kbd>⌘F</kbd> searches the map: matches ring in colour where they stand and everything else recedes. See [Search & Filtering](/guide/search#finding-things-in-the-graph-and-the-timeline).
 
 With the graph tab in front, **Export** saves it as a PDF — the whole map fitted to one page, not just the part on screen. See [Exporting](/guide/export#exporting-the-graph-and-the-timeline).
 

@@ -4,10 +4,10 @@ Writingale tracks two kinds of targets: a **book-wide goal** and **per-chapter g
 
 ## The book goal
 
-Set your goal in **Book → Book Settings…**: a target count (words or characters), how strict it is, and an optional deadline.
+Set your goal in **Book → Book Settings…**: a target count (words or characters), how strict it is, and an optional deadline. It sits at the foot of the sheet, below the title, the author and the [timeline's settings](/guide/timeline#row-order).
 
-<img src="/screenshots/book-settings-light.png" alt="Book Settings: title and author, the timeline's unit, and the writing goal" class="light-only">
-<img src="/screenshots/book-settings-dark.png" alt="Book Settings: title and author, the timeline's unit, and the writing goal" class="dark-only">
+<img src="/screenshots/book-settings-light.png" alt="The foot of Book Settings: the timeline's row order, then the writing goal with its comparator, count and deadline" class="light-only">
+<img src="/screenshots/book-settings-dark.png" alt="The foot of Book Settings: the timeline's row order, then the writing goal with its comparator, count and deadline" class="dark-only">
 
 - ***At least*** is the classic novel target — 60,000 words by December.
 - ***At most*** fits short-form limits — a competition cap, a query letter.

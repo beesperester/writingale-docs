@@ -6,7 +6,7 @@ export default defineConfig({
   lang: 'en-US',
   cleanUrls: true,
   lastUpdated: true,
-  srcExclude: ['CLAUDE.md'],
+  srcExclude: ['CLAUDE.md', 'FEATURES.md', 'capture/**'],
 
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],

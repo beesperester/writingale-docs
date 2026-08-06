@@ -1,6 +1,6 @@
 # Timeline View
 
-The timeline lays your story out against **story time**, counted in a unit you choose in Book Settings — months for the example book, days or years for yours. 0 is the beginning of the book; negative values are backstory.
+The timeline lays your story out against **story time**, counted in a unit you choose in Book Settings — hours for the example book, days or years for yours. 0 is the beginning of the book; negative values are backstory.
 
 <img src="/screenshots/timeline-light.png" alt="The timeline view of the example book" class="light-only">
 <img src="/screenshots/timeline-dark.png" alt="The timeline view of the example book" class="dark-only">
@@ -26,9 +26,33 @@ A book whose events cluster around a few moments would be mostly blank on a true
 
 How long is "long" is up to you: **Writingale → Settings → Timeline** has a switch to turn shortening off entirely and a threshold, given as a share of the book's whole span. At 15% (the default), any empty run longer than a seventh of the book is shortened.
 
+### Choosing what shows
+
+<img src="/screenshots/timeline-controls-light.png" alt="The timeline's header: type chips, the ordering switch, the summary and the zoom buttons" class="light-only">
+<img src="/screenshots/timeline-controls-dark.png" alt="The timeline's header: type chips, the ordering switch, the summary and the zoom buttons" class="dark-only">
+
+The **chips** at the left of the header are one per kind of thing that can appear on the board — chapters, characters, whatever your book defines. Switch one off and it leaves the board: hide the notes to see the chapters alone, or hide the chapters to look at world events on their own. A part's band goes with its chapters, since the band is only a summary of them.
+
+The middle of the header switches [story order and manuscript order](#story-order-vs-manuscript-order); the right end reports what's on the board and holds the zoom buttons.
+
+### Focusing on one part
+
+<img src="/screenshots/timeline-breadcrumb-light.png" alt="The timeline focused on Book One, with a breadcrumb row under the header" class="light-only">
+<img src="/screenshots/timeline-breadcrumb-dark.png" alt="The timeline focused on Book One, with a breadcrumb row under the header" class="dark-only">
+
+Double-click a **part's band** and the board narrows to that part: its chapters stay, the rest drop away, and the scale rebuilds to fit just those. It's how you look closely at three days in the middle of a book that spans years.
+
+Events and character lanes stay put while you're focused — the world goes on around a part, and that's usually the point of looking. A **breadcrumb row** appears under the header, naming the book and every group on the way down; click any step to come back out.
+
+While you're focused, the [export](/guide/export) sheet offers a **Scope** choice: the whole book, or just the part you're looking at.
+
+### Row order
+
+The rows sort themselves — by the order your kinds are declared, then by first appearance. To fix an order of your own, open **Book Settings → Row Order** and move the rows with the arrows. Rows you don't list keep their automatic place after the ones you do, and a book you never touch stays automatic.
+
 ### Giving the board more room
 
-A card is never drawn narrower than it takes to read it, which means that at any given scale the narrowest card still covers a real stretch of story time — in a book counted in months, roughly ten of them. Chapters closer together than that crowd under one another, and there's no room to place them precisely.
+A card is never drawn narrower than it takes to read it, which means that at any given scale the narrowest card still covers a real stretch of story time. Chapters closer together than that crowd under one another, and there's no room to place them precisely.
 
 The **zoom buttons** in the top-right corner are the way out: **+** doubles the board's width, so the same card width covers less time and the crowd spreads apart; **−** halves it to pull the whole book back into view. Each click keeps the moment at the centre of your view in place, and double-clicking the reading between the buttons goes back to 1×. Zoom is only offered in Story Order — the manuscript strip is evenly spaced by definition.
 
