@@ -8,15 +8,19 @@ Writingale is a native macOS app, available on the **Mac App Store**.
 
 ## Install
 
-Get Writingale from the Mac App Store. Updates arrive through the App Store like any other app — your books are plain files on disk and are never touched by an update.
+Writingale is **free to download** from the Mac App Store. Updates arrive through the App Store like any other app — your books are plain files on disk and are never touched by an update.
 
 ::: tip Try the example book
 Open the bundled example book from the welcome screen to explore a complete sample project, *The War of the Worlds* (after H. G. Wells), that uses every feature.
 :::
 
-## Try the demo
+## Try it before you buy
 
-A free demo of Writingale is available to download. It is the complete app with one difference: **saving is disabled** — explore every feature, open the example book, write and rearrange as much as you like, but nothing is kept when you quit. When you're ready to keep your work, get the full version from the Mac App Store.
+The free download is the complete app with one difference: **saving is switched off**. Open the example book or one of your own, write, rearrange, follow references, explore the graph and the timeline — everything works, and nothing is kept when you quit.
+
+Unlocking saving is a **one-time purchase of €49.99**, made inside the app. It is not a subscription: you buy it once, and it stays unlocked.
+
+If you've bought it before — on another Mac, or after reinstalling — choose **Restore Purchases** to get it back without paying again.
 
 ## Your data stays yours
 
