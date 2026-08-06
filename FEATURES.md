@@ -178,7 +178,7 @@ no screenshot (and arguably fine without one) · ⚠️ gap.
 | Book-wide goal ring in the sidebar header | [goals](guide/goals.md) | `goal-popover` | ✅ |
 | Goal popover — Goal and History tabs | [goals](guide/goals.md) | `goal-popover`, `goal-history` | ✅ |
 | Per-chapter word target | [goals](guide/goals.md), [inspector](guide/inspector.md) | `inspector-goal` | ✅ |
-| Book Settings sheet (title, author, time unit, row order) | [goals](guide/goals.md) | `book-settings` | ✅ |
+| Book Settings sheet (title, author, time unit, row order, writing goal) | [goals](guide/goals.md) | `book-settings` (shows the foot of the sheet — row order and goal) | ✅ |
 
 ## Types
 

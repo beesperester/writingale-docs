@@ -18,6 +18,10 @@ BOOK="$SCRATCH/example-book"
 OUT="$SCRATCH/shots"
 
 # The window every geometry in these scripts is measured against.
+# WIN_X/WIN_Y assume a display at least 2488x1217 points with the app
+# placed clear of the menu bar; on a smaller one the window is clamped
+# and every crop below is off. Check the first capture before trusting
+# a whole run.
 WIN_W=1512
 WIN_H=949
 WIN_X=976
@@ -81,6 +85,11 @@ BASELINE=(
   -timeline.abbreviateGaps YES
   -timeline.gapThreshold 15
   -timeline.zoom 1
+  # The site is written in en-US. Without this the app formats numbers
+  # and dates in the developer's own locale, and a screenshot reading
+  # "60.000 words" or "15,5 pt" contradicts the prose beside it.
+  -AppleLocale en_US
+  -AppleLanguages '("en-US")'
 )
 
 # launch <light|dark> [extra args...]
@@ -156,20 +165,6 @@ key_code() {
   sleep 0.8
 }
 
-# menu_item <menu> <item...>  — walks the app's own menu bar
-menu_item() {
-  local menu="$1"; shift
-  local path=""
-  for it in "$@"; do path="$path of menu item \"$it\""; done
-  osascript <<EOF >/dev/null 2>&1
-tell application "System Events" to tell process "Writingale"
-  set frontmost to true
-  click menu item "$1" of menu "$menu" of menu bar 1
-end tell
-EOF
-  sleep 0.7
-}
-
 # scroll_ticks <n> <x> <y> — window-relative scroll at a point
 scroll_ticks() {
   local n="$1" x=$((WIN_X + $2)) y=$((WIN_Y + $3))
@@ -204,13 +199,21 @@ hold_shot() {
   magick "$full" -crop "${WIN_W}x${WIN_H}+${WIN_X}+${WIN_Y}" +repage "$dest"
 }
 
-# Confirms the window is key by sampling the close button's red.
-focused() {
-  local info id tmp
+# Fails if the window is not key: an unfocused window drains its accent
+# highlights to grey (by design — see DESIGN.md), so a capture taken
+# while something else has focus is subtly and silently wrong.
+# Checks the close button, which is red only when the window is key.
+assert_focused() {
+  local info id tmp red
   info="$("$SCRATCH/windowid" Writingale)" || return 1
   id="${info%% *}"
   tmp="$(mktemp -t wgfocus).png"
   screencapture -x -o -l "$id" "$tmp"
-  magick "$tmp" -crop '1x1+26+26' +repage -format '%[pixel:p{0,0}]' info:
+  red="$(magick "$tmp" -crop '1x1+26+26' +repage -format '%[fx:int(255*r)] %[fx:int(255*g)]' info:)"
   rm -f "$tmp"
+  local r="${red%% *}" g="${red##* }"
+  if (( r < 180 || g > 160 )); then
+    echo "WARNING: window is not key (close button is $red) — capture may be wrong" >&2
+    return 1
+  fi
 }

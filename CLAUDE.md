@@ -83,6 +83,14 @@ Mechanics worth knowing before changing anything:
   is in the *argument domain* and **cannot be toggled from inside the
   app**: that is why `editor-hidden` passes
   `-editor.interfaceHidden YES` rather than pressing ⌘.
+- **The locale is pinned too** (`-AppleLocale en_US`,
+  `-AppleLanguages '("en-US")'`), and it is the easiest of these to
+  overlook because nothing about the shot looks wrong. This site is
+  written in en-US; on a German-configured Mac the app renders
+  `60.000 words`, `15,5 pt`, `0,25x` and `31.12.2026`, which a reader
+  parses as sixty words — and which flatly contradicts prose reading
+  "15.5 pt" directly above the image. Check any recaptured shot with a
+  number in it.
 - **The workspace is deleted before each launch.** Panes and tabs
   persist into the book, so a launch would otherwise inherit the
   previous shot's layout.

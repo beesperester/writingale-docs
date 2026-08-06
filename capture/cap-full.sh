@@ -18,11 +18,6 @@ shot editor "$mode"
 launch "$mode" -autoOpenPath "$BOOK" -autoSelectName "The Narrator" -autoInspector YES
 shot character "$mode"
 
-# journey — the same, scrolled to the inspector's Journey section.
-launch "$mode" -autoOpenPath "$BOOK" -autoSelectName "The Narrator" -autoInspector YES
-scroll_ticks -30 1360 500
-shot journey "$mode"
-
 # graph — settled, then panned onto Book Two's stretch of the spine.
 # At 28 chapters the map is several pane-widths wide at 1:1, and its
 # zoom is a pinch (no preference, no key), so the shot is a pan to a

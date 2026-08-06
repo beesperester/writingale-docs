@@ -81,21 +81,12 @@ sleep 1.5
 capture_window "$TMP"
 cut editor-tabs '620x36+462+52'
 
-# ---- a tab held over the lower quarter of its pane -------------------
-"$SCRATCH/mouse" holddrag $((WIN_X + 520)) $((WIN_Y + 67)) $((WIN_X + 980)) $((WIN_Y + 830))
-sleep 1
-capture_window "$TMP"
-cut editor-tab-drag '1045x500+462+400'
-"$SCRATCH/mouse" release $((WIN_X + 980)) $((WIN_Y + 830))
-sleep 1
-
-
 # ---- the board drilled into a part, with its breadcrumb --------------
 launch "$mode" -autoOpenPath "$BOOK" -autoSection timeline -timeline.zoom 0.25
 sleep 3
 "$SCRATCH/mouse" hscroll $((WIN_X + 1000)) $((WIN_Y + 500)) -14
 sleep 1
-"$SCRATCH/mouse" dblclick $((WIN_X + 700)) $((WIN_Y + 182))
+"$SCRATCH/mouse" dblclick $((WIN_X + 700)) $((WIN_Y + 182))   # Book One's band
 sleep 3
 capture_window "$TMP"
 cut timeline-breadcrumb '1045x420+462+88'

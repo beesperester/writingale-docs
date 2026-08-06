@@ -123,7 +123,7 @@ To swap a picture everywhere at once, replace it on the picture's own entity in 
 All in the **View menu**:
 
 - **Highlight** — dim everything except what you're working on: the current *line*, *sentence*, or *paragraph*. Below: sentence focus.
-- **Fixed Scrolling** — typewriter mode: the line you're working on stays at a fixed height on screen — the *top*, *center*, or *bottom* third — and the text moves under it, instead of your eye travelling down the page as you write. It holds that line whenever the cursor moves, whether you got there by typing, by an arrow key, or by clicking; scrolling by hand is never fought, and selecting a stretch of text leaves the view where it is.
+- **Fixed Scrolling** — typewriter mode: the line you're working on stays at a fixed height on screen — a quarter of the way down for *Top*, halfway for *Center*, three quarters for *Bottom* — and the text moves under it, instead of your eye travelling down the page as you write. It holds that line whenever the cursor moves, whether you got there by typing, by an arrow key, or by clicking; scrolling by hand is never fought, and selecting a stretch of text leaves the view where it is.
 - **Hide Interface** <kbd>⌘.</kbd> — distraction-free writing: a centered column of text and a floating word counter, nothing else. Press it again to come back.
 
 <img src="/screenshots/editor-hidden-light.png" alt="Hide Interface: a centered column of text and a floating word counter" class="light-only">

@@ -16,7 +16,7 @@ To restructure:
 
   - Drop it on the **middle** of another entry, which lights up with a coloured outline, and it moves *inside* that entry — a chapter into a part, or a scene into a chapter. A collapsed part opens so you can see where its new contents landed.
 - Right-click → **Move Into** to move an entry inside a part, or back out to the top level — handy in a long book, where the drop target may be several screens away.
-- Use the inspector's **Nesting** picker and **Contents** list, which do the same with buttons — including reorder arrows and **New Sub-Chapter** to create a child in place. See [the inspector](/guide/inspector#nesting-progress--contents).
+- Use the inspector's **Nesting** picker and **Contents** list, which do the same with buttons — including reorder arrows and **New Sub-Chapter** to create a child in place. See [the inspector](/guide/inspector#nesting-progress-contents).
 - Or **drag** the cards in the [timeline's Manuscript Order](/guide/timeline#story-order-vs-manuscript-order), where the whole book is laid out as one strip in reading order — chapters individually, or a whole part at once by its band.
 
 ## Progress rings

@@ -21,7 +21,6 @@ cut inspector-overview   '297x88+1215+52'
 cut inspector-identity   '297x182+1215+138'
 cut inspector-completion '297x64+1215+315'
 cut inspector-goal       '297x196+1215+378'
-cut inspector-storytime  '297x218+1215+572'
 
 # ---- inspector: a part, scrolled to nesting/progress/contents -------
 grab "Book One — The Coming of the Martians"
@@ -52,7 +51,7 @@ grab "The Narrator"
 "$SCRATCH/mouse" scroll $((WIN_X + 1360)) $((WIN_Y + 500)) -52; sleep 1.5
 capture_window "$TMP"
 cut inspector-journey '297x480+1215+455'
-cp "$TMP" "$OUT/journey-$mode.png"     # the full-window twin
+cp "$TMP" "$OUT/journey-$mode.png"   # the full-window twin comes from here
 
 # ---- inspector: custom fields, single-value and list ----------------
 grab "The New Order"
