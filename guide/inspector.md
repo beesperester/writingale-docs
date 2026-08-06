@@ -43,12 +43,12 @@ Parts don't have their own Completion — their standing is always derived from 
 
 **Target words** gives this one chapter its own word goal, separate from the book-wide goal. A small ring fills as you write, and the list column shows the same progress under the chapter's name. See [Goals & Statistics](/guide/goals).
 
-**Material** marks the entity as aside material: it keeps its place in the manuscript tree but is left out of export, goals, and progress — for deleted scenes you're not ready to delete, voice tests, cut openings. Above: *Text and rights (not part of the book)*, the example book's provenance page — it keeps its place in the tree but adds nothing to the book's counts. See [Manuscript Structure § Material](/guide/manuscript#material).
+**Material** marks the entity as aside material: it keeps its place in the manuscript tree but is left out of export, goals, and progress — for deleted scenes you're not ready to delete, voice tests, cut openings. The example book's *Text and rights (not part of the book)* is marked this way: it keeps its place in the tree but adds nothing to the book's counts. See [Manuscript Structure § Material](/guide/manuscript#material).
 
 ## Relationships
 
-<img src="/screenshots/inspector-relationships-light.png" alt="The Relationships section with a mother–son relationship" class="light-only">
-<img src="/screenshots/inspector-relationships-dark.png" alt="The Relationships section with a mother–son relationship" class="dark-only">
+<img src="/screenshots/inspector-relationships-light.png" alt="The Relationships section listing the narrator's brother and the curate" class="light-only">
+<img src="/screenshots/inspector-relationships-dark.png" alt="The Relationships section listing the narrator's brother and the curate" class="dark-only">
 
 Who is what to whom. Each relationship names a target, a **kind** in your own words — "sister", "rival", "creditor", nothing is prescribed — and an optional note. **Add Relationship** lists every possible partner (relationships connect things of the same kind: characters to characters, factions to factions). Above, the narrator's entry for his brother: *brother*, "In London through the exodus; they do not meet again until it is over."
 
@@ -69,17 +69,19 @@ Where the entity sits in your story's chronology, counted in the unit your book 
 Three sections about the entity's place in the manuscript:
 
 - **Nesting** — the **Inside** picker moves this entity into a part or chapter, or to the top level. Same result as dragging it in the list.
-- **Progress** — appears once something is nested here: a ring plus a tally, derived from the least-finished thing inside. Above, *Part I* reads "Final · 2 of 2 final" — its two counting chapters are done, and the cut opening is [material](/guide/manuscript#material), so it doesn't count.
+- **Progress** — appears once something is nested here: a ring plus a tally, derived from the least-finished thing inside. Above, *Book One* reads "Revision · 10 of 17 final" — ten of its seventeen counting chapters are done, and the least-finished of them is still in revision.
 - **Contents** — the children, in order: reorder with the arrows, remove with **−** (which moves the child back to the top level — nothing is deleted), attach something that already exists with **Add Entity**, or create a fresh child in place with **New Sub-Chapter**.
 
 See [Manuscript Structure](/guide/manuscript) for the tree as a whole.
 
 ## Annotates
 
-<img src="/screenshots/inspector-annotates-light.png" alt="The Annotates section of a note, with a stale quoted passage" class="light-only">
-<img src="/screenshots/inspector-annotates-dark.png" alt="The Annotates section of a note, with a stale quoted passage" class="dark-only">
+<img src="/screenshots/inspector-annotates-light.png" alt="The Annotates section of a note: one pin to a quoted passage, one to a whole document" class="light-only">
+<img src="/screenshots/inspector-annotates-dark.png" alt="The Annotates section of a note: one pin to a quoted passage, one to a whole document" class="dark-only">
 
-On a note: everything the note is pinned to — a whole document, or an exact quoted passage, shown underneath. If the quoted passage no longer exists in the target, the pin is flagged **stale** in red rather than silently discarded; above, the example book's *Note on the epigraph* deliberately points at a passage that has since moved off that chapter. Pinning happens in the editor — select text, right-click — or from the target's own Notes section.
+On a note: everything the note is pinned to. Above, *Why the Martians fail* is pinned two ways at once — to an exact passage in *Dead London*, quoted underneath it, and to *The Death of the Curate* as a **whole document**.
+
+If a quoted passage no longer exists in its target, the pin is flagged **stale** in red rather than silently discarded — the example book's *Note on the epigraph* is left that way on purpose, so you can see what it looks like. Pinning happens in the editor — select text, right-click — or from the target's own Notes section.
 
 ## Notes
 
@@ -93,12 +95,12 @@ The same connection seen from the other side — on any entity, the notes attach
 <img src="/screenshots/inspector-fields-single-light.png" alt="Single-value fields of a faction: motto, founding year, seat" class="light-only">
 <img src="/screenshots/inspector-fields-single-dark.png" alt="Single-value fields of a faction: motto, founding year, seat" class="dark-only">
 
-Your type's own fields, exactly as you defined them in the [type editor](/guide/entity-types). Single-value fields — a line of text, a number, one link — share the **Fields** section: above, a faction's motto, founding year, and seat.
+Your type's own fields, exactly as you defined them in the [type editor](/guide/entity-types). Single-value fields — a line of text, a number, one link — share the **Fields** section: above, the example book's *New Order* faction with its motto, founding year, and seat.
 
-<img src="/screenshots/inspector-fields-multi-light.png" alt="Multi-value field sections of a chapter: POV, Cast, Locations" class="light-only">
-<img src="/screenshots/inspector-fields-multi-dark.png" alt="Multi-value field sections of a chapter: POV, Cast, Locations" class="dark-only">
+<img src="/screenshots/inspector-fields-multi-light.png" alt="Multi-value field sections of a faction: Holdings and Members" class="light-only">
+<img src="/screenshots/inspector-fields-multi-dark.png" alt="Multi-value field sections of a faction: Holdings and Members" class="dark-only">
 
-Fields that hold several entries — a cast, a list of holdings — each get a **section of their own**, with a remove button per entry and an **Add** menu offering everything eligible: above, a chapter's POV, cast, and locations. Blue entries are links — click one to go there.
+Fields that hold several entries — a cast, a list of holdings — each get a **section of their own**, with a remove button per entry and an **Add** menu offering everything eligible: above, the same faction's holdings (plain text) and members (links). Blue entries are links — click one to go there.
 
 ## Referenced By
 

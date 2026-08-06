@@ -16,10 +16,13 @@
 | <kbd>⌘1</kbd> | Focus sidebar |
 | <kbd>⌘2</kbd> | Focus list |
 | <kbd>⌘3</kbd> | Focus editor |
-| <kbd>⌘4</kbd> | Show/Hide inspector (editor and timeline) |
+| <kbd>⌘4</kbd> | Show/Hide inspector (editor, graph and timeline) |
 | <kbd>⌘[</kbd> / <kbd>⌘]</kbd> | Navigation history back / forward |
 | <kbd>⌘.</kbd> | Hide interface (distraction-free) |
+| <kbd>⌘⇧P</kbd> | Reading preview |
 | <kbd>⌘⇧R</kbd> | Raw Markdown mode |
+| <kbd>⌘,</kbd> | Settings |
+| <kbd>⌘?</kbd> | Writingale Help |
 
 ## Panes & tabs
 
@@ -45,9 +48,16 @@
 | Shortcut | Action |
 |---|---|
 | <kbd>⌘K</kbd> | Quick insert (reference or command) |
-| <kbd>⌘F</kbd> | Find in document |
+| <kbd>⌘F</kbd> | Find — in the document, or in the graph or timeline you're looking at |
 | <kbd>⌘⌥F</kbd> | Find and replace in document |
 | `[[` | Reference autocomplete popup |
 | <kbd>⌘</kbd>-click | Follow reference / open annotation |
+
+## Saving
+
+| Shortcut | Action |
+|---|---|
+| <kbd>⌘S</kbd> | Save the document you're in |
+| <kbd>⌥⌘S</kbd> | Save everything |
 
 Menus not listed here (View → Highlight, View → Fixed Scrolling, Book → Book Settings…, Book → Edit Entity Types…) have no default shortcut.

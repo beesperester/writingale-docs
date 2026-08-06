@@ -19,9 +19,17 @@ Formatting uses lightweight marks that stay visible (dimmed) while the styled te
 | `- item` / `1. item` | bulleted / numbered lists |
 | `%% note to self` | a private comment — dimmed here, never exported |
 
-You don't have to type the marks. The **format buttons above the editor** style whatever is selected — headings, bold, italic, strikethrough, code, lists, quote, and comment, one click each. The **Markup menu** applies the same styles — Bold <kbd>⌘B</kbd>, Italic <kbd>⌘I</kbd>, Comment <kbd>⌘/</kbd> — and the right-click menu carries a Format submenu too.
+You don't have to type the marks. The **format buttons above the editor** style whatever is selected — headings, bold, italic, strikethrough, code, lists, quote, and comment, one click each.
+
+<img src="/screenshots/editor-format-buttons-light.png" alt="The toolbar's format buttons: headings, bold, italic, strikethrough, code, and a lists menu" class="light-only">
+<img src="/screenshots/editor-format-buttons-dark.png" alt="The toolbar's format buttons: headings, bold, italic, strikethrough, code, and a lists menu" class="dark-only">
+
+The **Markup menu** applies the same styles — Bold <kbd>⌘B</kbd>, Italic <kbd>⌘I</kbd>, Comment <kbd>⌘/</kbd> — and the right-click menu carries a Format submenu too.
 
 ### Three views of your text
+
+<img src="/screenshots/editor-view-switcher-light.png" alt="The view switcher: live styling, reading preview, raw text" class="light-only">
+<img src="/screenshots/editor-view-switcher-dark.png" alt="The view switcher: live styling, reading preview, raw text" class="dark-only">
 
 The switcher in the toolbar shows which view you're in and flips between them: **live styling** (the pencil — where you write), a clean **reading preview** (the eye), and the **raw text** (the brackets). The view belongs to the pane you're working in, so with the editor [split](#splitting) you can read one document while writing in the other. Every launch starts in live styling.
 
@@ -41,9 +49,33 @@ The switcher in the toolbar shows which view you're in and flips between them: *
 
 ### Font & line height
 
+<img src="/screenshots/settings-editor-light.png" alt="Settings → Editor: font, size, line height, and the wrap column" class="light-only">
+<img src="/screenshots/settings-editor-dark.png" alt="Settings → Editor: font, size, line height, and the wrap column" class="dark-only">
+
 The document font, size, and line height are set in **Settings** <kbd>⌘,</kbd>, with a live preview. The default is the system serif at 15.5 pt. Your choice follows your story everywhere it's read: the editor, [Preview](#preview), glance panels, and the [export](/guide/export) preview and PDF.
 
-Settings also holds the [timeline's handling of empty stretches](/guide/timeline#skipped-stretches). Both are app-wide preferences, not part of any one book.
+### Wrap column
+
+By default a line of prose runs the full width of the window, which on a wide screen makes for a long, tiring line. Turn on **Wrap column** in Settings and the text wraps at a set number of characters instead — 80 by default, anywhere from 30 to 150 — however wide you make the window. The text simply sits in a column of that width; the window's extra space stays empty.
+
+This changes nothing in your file. The line breaks are drawn, not typed: the paragraph is still one long line on disk, exactly as it was.
+
+Because the document font is proportional — an "i" is narrower than an "m" — "80 characters" can't be exact. The column is measured in the width of a digit in your current font, so a line of narrow letters fits a few more characters than the number says, and a line of wide ones a few less.
+
+### Line numbers
+
+<img src="/screenshots/editor-line-numbers-light.png" alt="The line-number gutter beside wrapped paragraphs: only the first line of each paragraph is numbered" class="light-only">
+<img src="/screenshots/editor-line-numbers-dark.png" alt="The line-number gutter beside wrapped paragraphs: only the first line of each paragraph is numbered" class="dark-only">
+
+A narrow gutter down the left edge numbers the lines of your document — useful for talking about a passage with an editor, or finding your way back to a spot you noted down.
+
+The numbers count the lines **as they are in the file**, not as they happen to wrap on screen: a paragraph that fills four lines of the window is one numbered line, and the wrapped continuations are left unnumbered. Resize the window and the numbering doesn't change.
+
+The gutter shows in live styling and in raw text. It's absent from the reading preview, and it's hidden in **Hide Interface** — the point there is to have nothing but the words.
+
+At the other end of the pane, the status bar shows where your cursor is as **`Ln 48, Col 1`** — the same line count as the gutter, and the column in characters as you'd count them.
+
+Settings also holds the [timeline's handling of empty stretches](/guide/timeline#skipped-stretches). All of these are app-wide preferences, not part of any one book.
 
 ## Links
 
@@ -53,6 +85,9 @@ Settings also holds the [timeline's handling of empty stretches](/guide/timeline
 - **⌘-click** a link to jump to what it names; **⌘[** and **⌘]** walk back and forward like a browser.
 - Right-click → **Insert Reference** is the menu-driven alternative to typing `[[`.
 - Or **drag one in from the list**: switch the sidebar to Characters (or any other kind — your document stays open), then drag a name from the list into your text. The cursor follows the drag so you can see exactly where the mention will land; drop it and it appears as the name, linked like any other mention.
+
+<img src="/screenshots/editor-drag-reference-light.png" alt="A character dragged from the list over the text, with the insertion cursor showing where it will land" class="light-only">
+<img src="/screenshots/editor-drag-reference-dark.png" alt="A character dragged from the list over the text, with the insertion cursor showing where it will land" class="dark-only">
 
 ## Quick insert
 
@@ -88,7 +123,7 @@ To swap a picture everywhere at once, replace it on the picture's own entity in 
 All in the **View menu**:
 
 - **Highlight** — dim everything except what you're working on: the current *line*, *sentence*, or *paragraph*. Below: sentence focus.
-- **Fixed Scrolling** — typewriter mode: keep the line you're typing pinned to the *top*, *center*, or *bottom* of the window instead of drifting down the screen.
+- **Fixed Scrolling** — typewriter mode: the line you're working on stays at a fixed height on screen — the *top*, *center*, or *bottom* third — and the text moves under it, instead of your eye travelling down the page as you write. It holds that line whenever the cursor moves, whether you got there by typing, by an arrow key, or by clicking; scrolling by hand is never fought, and selecting a stretch of text leaves the view where it is.
 - **Hide Interface** <kbd>⌘.</kbd> — distraction-free writing: a centered column of text and a floating word counter, nothing else. Press it again to come back.
 
 <img src="/screenshots/editor-hidden-light.png" alt="Hide Interface: a centered column of text and a floating word counter" class="light-only">
@@ -127,7 +162,10 @@ Documents can be dragged **in from the list**, too: drop one on a pane's tab bar
 
 ### Splitting
 
-**Editor → Split Right** <kbd>⌘⌥→</kbd> and **Split Down** <kbd>⌘⌥↓</kbd> divide the pane you're in; the toolbar has buttons for both. The new pane starts on the same document, so the usual next step is to open something else in it — or to leave it, and read the same chapter in two places at once. Dragging a tab to a pane's edge (above) does the same thing in one gesture.
+<img src="/screenshots/editor-split-buttons-light.png" alt="The toolbar's split buttons: split right, split down, close editor" class="light-only">
+<img src="/screenshots/editor-split-buttons-dark.png" alt="The toolbar's split buttons: split right, split down, close editor" class="dark-only">
+
+**Editor → Split Right** <kbd>⌘⌥→</kbd> and **Split Down** <kbd>⌘⌥↓</kbd> divide the pane you're in; the toolbar has a button for each, and a third that closes the pane you're in again. The new pane starts on the same document, so the usual next step is to open something else in it — or to leave it, and read the same chapter in two places at once. Dragging a tab to a pane's edge (above) does the same thing in one gesture.
 
 <img src="/screenshots/editor-split-light.png" alt="A chapter above the timeline, each in its own pane with its own tabs" class="light-only">
 <img src="/screenshots/editor-split-dark.png" alt="A chapter above the timeline, each in its own pane with its own tabs" class="dark-only">
@@ -141,6 +179,10 @@ Each pane carries its own **word count and saved state** in the bar along its bo
 Tabs aren't only for chapters. The **Views** in the sidebar open as tabs too:
 
 - **Manuscript** — your whole manuscript as one flowing text, in reading order. A labeled divider marks where each document begins, so the boundaries stay visible while the text reads as one piece — and everything stays editable right there. Parts and groups appear too, in their place in the order: a part's own page is text you wrote, so you can read and edit it here exactly as it will export. As you scroll, the document on screen is highlighted in the list; click one in the list to jump the view to it.
+
+  <img src="/screenshots/editor-manuscript-light.png" alt="The Manuscript tab: a part's page and the first chapter, separated by a labeled divider" class="light-only">
+  <img src="/screenshots/editor-manuscript-dark.png" alt="The Manuscript tab: a part's page and the first chapter, separated by a labeled divider" class="dark-only">
+
 - **Graph** and **Timeline** — the whole-book views, now openable *beside* a chapter instead of taking the window over. Write with the timeline underneath and watch the shape of the book as you go.
 
 ### It's remembered
@@ -153,7 +195,7 @@ Drop a `.md` or `.txt` file into the editor to bring it into the book. Writingal
 
 ## Find
 
-<kbd>⌘F</kbd> opens Find, <kbd>⌘⌥F</kbd> Find & Replace — scoped to the current document. For questions about the whole book, see [Search & Filtering](/guide/search).
+<kbd>⌘F</kbd> opens Find, <kbd>⌘⌥F</kbd> Find & Replace — scoped to the current document. The same key in a [graph](/guide/graph) or [timeline](/guide/timeline) tab searches *that* view instead. For questions about the whole book, see [Search & Filtering](/guide/search).
 
 ## Saving
 
@@ -161,4 +203,4 @@ You decide when your work goes to disk: **File → Save** <kbd>⌘S</kbd> saves 
 
 If you quit or close the book while something is unsaved, Writingale asks whether to save it all, discard, or stay.
 
-The status bar also shows the word count — and the word count of just the selection while text is selected.
+The status bar also shows the word count — and the word count of just the selection while text is selected — with the cursor's [line and column](#line-numbers) at its right end.

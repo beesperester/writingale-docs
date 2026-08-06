@@ -49,7 +49,14 @@ The sheet shows exactly what will be written, plus the total word count. When it
 
 The [graph](/guide/graph) and the [timeline](/guide/timeline) can each be saved as a **PDF** — for a wall, a planning session, or a note to a collaborator. Open the view's tab and press Export.
 
-What you get is the *whole* picture, not the part that happened to be on screen: the graph is fitted to one page at whatever scale it takes, and the timeline keeps every column, however far it scrolls sideways. Otherwise the page is what the view shows — the kinds you've hidden stay hidden, the ordering you chose is the ordering exported. The book's title heads the page so a printed copy says where it came from.
+What you get is the *whole* picture, not the part that happened to be on screen: the graph is fitted to one page at whatever scale it takes, and the timeline keeps every column, however far it scrolls sideways. The book's title heads the page so a printed copy says where it came from.
+
+Each view's sheet has its own options, seeded from what you were looking at but yours to change without disturbing the view itself:
+
+| View | Options |
+|---|---|
+| **Graph** | One toggle per kind — trim a crowded page to the kinds that matter |
+| **Timeline** | Story or manuscript order; in story order, its own zoom, since a page has different room than a pane; and, if you'd [focused the board on a part](/guide/timeline#focusing-on-one-part), whether to print the whole book or just that part |
 
 ## Why a plain file?
 
