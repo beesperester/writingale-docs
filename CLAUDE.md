@@ -198,6 +198,7 @@ Driven shots (`cap-interact.sh`):
 | `split-here` | Right-click in the editor body (900,430) → region `400x220` at window `+880+410` | [manuscript.md](guide/manuscript.md) |
 | `annotate-menu` | Drag-select a phrase, right-click it → region `420x300` at window `+740+227` | [annotations.md](guide/annotations.md) |
 | `editor-tabs` | Chapter pinned by double-click, a timeline tab, then one list click for a provisional (italic) tab → `620x36+462+52` | [editor.md](guide/editor.md) |
+| `timeline-breadcrumb` | Timeline at `-timeline.zoom 0.25`, scrolled right 14, then a **double-click on Book One's band** (700,182) → `1045x420+462+88` | [timeline.md](guide/timeline.md) |
 
 Held-drag shots (`cap-drags.sh` — see `hold_shot`):
 
