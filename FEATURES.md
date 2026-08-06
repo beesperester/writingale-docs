@@ -200,8 +200,12 @@ no screenshot (and arguably fine without one) · ⚠️ gap.
 
 ## Not documented on purpose
 
-- **The demo edition** (`WritingaleDemo`, read-only). It is a
-  distribution decision, not a feature of the app the reader bought.
+- **How the read-only/unlock split is built.** *That* it exists is
+  documented — [installation](guide/installation.md) § Try it before
+  you buy tells the reader the download is free, that the app runs
+  read-only until a one-time purchase, and that Restore Purchases
+  exists. How it is implemented is a distribution decision, not a
+  feature.
 - **Anything about building the app or the repository.** Writingale
   ships through the App Store and is not open source — see the root
   `CLAUDE.md`.
