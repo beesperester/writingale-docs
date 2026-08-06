@@ -14,8 +14,22 @@ SCRATCH="${WG_SCRATCH:-/tmp/writingale-capture}"
 #   xcodebuild -project app/App/Writingale.xcodeproj -scheme Writingale \
 #     -derivedDataPath "$SCRATCH/dd" build
 APP="${WG_APP:-$SCRATCH/dd/Build/Products/Debug/Writingale.app}"
-BOOK="$SCRATCH/example-book"
 OUT="$SCRATCH/shots"
+
+# The throwaway book lives inside the app's **sandbox container**, not
+# in $SCRATCH.
+#
+# The app is sandboxed, so it can only reach folders the user has
+# granted it — normally by picking them in an open panel. `-autoOpenPath`
+# hands it a bare path with no grant behind it, so a book anywhere else
+# simply fails to open and the automation photographs the welcome
+# screen instead: no error, no crash, just the wrong picture. A folder
+# inside the container needs no grant at all.
+#
+# (`$SCRATCH` still holds the build, the helper binaries and the
+# output — none of which the sandboxed app has to read.)
+CONTAINER="$HOME/Library/Containers/de.esperester.writingale/Data"
+BOOK="${WG_BOOK:-$CONTAINER/example-book}"
 
 # The window every geometry in these scripts is measured against.
 # WIN_X/WIN_Y assume a display at least 2488x1217 points with the app
@@ -38,6 +52,9 @@ done
 
 # A pristine copy of the example book, so captures never dirty the repo.
 reset_book() {
+  # The container exists once the app has been launched at least once;
+  # create it anyway so a first run on a clean machine works.
+  mkdir -p "${BOOK:h}"
   rm -rf "$BOOK"
   cp -R "$REPO/app/ExampleBook" "$BOOK"
   rm -rf "$BOOK/.writingale"
