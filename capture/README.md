@@ -14,7 +14,7 @@ directory they write to:
 
 ```sh
 xcodebuild -project ../../app/App/Writingale.xcodeproj -scheme Writingale \
-  -derivedDataPath /tmp/writingale-capture/dd build
+  -derivedDataPath "${WG_SCRATCH:-/tmp/writingale-capture}/dd" build
 ```
 
 Then, from this directory, four passes per appearance:
@@ -52,6 +52,11 @@ The terminal running these needs **Screen Recording** and
 **Accessibility** permission in System Settings → Privacy & Security.
 Without Accessibility the window is never resized and every geometry in
 these scripts is wrong.
+
+On the command line: `zsh`, `xcodebuild` and `swiftc` (Xcode — the two
+Swift helpers are compiled on first use), `magick`
+(ImageMagick — every crop goes through it), `python3` (seeds the writing
+statistics), and `screencapture` and `osascript`, which ship with macOS.
 
 ## Things that will bite you
 

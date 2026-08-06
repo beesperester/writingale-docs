@@ -92,6 +92,25 @@ BASELINE=(
   -AppleLanguages '("en-US")'
 )
 
+# Fails if the window is not key: an unfocused window drains its accent
+# highlights to grey (by design — see DESIGN.md), so a capture taken
+# while something else has focus is subtly and silently wrong.
+# Checks the close button, which is red only when the window is key.
+assert_focused() {
+  local info id tmp red
+  info="$("$SCRATCH/windowid" Writingale)" || return 1
+  id="${info%% *}"
+  tmp="$(mktemp -t wgfocus).png"
+  screencapture -x -o -l "$id" "$tmp"
+  red="$(magick "$tmp" -crop '1x1+26+26' +repage -format '%[fx:int(255*r)] %[fx:int(255*g)]' info:)"
+  rm -f "$tmp"
+  local r="${red%% *}" g="${red##* }"
+  if (( r < 180 || g > 160 )); then
+    echo "WARNING: window is not key (close button is $red) — capture may be wrong" >&2
+    return 1
+  fi
+}
+
 # launch <light|dark> [extra args...]
 launch() {
   local mode="$1"; shift
@@ -112,6 +131,7 @@ launch() {
   sleep 1.2
   normalize_window
   sleep 0.8
+  assert_focused || true   # warn, don't abort: some shots are checked by eye
 }
 
 normalize_window() {
@@ -197,23 +217,4 @@ hold_shot() {
   "$SCRATCH/mouse" release "$x2" "$y2"
   sleep 0.8
   magick "$full" -crop "${WIN_W}x${WIN_H}+${WIN_X}+${WIN_Y}" +repage "$dest"
-}
-
-# Fails if the window is not key: an unfocused window drains its accent
-# highlights to grey (by design — see DESIGN.md), so a capture taken
-# while something else has focus is subtly and silently wrong.
-# Checks the close button, which is red only when the window is key.
-assert_focused() {
-  local info id tmp red
-  info="$("$SCRATCH/windowid" Writingale)" || return 1
-  id="${info%% *}"
-  tmp="$(mktemp -t wgfocus).png"
-  screencapture -x -o -l "$id" "$tmp"
-  red="$(magick "$tmp" -crop '1x1+26+26' +repage -format '%[fx:int(255*r)] %[fx:int(255*g)]' info:)"
-  rm -f "$tmp"
-  local r="${red%% *}" g="${red##* }"
-  if (( r < 180 || g > 160 )); then
-    echo "WARNING: window is not key (close button is $red) — capture may be wrong" >&2
-    return 1
-  fi
 }

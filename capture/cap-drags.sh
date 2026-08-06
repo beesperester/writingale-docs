@@ -1,5 +1,5 @@
 #!/bin/zsh
-# The four shots that have to be taken with the mouse button still down.
+# The shots that have to be taken with the mouse button still down.
 source "$(dirname "$0")/lib.sh"
 
 mode="${1:-light}"

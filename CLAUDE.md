@@ -103,9 +103,11 @@ Mechanics worth knowing before changing anything:
   dictionary, so the `editor` shot came out as the item's 97-word page
   about half the time. `-autoSelectType chapters` pins it.
 - Appearance is forced per shot (`-NSRequiresAquaSystemAppearance YES`
-  / `-AppleInterfaceStyle Dark`), the window is normalized to
-  1512×949 pt at a fixed origin, and `focused()` verifies the window is
-  key by sampling the close button's red.
+  / `-AppleInterfaceStyle Dark`) and the window is normalized to
+  1512×949 pt at a fixed origin. `launch` then calls `assert_focused`,
+  which warns if the window is not key — an unfocused window drains its
+  accent highlights to grey by design, so the capture would be subtly
+  and silently wrong.
 - **Per-window capture (`screencapture -l`) returns a blank image
   during an AppKit drag session.** Held-drag shots therefore capture
   the whole screen and crop the window out of it, *while the drag is
@@ -117,7 +119,8 @@ Mechanics worth knowing before changing anything:
 - **The graph's zoom is a trackpad pinch and cannot be synthesized.** A
   `CGEvent` magnify event is accepted but ignored by SwiftUI's
   `MagnifyGesture`, and posting one drops the window's key status. With
-  28 chapters the spine is several pane-widths wide at 1:1, so the
+  28 documents on the spine (Wells's 27 chapters plus the material
+  page) it is several pane-widths wide at 1:1, so the
   `graph` shot is a **pan** onto a legible stretch. A fitted whole-map
   shot would need a graph-zoom automation hook next to `-timeline.zoom`.
 
@@ -189,7 +192,7 @@ Crops (`cap-crops.sh` unless noted):
 | `editor-view-switcher` | Toolbar → `116x44+1074+4` | [editor.md](guide/editor.md) |
 | `editor-line-numbers` | The gutter beside wrapped paragraphs → `560x230+462+88` | [editor.md](guide/editor.md) |
 | `export-sheet` | `-autoSheet export` → `800x600+360+180` | [export.md](guide/export.md) |
-| `book-settings` | `-autoSheet settings`, **scrolled 10** — the row order and the writing goal are both below the fold → `470x530+525+210` | [goals.md](guide/goals.md), [timeline.md](guide/timeline.md) |
+| `book-settings` | `-autoSheet settings`, **scrolled 10** — the row order and the writing goal are both below the fold → `470x530+525+210` | [goals.md](guide/goals.md) (the row order is described in [timeline.md](guide/timeline.md), which links here rather than repeating the image) |
 | `type-editor` | `-autoSheet types` → `800x600+360+180` | [entity-types.md](guide/entity-types.md) |
 | `graph-controls` | Graph tab → `530x58+470+88` (chips, outlines, re-layout, reset — no share button) | [graph.md](guide/graph.md) |
 | `timeline-controls` | Timeline header → `1045x50+462+88` (type chips, ordering, summary, zoom) | [timeline.md](guide/timeline.md) |

@@ -133,7 +133,8 @@ no screenshot (and arguably fine without one) · ⚠️ gap.
 | Pan by dragging; **zoom by pinching only** — no key, no preference | [graph](guide/graph.md) § Controls | — | ⚠️ see note below |
 | A type can be kept off the graph entirely | [entity-types](guide/entity-types.md) | — | 📝 |
 
-> **Note for the next capture run.** With 28 chapters the graph's spine
+> **Note for the next capture run.** With 28 documents on the spine
+> (Wells's 27 chapters plus the material page) the graph's spine
 > is several pane-widths wide at 1:1, and its zoom is a trackpad pinch —
 > which cannot be synthesized (a `CGEvent` magnify event is delivered but
 > SwiftUI's `MagnifyGesture` ignores it, and posting one drops the
