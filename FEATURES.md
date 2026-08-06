@@ -202,9 +202,10 @@ no screenshot (and arguably fine without one) · ⚠️ gap.
 
 - **How the read-only/unlock split is built.** *That* it exists is
   documented — [installation](guide/installation.md) § Try it before
-  you buy tells the reader the download is free, saving is off until a
-  one-time purchase, and where Restore Purchases is. How it is
-  implemented is a distribution decision, not a feature.
+  you buy tells the reader the download is free, that the app runs
+  read-only until a one-time purchase, and that Restore Purchases
+  exists. How it is implemented is a distribution decision, not a
+  feature.
 - **Anything about building the app or the repository.** Writingale
   ships through the App Store and is not open source — see the root
   `CLAUDE.md`.

@@ -20,7 +20,7 @@ Open the bundled example book from the welcome screen to explore a complete samp
 
 ## Try it before you buy
 
-The free download is the complete app with one difference: **saving is switched off**. Open the example book or one of your own, write, rearrange, follow references, explore the graph and the timeline — everything works, and nothing is kept when you quit.
+Until you unlock it, Writingale runs **read-only**: the app says so in the sidebar and along the bottom of the editor. Open the example book or one of your own, write, rearrange, follow references, explore the graph and the timeline — it all behaves exactly as it will once unlocked, and nothing is kept when you quit. (Adding images is the one thing switched off entirely, since a picture has nowhere to be saved to.)
 
 Unlocking saving is a **one-time purchase of €49.99**, made inside the app. It is not a subscription: you buy it once, and it stays unlocked.
 
