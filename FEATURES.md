@@ -201,11 +201,15 @@ no screenshot (and arguably fine without one) · ⚠️ gap.
 ## Not documented on purpose
 
 - **How the read-only/unlock split is built.** *That* it exists is
-  documented — [installation](guide/installation.md) § Try it before
-  you buy tells the reader the download is free, that the app runs
-  read-only until a one-time purchase, and that Restore Purchases
-  exists. How it is implemented is a distribution decision, not a
-  feature.
+  documented in **two** places, deliberately:
+  [installation](guide/installation.md) § Try it before you buy, for
+  the visitor deciding whether to buy; and [faq](reference/faq.md)
+  § It says READ-ONLY, for the user already looking at the badge.
+  The duplication is load-bearing — `installation.md` is the one page
+  `app/scripts/sync-help.sh` excludes from the bundled offline help, so
+  without the FAQ entry the in-app Help has no answer at all. Keep the
+  two in step. How the split is *implemented* stays undocumented: a
+  distribution decision, not a feature.
 - **Anything about building the app or the repository.** Writingale
   ships through the App Store and is not open source — see the root
   `CLAUDE.md`.
