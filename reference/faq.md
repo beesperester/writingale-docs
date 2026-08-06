@@ -1,5 +1,11 @@
 # FAQ
 
+## It says READ-ONLY and my work isn't being saved — why?
+
+Writingale will be free to download, and runs **read-only** until you unlock saving. Everything works — write, rearrange, follow references, explore the graph and the timeline — but nothing is kept when you quit. (Adding images is the one thing switched off entirely, since a picture has nowhere to be saved to.)
+
+Unlocking saving is a **one-time purchase of €49.99**, made inside the app. It is not a subscription. If you have bought it before, on another Mac or after reinstalling, choose **Restore Purchases** rather than paying again.
+
 ## Can I edit my book outside Writingale?
 
 Yes — that's the point. Files are plain markdown with YAML frontmatter. Writingale watches the folder and reloads external changes automatically; <kbd>⌘R</kbd> forces a reload. The only rule: don't change an entity's `uid`.
@@ -35,12 +41,6 @@ Goals and the manuscript word count only count **manuscript-trait** entities tha
 ## Can a book have types beyond the default five?
 
 Yes — types are per-book, defined in `types.yaml` or the built-in type editor. The example book adds Factions (with custom fields including text, numbers, lists, and references). See [Entity Types & Traits](/guide/entity-types).
-
-## It says READ-ONLY and my work isn't being saved — why?
-
-Writingale is free to download and runs **read-only** until you unlock saving. Everything works — write, rearrange, follow references, explore the graph and the timeline — but nothing is kept when you quit. (Adding images is the one thing switched off entirely, since a picture has nowhere to be saved to.)
-
-Unlocking saving is a **one-time purchase of €49.99**, made inside the app. It is not a subscription. If you have bought it before, on another Mac or after reinstalling, choose **Restore Purchases** rather than paying again. See [Installation](/guide/installation).
 
 ## Where are my writing statistics stored?
 
