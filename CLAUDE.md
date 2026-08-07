@@ -105,7 +105,18 @@ Mechanics worth knowing before changing anything:
 - **Automation args**: `-autoOpenPath`, `-autoSelectName`,
   `-autoSelectType <plural>` (**always pass this with a name** — see
   below), `-autoInspector YES`, `-autoSection graph|timeline|<plural>`,
-  `-autoSheet export|settings|types`, `-autoContinuous YES`.
+  `-autoSheet export|settings|timeline|types`, `-autoContinuous YES`,
+  `-lockedMode`.
+- **`-autoSheet timeline` is new**, and it changes the `book-settings`
+  recipe. Book Settings has three tabs now (Book, Timeline, Entity
+  Types); the time unit and the row order moved onto Timeline, so the
+  old "open settings and scroll" composition no longer reaches them.
+- **`-lockedMode` is the only way to photograph the read-only state**,
+  and it is now the *easy thing to forget*. This Mac resolves a cached
+  StoreKit test entitlement by bundle ID, so a plain launch of
+  `app.writingale` comes up **unlocked** — a pass that forgets the flag
+  silently photographs the wrong state. (It was renamed from
+  `-demoMode`.)
 - **`-autoSelectName` alone is not reproducible.** The example book's
   "The Heat-Ray" is both a chapter and an item, and the lookup walks a
   dictionary, so the `editor` shot came out as the item's 97-word page
@@ -200,7 +211,7 @@ Crops (`cap-crops.sh` unless noted):
 | `editor-view-switcher` | Toolbar → `116x44+1074+4` | [editor.md](guide/editor.md) |
 | `editor-line-numbers` | The gutter beside wrapped paragraphs → `560x230+462+88` | [editor.md](guide/editor.md) |
 | `export-sheet` | `-autoSheet export` → `800x600+360+180` | [export.md](guide/export.md) |
-| `book-settings` | `-autoSheet settings`, **scrolled 10** — the row order and the writing goal are both below the fold → `470x530+525+210` | [goals.md](guide/goals.md) (the row order is described in [timeline.md](guide/timeline.md), which links here rather than repeating the image) |
+| `book-settings` | `-autoSheet settings`, **scrolled 10** — the row order and the writing goal are both below the fold → `470x530+525+210`. **This recipe is stale**: the sheet is tabbed now and the row order lives on its own tab — recapture with `-autoSheet timeline`, no scroll | [goals.md](guide/goals.md) (the row order is described in [timeline.md](guide/timeline.md), which links here rather than repeating the image) |
 | `type-editor` | `-autoSheet types` → `800x600+360+180` | [entity-types.md](guide/entity-types.md) |
 | `graph-controls` | Graph tab → `530x58+470+88` (chips, outlines, re-layout, reset — no share button) | [graph.md](guide/graph.md) |
 | `timeline-controls` | Timeline header → `1045x50+462+88` (type chips, ordering, summary, zoom) | [timeline.md](guide/timeline.md) |
