@@ -73,10 +73,14 @@ Writingale talks to exactly one service, and it is Apple's.
 
 **On every launch it asks the App Store what the unlock costs**, so it
 can show you the price in your own currency instead of guessing. It
-asks whether or not you have bought anything. The request names the
-product; it says nothing about you and carries none of your writing.
-macOS makes it on the app's behalf, through the same system service
-that handles purchases.
+asks whether or not you have bought anything.
+
+All Writingale supplies is the name of the product. macOS makes the
+request on the app's behalf, through the same system service that
+handles purchases — and because Apple has to know which store you buy
+from to quote a price, that request is tied to your App Store account
+in the ordinary way any App Store request is. None of that comes back
+to Writingale, and none of your writing goes into it.
 
 **When you buy or restore**, Apple handles the transaction and tells
 the app whether this Apple Account owns the unlock.
@@ -105,9 +109,15 @@ delete. Everything Writingale keeps is on your Mac:
 
 - **Your books** are folders you chose. Move or delete them like any
   other folder — Writingale keeps no other copy.
-- **Recent books, saved folder permissions and preferences** go when
-  you drag Writingale to the Trash, since macOS removes an app's
-  sandbox container along with it.
+- **Recent books, saved folder permissions and preferences** live in
+  Writingale's storage folder. macOS **does not** delete that when you
+  move an app to the Trash — it stays behind, as it does for every
+  sandboxed app. To remove it, delete this folder as well:
+
+  `~/Library/Containers/app.writingale`
+
+  In the Finder, choose Go ▸ Go to Folder… and paste that path. Your
+  books are not in there and are untouched.
 
 ## Changes to this policy
 
