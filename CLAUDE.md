@@ -75,7 +75,7 @@ Mechanics worth knowing before changing anything:
   `$SCRATCH/dd/Build/Products/Debug/Writingale.app`.
 - **The book is a throwaway copy** of `app/ExampleBook`, and it lives
   **inside the app's sandbox container**
-  (`~/Library/Containers/de.esperester.writingale/Data/`), not in
+  (`~/Library/Containers/app.writingale/Data/`), not in
   `$SCRATCH`. The app is sandboxed, so it can only reach folders the
   user has granted it; `-autoOpenPath` carries no grant, so a book
   anywhere else does not open and the run photographs the welcome

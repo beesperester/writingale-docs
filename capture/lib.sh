@@ -28,7 +28,7 @@ OUT="$SCRATCH/shots"
 #
 # (`$SCRATCH` still holds the build, the helper binaries and the
 # output — none of which the sandboxed app has to read.)
-CONTAINER="$HOME/Library/Containers/de.esperester.writingale/Data"
+CONTAINER="$HOME/Library/Containers/app.writingale/Data"
 BOOK="${WG_BOOK:-$CONTAINER/example-book}"
 
 # The window every geometry in these scripts is measured against.
