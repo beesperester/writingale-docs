@@ -91,4 +91,4 @@ planned — that would be stated here plainly and before it happened.
 
 ## Contact
 
-Questions about privacy in Writingale: **bernhard@esperester.de**
+Questions about privacy in Writingale: **privacy@writingale.app**
