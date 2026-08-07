@@ -73,9 +73,17 @@ Mechanics worth knowing before changing anything:
 - **Build first**, with a fresh `-derivedDataPath` and `-scheme
   Writingale`; `lib.sh` expects the app at
   `$SCRATCH/dd/Build/Products/Debug/Writingale.app`.
-- **The book is a throwaway copy** of `app/ExampleBook` in `/tmp`.
+- **The book is a throwaway copy** of `app/ExampleBook`, and it lives
+  **inside the app's sandbox container**
+  (`~/Library/Containers/de.esperester.writingale/Data/`), not in
+  `$SCRATCH`. The app is sandboxed, so it can only reach folders the
+  user has granted it; `-autoOpenPath` carries no grant, so a book
+  anywhere else does not open and the run photographs the welcome
+  screen instead — no error, no crash, just the wrong picture.
   `reset_book` re-copies it — necessary before any pass that drags,
-  because a completed drag really does reorder the book.
+  because a completed drag really does reorder the book — and
+  `assert_book_open` after a launch catches the failure loudly if the
+  book did not open after all.
 - **Every preference the shots depend on is pinned on the command
   line** (`BASELINE` in `lib.sh`). Without this a capture inherits
   whatever the developer last set — focus highlight, a non-default

@@ -51,9 +51,27 @@ for tool in windowid mouse; do
 done
 
 # A pristine copy of the example book, so captures never dirty the repo.
+# The container belongs to macOS, not to us: `containermanagerd` creates
+# it — metadata plist and all — the first time the app runs. Making
+# `Data/` by hand produces a directory that looks right and may be
+# relocated or replaced on that first launch, stranding the book we just
+# copied into it. So on a clean machine, let the app create its own
+# container and wait for it.
+ensure_container() {
+  [[ -d "$CONTAINER" ]] && return 0
+  echo "no container yet — launching once so macOS creates it" >&2
+  open -n "$APP" >/dev/null 2>&1
+  local n=0
+  while [[ ! -d "$CONTAINER" ]] && (( n < 60 )); do sleep 0.5; ((n++)); done
+  quit_app
+  [[ -d "$CONTAINER" ]] || { echo "container never appeared at $CONTAINER" >&2; return 1; }
+}
+
 reset_book() {
-  # The container exists once the app has been launched at least once;
-  # create it anyway so a first run on a clean machine works.
+  # Only meaningful for the default location; WG_BOOK is the caller's
+  # problem (and see README — pointing it outside the container breaks
+  # every shot).
+  [[ "$BOOK" == "$CONTAINER"/* ]] && { ensure_container || return 1; }
   mkdir -p "${BOOK:h}"
   rm -rf "$BOOK"
   cp -R "$REPO/app/ExampleBook" "$BOOK"
@@ -149,6 +167,25 @@ launch() {
   normalize_window
   sleep 0.8
   assert_focused || true   # warn, don't abort: some shots are checked by eye
+  # Only when this launch was supposed to open a book.
+  if [[ "$*" == *-autoOpenPath* ]]; then
+    assert_book_open || true
+  fi
+}
+
+# Fails if the app is sitting on the welcome screen when a book was
+# asked for. Under the sandbox that is the *normal* way `-autoOpenPath`
+# fails — the app has no grant for the path, so it opens nothing, shows
+# no error, and every shot in the pass is silently of the wrong window.
+# The window title is the tell: the welcome window is "Writingale", an
+# open book's is its title.
+assert_book_open() {
+  local name
+  name="$(osascript -e 'tell application "System Events" to tell process "Writingale" to get name of window 1' 2>/dev/null)"
+  if [[ -z "$name" || "$name" == "Writingale" ]]; then
+    echo "WARNING: no book open (window is \"${name:-none}\") — is the book inside the sandbox container? See README." >&2
+    return 1
+  fi
 }
 
 normalize_window() {

@@ -32,6 +32,13 @@ rather than an error.
 Set `WG_SCRATCH` to move the working directory, `WG_APP` to point at an
 app bundle you built somewhere else.
 
+`WG_BOOK` moves the throwaway book, but **think before using it**. The
+app is sandboxed and reaches the book through `-autoOpenPath`, which
+carries no permission with it, so the book has to sit somewhere the app
+can read without a grant — which in practice means inside its container,
+where the default puts it. Point `WG_BOOK` anywhere else and the app
+opens nothing and every shot is of the welcome screen.
+
 ## What's here
 
 | File | |
