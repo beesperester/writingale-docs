@@ -8,8 +8,8 @@ description: Writingale collects no data about you. Here is what that means in d
 *Last updated 7 August 2026*
 
 **Writingale collects nothing about you.** No account, no analytics, no
-crash reports, no usage statistics, no advertising identifiers. Nothing
-you write is sent anywhere. There is no server to send it to.
+usage statistics, no advertising identifiers, no tracking of any kind.
+Nothing you write is sent anywhere. There is no server to send it to.
 
 This page explains that in more detail, because "we collect nothing" is
 easy to say and worth being specific about.
@@ -39,14 +39,17 @@ Everything below stays on your Mac. None of it leaves your computer.
 | Preferences — font, editor and timeline settings | Writingale's own storage on your Mac |
 
 Writingale is sandboxed, which is a macOS feature that restricts an app
-to what it has been given. It can only read and write folders you have
-picked yourself in an open panel. It cannot browse the rest of your
-disk.
+to what it has been given. Beyond its own storage it can only read and
+write folders you picked yourself — opening a book, or choosing where
+to export one. It cannot browse the rest of your disk.
 
 When you open a book, macOS gives Writingale permission to that folder.
 Writingale saves that permission so the book reopens next time without
-asking again. That permission is stored on your Mac, applies only to
-folders you chose, and is not readable by anyone else.
+asking again. It stays on your Mac, records only folders you picked
+yourself, and **cannot be used by any other app** — macOS ties it to
+Writingale. (Like other app settings it is an ordinary file in
+Writingale's storage, so you can read it, as can anything you have
+given full disk access, as can your backups.)
 
 ## Purchases
 
@@ -55,20 +58,32 @@ handled entirely by Apple.** Writingale never sees your name, your
 email address, your payment details or your Apple Account — Apple does
 not share them with us, and the app has no way to ask.
 
-What Writingale receives is Apple's answer to a single question: has
-this Apple Account bought the unlock? That answer is a yes or a no. It
-is checked on your Mac against a receipt Apple stores there, and it is
-what Restore Purchase reads when you set up a second Mac.
+What Writingale asks Apple is one question: has this Apple Account
+bought the unlock? Apple's answer comes back as a signed receipt, and
+the only parts of it the app reads are which product was bought and
+whether it was refunded. The check happens on your Mac, and it is what
+Restore Purchase reads when you set up a second Mac.
 
 Apple's own handling of your purchase is covered by
 [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
 
-## No network use
+## What Writingale asks the App Store
 
-Writingale makes no network connections of its own. It does not check
-for updates, fetch anything, or phone home — there is nothing to phone
-home to. The only network traffic connected with Writingale is Apple's,
-when the App Store handles a purchase or an app update.
+Writingale talks to exactly one service, and it is Apple's.
+
+**On every launch it asks the App Store what the unlock costs**, so it
+can show you the price in your own currency instead of guessing. It
+asks whether or not you have bought anything. The request names the
+product; it says nothing about you and carries none of your writing.
+macOS makes it on the app's behalf, through the same system service
+that handles purchases.
+
+**When you buy or restore**, Apple handles the transaction and tells
+the app whether this Apple Account owns the unlock.
+
+That is all of it. Writingale has no server of its own, no account
+system, no sync, no update check and no telemetry. Nothing you write is
+transmitted anywhere, ever.
 
 ## No tracking, no third parties
 
@@ -79,9 +94,20 @@ collected in the first place.
 
 ## Children
 
-Writingale is a writing tool with no social features, no user-generated
-content shared between people, and no data collection. It is suitable
-for any age and collects nothing from anyone, including children.
+Writingale is a writing tool with no social features and no way to
+share anything with other people through it. It collects nothing from
+anyone, including children.
+
+## Removing your data
+
+There is no account to close, and nothing held anywhere for anyone to
+delete. Everything Writingale keeps is on your Mac:
+
+- **Your books** are folders you chose. Move or delete them like any
+  other folder — Writingale keeps no other copy.
+- **Recent books, saved folder permissions and preferences** go when
+  you drag Writingale to the Trash, since macOS removes an app's
+  sandbox container along with it.
 
 ## Changes to this policy
 
