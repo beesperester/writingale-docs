@@ -81,7 +81,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'Writingale — write books in plain markdown, linked and tracked.'
+      message: 'Writingale — write books in plain markdown, linked and tracked. <a href="/privacy">Privacy</a>'
     },
 
     outline: { level: [2, 3] }
