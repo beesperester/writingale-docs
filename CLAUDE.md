@@ -107,16 +107,26 @@ Mechanics worth knowing before changing anything:
   below), `-autoInspector YES`, `-autoSection graph|timeline|<plural>`,
   `-autoSheet export|settings|timeline|types`, `-autoContinuous YES`,
   `-lockedMode`.
-- **`-autoSheet timeline` is new**, and it changes the `book-settings`
-  recipe. Book Settings has three tabs now (Book, Timeline, Entity
-  Types); the time unit and the row order moved onto Timeline, so the
-  old "open settings and scroll" composition no longer reaches them.
+- **Both settings dialogs are tabbed, and a tab is not scrollable-to.**
+  Book Settings has three tabs — Book, Timeline, Entity Types — opened
+  directly with `-autoSheet settings|timeline|types`. **The Writing Goal
+  is on the Book tab** (`bookForm`) while the time unit and row order
+  are on Timeline (`timelineForm`), so one composition can no longer
+  cover both: a shot that wants the goal and a shot that wants the row
+  order are now two shots.
+- **The app's Settings window (⌘,) has no `-autoSheet` equivalent**, and
+  its tab persists in `@AppStorage("settingsTab")` — so a capture run
+  opens on whichever tab was last used by hand. Pin it in the argument
+  domain like any other preference: `-settingsTab font|editor|timeline|
+  license`. Forget it and the pass photographs a plausible-looking wrong
+  tab. (The window has four tabs; License is the one no earlier recipe
+  knows about.)
 - **`-lockedMode` is the only way to photograph the read-only state**,
-  and it is now the *easy thing to forget*. This Mac resolves a cached
-  StoreKit test entitlement by bundle ID, so a plain launch of
+  and it is the *easiest thing here to forget*. This Mac resolves a
+  cached StoreKit test entitlement by bundle ID, so a plain launch of
   `app.writingale` comes up **unlocked** — a pass that forgets the flag
-  silently photographs the wrong state. (It was renamed from
-  `-demoMode`.)
+  silently photographs the wrong state. (Older recipes call it
+  `-demoMode`; same flag, renamed.)
 - **`-autoSelectName` alone is not reproducible.** The example book's
   "The Heat-Ray" is both a chapter and an item, and the lookup walks a
   dictionary, so the `editor` shot came out as the item's 97-word page
@@ -175,7 +185,7 @@ Full-window (`cap-full.sh`, plus `journey` from `cap-crops.sh`):
 
 | name | composition | used on |
 |---|---|---|
-| `welcome` | Welcome screen, no automation args (the recents list is the developer's own) | [what-is-writingale.md](guide/what-is-writingale.md), [quick-start.md](guide/quick-start.md) |
+| `welcome` | **Stale — "no automation args" is no longer enough.** The recents list is still the developer's own, but the app is sandboxed now: every entry predating that release has no bookmark and draws **dimmed with a lock badge**, so a bare run photographs a list of dimmed rows (or the empty-recents branch). The shot needs a book opened once, to mint a bookmark, before the welcome screen is captured. There is also a new unlock line under the buttons | [what-is-writingale.md](guide/what-is-writingale.md), [quick-start.md](guide/quick-start.md) |
 | `editor` | "The Heat-Ray" (the **chapter** — pass `-autoSelectType chapters`) in a single pane | [editor.md](guide/editor.md), [quick-start.md](guide/quick-start.md) |
 | `editor-split` | The same chapter above a timeline tab (⌘⌥↓, then Views → Timeline), each pane with its own strip and status bar | [editor.md](guide/editor.md) |
 | `editor-hidden` | Distraction-free, set by `-editor.interfaceHidden YES` | [editor.md](guide/editor.md) |
@@ -211,7 +221,7 @@ Crops (`cap-crops.sh` unless noted):
 | `editor-view-switcher` | Toolbar → `116x44+1074+4` | [editor.md](guide/editor.md) |
 | `editor-line-numbers` | The gutter beside wrapped paragraphs → `560x230+462+88` | [editor.md](guide/editor.md) |
 | `export-sheet` | `-autoSheet export` → `800x600+360+180` | [export.md](guide/export.md) |
-| `book-settings` | `-autoSheet settings`, **scrolled 10** — the row order and the writing goal are both below the fold → `470x530+525+210`. **This recipe is stale**: the sheet is tabbed now and the row order lives on its own tab — recapture with `-autoSheet timeline`, no scroll | [goals.md](guide/goals.md) (the row order is described in [timeline.md](guide/timeline.md), which links here rather than repeating the image) |
+| `book-settings` | **Stale — and it has to become two shots.** Was `-autoSheet settings`, **scrolled 10**, catching the writing goal *and* the row order below one fold → `470x530+525+210`. They are on different tabs now: the goal on Book (`-autoSheet settings`, no scroll) and the row order on Timeline (`-autoSheet timeline`). [goals.md](guide/goals.md) needs the goal; [timeline.md](guide/timeline.md) currently links here for the row order rather than carrying its own image, so it needs the second shot or a rewrite | [goals.md](guide/goals.md), [timeline.md](guide/timeline.md) |
 | `type-editor` | `-autoSheet types` → `800x600+360+180` | [entity-types.md](guide/entity-types.md) |
 | `graph-controls` | Graph tab → `530x58+470+88` (chips, outlines, re-layout, reset — no share button) | [graph.md](guide/graph.md) |
 | `timeline-controls` | Timeline header → `1045x50+462+88` (type chips, ordering, summary, zoom) | [timeline.md](guide/timeline.md) |
@@ -220,7 +230,7 @@ Driven shots (`cap-interact.sh`):
 
 | name | composition | used on |
 |---|---|---|
-| `settings-editor` | ⌘, with `-editor.wrapColumnEnabled YES`; the Settings **window** (`windowid --smallest`) → `440x412+0+90` | [editor.md](guide/editor.md) |
+| `settings-editor` | **Stale.** ⌘, with `-editor.wrapColumnEnabled YES`; the Settings **window** (`windowid --smallest`) → `440x412+0+90`. The window is tabbed now, so this must also pass **`-settingsTab editor`** — without it the run opens on whatever tab was last used and the crop is silently the wrong panel. The stacked sections are gone and a fourth tab (License) is new, so the geometry needs re-measuring | [editor.md](guide/editor.md) |
 | `view-search` | Timeline tab, ⌘F, type `storm`, Return to step → `1045x570+462+88` | [search.md](guide/search.md) |
 | `quick-insert` | ⌘K then `arti` → `600x320+456+120` | [editor.md](guide/editor.md) |
 | `goal-popover` | Goal ring clicked (194,70) → region `245x275` at window `+85+88` | [goals.md](guide/goals.md) |
