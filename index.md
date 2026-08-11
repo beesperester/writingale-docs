@@ -40,6 +40,12 @@ features:
     details: Export compiles the manuscript tree into a single clean markdown file, with references resolved to names and comments stripped.
 ---
 
+<div style="text-align: center; margin: 40px auto 0;">
+  <a href="https://apps.apple.com/app/id6799093016" title="Download Writingale on the Mac App Store">
+    <img src="/app-store-badge.svg" alt="Download on the Mac App Store" style="display: inline-block; height: 56px; margin: 14px;">
+  </a>
+</div>
+
 <div style="max-width: 1152px; margin: 48px auto 0;">
 
 <img src="/screenshots/editor-light.png" alt="The Writingale editor" class="light-only">
