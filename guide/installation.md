@@ -1,10 +1,10 @@
 # Installation
 
-Writingale is a native macOS app, coming to the **Mac App Store**.
+Writingale is a native macOS app, available on the **Mac App Store**.
 
-::: warning Not released yet
-Writingale isn't on the App Store yet. This page describes how it will work when it arrives; there's nothing to download today.
-:::
+<a href="https://apps.apple.com/app/id6799093016" title="Download Writingale on the Mac App Store">
+  <img src="/app-store-badge.svg" alt="Download on the Mac App Store" style="height: 52px; margin: 14px 0;">
+</a>
 
 ## Requirements
 
@@ -12,7 +12,7 @@ Writingale isn't on the App Store yet. This page describes how it will work when
 
 ## Install
 
-Writingale will be **free to download** from the Mac App Store. Updates arrive through the App Store like any other app — your books are plain files on disk and are never touched by an update.
+Writingale is **free to download** from the Mac App Store. Updates arrive through the App Store like any other app — your books are plain files on disk and are never touched by an update.
 
 ::: tip Try the example book
 Open the bundled example book from the welcome screen to explore a complete sample project, *The War of the Worlds* (after H. G. Wells), that uses every feature.
