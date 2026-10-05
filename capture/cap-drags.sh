@@ -18,11 +18,16 @@ hold_shot 520 67 980 800 "$HELD"
 cut editor-tab-drag '1045x520+462+400'
 
 # ---- a character row held over the editor text ----------------------
+# Grabs the *first* row rather than one counted down the list. The
+# Characters section became a tree when every type learned to nest, so
+# a fixed y that used to land on The Narrator now lands on the family
+# holding him — and the shot would show a container being dragged. The
+# first row is the one position nesting cannot move.
 reset_book
 launch "$mode" -autoOpenPath "$BOOK" -autoSelectName "The Heat-Ray" -autoSelectType chapters \
   -autoSection characters
 sleep 1
-hold_shot 330 200 900 300 "$HELD"
+hold_shot 330 79 900 300 "$HELD"
 cut editor-drag-reference '1045x340+462+120'
 
 # ---- a chapter row held on another row's edge (reorder) -------------
